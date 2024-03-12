@@ -1,5 +1,5 @@
 {
-  "description": "Supermarket Management System (not official deps on game)",
+  "description": "Supermarket Management System (not official deps on game) Using Electron Boilerplate",
   "keywords": [
     "electron",
     "boilerplate",
@@ -9,29 +9,19 @@
     "sass",
     "webpack",
     "hot",
-    "reload"
+    "reload",
+    "Supermarket Simulation"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
-  "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
-  },
+  "homepage": "https://github.com/Nolyo/Supermarket-management-system#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/Nolyo/Supermarket-management-system.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "Nolyo",
+    "url": "https://github.com/nolyo"
   },
-  "contributors": [
-    {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
-    }
-  ],
   "main": "./src/main/main.ts",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
