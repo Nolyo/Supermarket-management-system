@@ -12,3 +12,6 @@ After installing the dependencies, you can run the project by running the follow
 npm start
 ```
 The project will open in a new window. You can now use the project.
+
+Make with ❤️ with [Electron React Boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate)
+
