@@ -24,6 +24,11 @@ export type RackData = {
   RackSlots: Array<RackSlot>;
 };
 
+type DailyPriceChanges = {
+  ProductID: number;
+  Price: number;
+};
+
 export type DisplayedProductData = { [key: string]: number };
 
 export type CommonSave = {
@@ -38,6 +43,9 @@ export type CommonSave = {
     Money?: number;
     RackDatas?: Array<RackData>;
     DisplayedProductData?: DisplayedProductData;
+    DailyPriceChanges?: DailyPriceChanges;
+    PreviousPrices?: Array<{ ProductID: number; Price: number }>;
+    Prices?: Array<{ ProductID: number; Price: number }>;
   };
 };
 

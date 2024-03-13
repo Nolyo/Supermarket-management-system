@@ -1,13 +1,69 @@
 import React, { useEffect, useState } from 'react';
-import { AssociatedItem } from '../main/type';
+import SaveFileType, { AssociatedItem, Item } from '../main/type';
+import Card from './components/Card';
+import items from '../../.erb/scripts/items.json';
+import upArrowRed from '../../assets/up-arrow-red.svg';
+import downArrowGreen from '../../assets/down-arrow-green.svg';
 
 type GeneralDataProps = {
+  data: SaveFileType;
   associated: AssociatedItem;
 };
 export default function Products(props: GeneralDataProps) {
-  const { associated } = props;
+  const { associated, data } = props;
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<AssociatedItem>({});
+  const priceChangeds = data.Price.value.DailyPriceChanges;
+  /* eslint-disable */
+  const priceChangedElement = Object.keys(priceChangeds).map((i) => {
+    const price = priceChangeds?.[parseInt(i, 10)];
+
+    const item: Item | undefined = items.find((it) => it.id == price.ProductID);
+    const oldPrice = data.Price.value.PreviousPrices?.find(
+      (old) => old.ProductID == parseInt(item?.id || '0'),
+    );
+    const newPrice = data.Price.value.Prices?.find(
+      (old) => old.ProductID == parseInt(item?.id || '0'),
+    );
+    if (!item || !oldPrice || !newPrice) {
+      return false;
+    }
+
+    return (
+      <Card
+        title={
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              width: '100%',
+              alignItems: 'center',
+              padding: '5px 0',
+              fontSize: '0.8em',
+            }}
+          >
+            <div>
+              {oldPrice?.Price > newPrice?.Price ? (
+                <img width={20} src={downArrowGreen} alt="price down" />
+              ) : (
+                <img width={20} src={upArrowRed} alt="price up" />
+              )}
+            </div>
+            <span>{item.name}</span>
+          </div>
+        }
+        content={
+          <div className="flex">
+            <ul>
+              <li>Old price: {oldPrice?.Price}</li>
+              <li>New price: {newPrice?.Price}</li>
+            </ul>
+          </div>
+        }
+      />
+    );
+    /* eslint-enable */
+  });
 
   useEffect(() => {
     const filteredA = Object.keys(associated).reduce((acc, key) => {
@@ -35,6 +91,10 @@ export default function Products(props: GeneralDataProps) {
 
   return (
     <div className="align">
+      <div>
+        <h2>Price changed of day</h2>
+        <div className="flex">{priceChangedElement}</div>
+      </div>
       <div
         className="flex"
         style={{ justifyContent: 'space-between', margin: 0 }}

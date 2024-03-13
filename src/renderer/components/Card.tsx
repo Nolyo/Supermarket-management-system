@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 type CardType = {
-  title: string;
+  title: string | ReactNode;
   content: ReactNode;
 };
 export default function Card(props: CardType) {
@@ -9,9 +9,7 @@ export default function Card(props: CardType) {
 
   return (
     <div className="card">
-      <div className="card-title">
-        <span>{title}</span>
-      </div>
+      <div className="card-title">{title}</div>
       <div>{content}</div>
     </div>
   );
