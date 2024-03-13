@@ -1,0 +1,26 @@
+[
+  {
+    "id": "33",
+    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/1/15/Cereal_Chokipik.png",
+    "name": {
+      "en": "english name",
+      "fr": "Titre fr",
+      "de": "DE title"
+    },
+    "brand": "(Chokipik)",
+    "quantity": "x12",
+    "storageType": "Gondole"
+  },
+  {
+    "id": "70",
+    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/54/Sliced_Bread_Ron%27s.png",
+    "name": {
+      "en": "english name",
+      "fr": "Titre fr",
+      "de": "DE title"
+    },
+    "brand": "(Ron's)",
+    "quantity": "x12",
+    "storageType": "Gondole"
+  }
+]

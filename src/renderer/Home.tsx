@@ -8,9 +8,9 @@ import SaveFileType, {
   RackData,
 } from '../main/type';
 import './App.css';
-
-// Importer le fichier items.json
 import items from '../../.erb/scripts/items.json';
+import shoppingCart from '../../assets/cart-shopping-solid.svg';
+import circleInfo from '../../assets/circle-info-solid.svg';
 
 function associateProductsAndItems(
   products: DisplayedProductData,
@@ -42,22 +42,6 @@ function associateProductsAndItems(
       }
       associated[id] = obj;
     }
-
-    // if (item) {
-    //   let obj;
-    //   if (type === 'store') {
-    //     obj = {
-    //       storeCount: products[id],
-    //       item,
-    //     };
-    //   } else {
-    //     obj = {
-    //       rackCount: products[id],
-    //       item,
-    //     };
-    //   }
-    //   associated[id] = obj;
-    // }
   }
   /* eslint-enable */
   return associated;
@@ -85,7 +69,6 @@ function countItemInRack(saveFile: SaveFileType) {
       });
     });
   });
-
   // Associer les produits et les items
   const associated = associateProductsAndItems(products);
   const next = countItemInStore(saveFile, associated);
@@ -93,9 +76,20 @@ function countItemInRack(saveFile: SaveFileType) {
   return next;
 }
 
+function sortObjectsBySum(objects) {
+  return Object.entries(objects)
+    .map(([id, item]) => ({
+      id,
+      sum: (item.storeCount || 0) + (item.rackCount || 0),
+    }))
+    .sort((a, b) => a.sum - b.sum)
+    .map(({ id }) => objects[id]);
+}
+
 function Home() {
   const [raw, setRow] = useState<SaveFileType | null>(null);
   const [associated, setAssociated] = useState<AssociatedItem>({});
+  const [show, setShow] = useState<'general' | 'products'>('products');
   useEffect(() => {
     if (window.electron) {
       // calling IPC exposed from preload script
@@ -110,15 +104,36 @@ function Home() {
   useEffect(() => {
     if (raw) {
       const data = countItemInRack(raw);
-      console.log(data);
-      setAssociated(data);
+      // eslint-disable-next-line no-console
+      console.log('Associated items and count:', data);
+      setAssociated(sortObjectsBySum(data));
     }
   }, [raw]);
 
+  if (!raw) {
+    return false;
+  }
+
   return (
     <div>
-      <GeneralData data={raw} />
-      <Products associated={associated} />
+      <div className="navbar">
+        <button
+          type="button"
+          onClick={() => setShow('general')}
+          className={show === 'general' ? 'active' : ''}
+        >
+          <img width={48} src={circleInfo} alt="text" />
+        </button>
+        <button
+          className={show === 'products' ? 'active' : ''}
+          type="button"
+          onClick={() => setShow('products')}
+        >
+          <img width={48} src={shoppingCart} alt="text" />
+        </button>
+      </div>
+      {show === 'products' && <Products data={raw} associated={associated} />}
+      {show === 'general' && <GeneralData data={raw} />}
     </div>
   );
 }
