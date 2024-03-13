@@ -69,7 +69,6 @@ function countItemInRack(saveFile: SaveFileType) {
       });
     });
   });
-
   // Associer les produits et les items
   const associated = associateProductsAndItems(products);
   const next = countItemInStore(saveFile, associated);

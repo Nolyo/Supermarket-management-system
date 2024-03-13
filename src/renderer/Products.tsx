@@ -4,6 +4,8 @@ import Card from './components/Card';
 import items from '../../.erb/scripts/items.json';
 import upArrowRed from '../../assets/up-arrow-red.svg';
 import downArrowGreen from '../../assets/down-arrow-green.svg';
+import { useTranslation } from 'react-i18next';
+import formatDollar from './utils';
 
 type GeneralDataProps = {
   data: SaveFileType;
@@ -11,8 +13,10 @@ type GeneralDataProps = {
 };
 export default function Products(props: GeneralDataProps) {
   const { associated, data } = props;
+  const { t, i18n } = useTranslation();
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<AssociatedItem>({});
+  const [userLng, setUserLng] = useState('en');
   const priceChangeds = data.Price.value.DailyPriceChanges;
   /* eslint-disable */
   const priceChangedElement = Object.keys(priceChangeds).map((i) => {
@@ -49,14 +53,18 @@ export default function Products(props: GeneralDataProps) {
                 <img width={20} src={upArrowRed} alt="price up" />
               )}
             </div>
-            <span>{item.name}</span>
+            <span>{userLng === 'en' ? item.en_name : item.name}</span>
           </div>
         }
         content={
           <div className="flex">
             <ul>
-              <li>Old price: {oldPrice?.Price}</li>
-              <li>New price: {newPrice?.Price}</li>
+              <li>
+                {t('products.old_price')}: {formatDollar(oldPrice?.Price)}
+              </li>
+              <li>
+                {t('products.new_price')}: {formatDollar(newPrice?.Price)}
+              </li>
             </ul>
           </div>
         }
@@ -66,8 +74,16 @@ export default function Products(props: GeneralDataProps) {
   });
 
   useEffect(() => {
+    const lng = i18n.language;
+    setUserLng(lng);
+  }, [i18n]);
+
+  useEffect(() => {
     const filteredA = Object.keys(associated).reduce((acc, key) => {
       const item = associated[parseInt(key, 10)];
+      if (!item.item) {
+        return acc;
+      }
       if (
         item.item.name.toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())
@@ -92,17 +108,17 @@ export default function Products(props: GeneralDataProps) {
   return (
     <div className="align">
       <div>
-        <h2>Price changed of day</h2>
+        <h2>{t('products.price_changed')}</h2>
         <div className="flex">{priceChangedElement}</div>
       </div>
       <div
         className="flex"
         style={{ justifyContent: 'space-between', margin: 0 }}
       >
-        <h1>Products</h1>
+        <h1>{t('products.product')}</h1>
         <div className="blue">
           <button type="button" onClick={handleRefresh}>
-            Refresh
+            {t('products.refresh')}
           </button>
         </div>
         <div>
@@ -110,7 +126,7 @@ export default function Products(props: GeneralDataProps) {
             className="search-input"
             type="search"
             value={search}
-            placeholder="Search a product"
+            placeholder={t('products.search-product')}
             onChange={handleSearch}
           />
         </div>
@@ -118,11 +134,11 @@ export default function Products(props: GeneralDataProps) {
       <table className="table">
         <thead>
           <tr className="table-row">
-            <th>Img</th>
-            <th>Product</th>
-            <th>Store</th>
-            <th>Stockage</th>
-            <th>Total</th>
+            <th>{t('products.img')}</th>
+            <th>{t('products.product')}</th>
+            <th>{t('products.store')}</th>
+            <th>{t('products.stockage')}</th>
+            <th>{t('products.total')}</th>
           </tr>
         </thead>
         <tbody>
@@ -131,10 +147,19 @@ export default function Products(props: GeneralDataProps) {
             return (
               <tr className="table-row" key={key}>
                 <td>
-                  <img src={item.item.img} alt="" />
+                  <img
+                    width={80}
+                    height={80}
+                    style={{
+                      objectFit: 'contain',
+                    }}
+                    src={item.item.img}
+                    alt=""
+                  />
                 </td>
                 <td>
-                  {item.item.brand} {item.item.name}
+                  {userLng === 'en' ? item.item.en_name : item.item.name}{' '}
+                  {item.item.brand}
                 </td>
                 <td>{item.storeCount || 0}</td>
                 <td>{item.rackCount || 0}</td>

@@ -64,6 +64,7 @@ export type Item = {
   img: string;
   brand: string;
   name: string;
+  en_name: string;
   quantity: string;
   storageType: string;
 };

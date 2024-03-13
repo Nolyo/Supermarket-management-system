@@ -1,7 +1,7 @@
 import {
   app,
   Menu,
-  shell,
+  // shell,
   BrowserWindow,
   MenuItemConstructorOptions,
 } from 'electron';
@@ -267,7 +267,7 @@ export default class MenuBuilder {
               ],
       },
       {
-        label: '&Version 1.2',
+        label: '&Version 1.3',
         submenu:
           process.env.NODE_ENV === 'development' ||
           process.env.DEBUG_PROD === 'true'
