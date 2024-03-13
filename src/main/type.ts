@@ -24,7 +24,7 @@ export type RackData = {
   RackSlots: Array<RackSlot>;
 };
 
-type DailyPriceChanges = {
+export type DailyPriceChanges = {
   ProductID: number;
   Price: number;
 };

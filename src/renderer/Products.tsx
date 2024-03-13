@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import SaveFileType, { AssociatedItem, Item } from '../main/type';
-import Card from './components/Card';
-import items from '../../.erb/scripts/items.json';
-import upArrowRed from '../../assets/up-arrow-red.svg';
-import downArrowGreen from '../../assets/down-arrow-green.svg';
-import formatDollar from './utils';
+import SaveFileType, { AssociatedItem } from '../main/type';
+
+import PriceChanged from './components/PriceChanged';
 
 type GeneralDataProps = {
   data: SaveFileType;
@@ -17,61 +14,6 @@ export default function Products(props: GeneralDataProps) {
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<AssociatedItem>({});
   const [userLng, setUserLng] = useState('en');
-  const priceChangeds = data.Price.value.DailyPriceChanges;
-  /* eslint-disable */
-  const priceChangedElement = Object.keys(priceChangeds).map((i) => {
-    const price = priceChangeds?.[parseInt(i, 10)];
-
-    const item: Item | undefined = items.find((it) => it.id == price.ProductID);
-    const oldPrice = data.Price.value.PreviousPrices?.find(
-      (old) => old.ProductID == parseInt(item?.id || '0'),
-    );
-    const newPrice = data.Price.value.Prices?.find(
-      (old) => old.ProductID == parseInt(item?.id || '0'),
-    );
-    if (!item || !oldPrice || !newPrice) {
-      return false;
-    }
-
-    return (
-      <Card
-        title={
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              width: '100%',
-              alignItems: 'center',
-              padding: '5px 0',
-              fontSize: '0.8em',
-            }}
-          >
-            <div>
-              {oldPrice?.Price > newPrice?.Price ? (
-                <img width={20} src={downArrowGreen} alt="price down" />
-              ) : (
-                <img width={20} src={upArrowRed} alt="price up" />
-              )}
-            </div>
-            <span>{userLng === 'en' ? item.en_name : item.name}</span>
-          </div>
-        }
-        content={
-          <div className="flex">
-            <ul>
-              <li>
-                {t('products.old_price')}: {formatDollar(oldPrice?.Price)}
-              </li>
-              <li>
-                {t('products.new_price')}: {formatDollar(newPrice?.Price)}
-              </li>
-            </ul>
-          </div>
-        }
-      />
-    );
-    /* eslint-enable */
-  });
 
   useEffect(() => {
     const lng = i18n.language;
@@ -109,7 +51,7 @@ export default function Products(props: GeneralDataProps) {
     <div className="align">
       <div>
         <h2>{t('products.price_changed')}</h2>
-        <div className="flex">{priceChangedElement}</div>
+        <PriceChanged data={data} userLng={userLng} />
       </div>
       <div
         className="flex"
@@ -154,7 +96,7 @@ export default function Products(props: GeneralDataProps) {
                       objectFit: 'contain',
                     }}
                     src={item.item.img}
-                    alt=""
+                    alt="logo product"
                   />
                 </td>
                 <td>

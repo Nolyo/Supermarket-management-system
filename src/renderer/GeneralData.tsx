@@ -95,15 +95,6 @@ export default function GeneralData(props: GeneralDataProps) {
                   bills: data?.Expenses.value.Bills.length,
                   rents: data?.Expenses.value.Rents.length,
                 })}
-                {/* You have{' '}
-                <span className="bold italic blue">
-                  {data?.Expenses.value.Bills.length} bills
-                </span>{' '}
-                and
-                <span className="bold italic blue">
-                  {data?.Expenses.value.Rents.length} rent
-                </span>{' '}
-                to pay */}
               </p>
             ) : (
               <p>You have no bills to pay ❌</p>
