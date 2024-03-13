@@ -17,7 +17,7 @@ export default function PriceChanged(props: PriceChangedType) {
   const priceChangedElement = Object.keys(priceChangeds || {}).map((i) => {
     const price: DailyPriceChanges = priceChangeds?.[parseInt(i, 10)];
     const item: Item | undefined = items.find(
-      (it) => parseInt(it.id, 10) === parseInt(price.ProductID, 10),
+      (it) => parseInt(it.id, 10) === price.ProductID,
     );
     const oldPrice = data.Price.value.PreviousPrices?.find(
       (old) => old.ProductID === parseInt(item?.id || '0', 10),
@@ -41,6 +41,7 @@ export default function PriceChanged(props: PriceChangedType) {
               alignItems: 'center',
               padding: '5px 0',
               fontSize: '0.8em',
+              gap: '5px',
             }}
           >
             <div>

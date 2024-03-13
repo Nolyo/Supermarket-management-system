@@ -5,12 +5,14 @@ import GeneralData from './GeneralData';
 import SaveFileType, {
   AssociatedItem,
   DisplayedProductData,
+  Item,
   RackData,
 } from '../main/type';
-import './App.css';
 import items from '../../.erb/scripts/items.json';
 import shoppingCart from '../../assets/cart-shopping-solid.svg';
 import circleInfo from '../../assets/circle-info-solid.svg';
+import { associatePriceToItem } from './utils';
+import './App.css';
 
 function associateProductsAndItems(
   products: DisplayedProductData,
@@ -20,27 +22,26 @@ function associateProductsAndItems(
   /* eslint-disable */
   for (const id in products) {
     const item = items.find((item) => item.id === id);
+    if (!item) continue;
     //Si associated existe deja on ajoute la clé storeCount ou rackCount selon le type
-    if (associated[id]) {
+    if (associated[parseInt(id)]) {
       if (type === 'store') {
-        associated[id].storeCount = products[id];
+        associated[parseInt(id)].storeCount = products[id];
       } else {
-        associated[id].rackCount = products[id];
+        associated[parseInt(id)].rackCount = products[id];
       }
     } else {
-      let obj;
+      let obj: { rackCount?: number; item: Item; storeCount?: number } = {
+        item,
+        rackCount: 0,
+        storeCount: 0,
+      };
       if (type === 'store') {
-        obj = {
-          storeCount: products[id],
-          item,
-        };
+        obj.storeCount = products[id];
       } else {
-        obj = {
-          rackCount: products[id],
-          item,
-        };
+        obj.rackCount = products[id];
       }
-      associated[id] = obj;
+      associated[parseInt(id, 10)] = obj;
     }
   }
   /* eslint-enable */
@@ -71,25 +72,40 @@ function countItemInRack(saveFile: SaveFileType) {
   });
   // Associer les produits et les items
   const associated = associateProductsAndItems(products);
-  const next = countItemInStore(saveFile, associated);
 
-  return next;
+  return associated;
 }
 
-function sortObjectsBySum(objects) {
+function countItemOnFloor(saveFile: SaveFileType, associated: AssociatedItem) {
+  const floorBoxs = saveFile.Progression.value.BoxDatas;
+  const raw: { [key: number]: number } = {};
+
+  if (!floorBoxs) return associated;
+
+  floorBoxs.forEach((floor) => {
+    raw[floor.ProductID] = floor.ProductCount;
+  });
+
+  const allAssociated = associateProductsAndItems(raw, 'rack', associated);
+
+  return allAssociated;
+}
+
+function sortObjectsBySum(objects: AssociatedItem) {
   return Object.entries(objects)
     .map(([id, item]) => ({
       id,
       sum: (item.storeCount || 0) + (item.rackCount || 0),
     }))
     .sort((a, b) => a.sum - b.sum)
-    .map(({ id }) => objects[id]);
+    .map(({ id }) => objects[parseInt(id, 10)]);
 }
 
 function Home() {
   const [raw, setRow] = useState<SaveFileType | null>(null);
   const [associated, setAssociated] = useState<AssociatedItem>({});
   const [show, setShow] = useState<'general' | 'products'>('products');
+
   useEffect(() => {
     if (window.electron) {
       // calling IPC exposed from preload script
@@ -103,10 +119,13 @@ function Home() {
 
   useEffect(() => {
     if (raw) {
-      const data = countItemInRack(raw);
+      const inRack = countItemInRack(raw);
+      const onFloorAndRack = countItemOnFloor(raw, inRack);
+      const data = countItemInStore(raw, onFloorAndRack);
+      associatePriceToItem(raw, data);
+      setAssociated(sortObjectsBySum(inRack));
       // eslint-disable-next-line no-console
-      console.log('Associated items and count:', data);
-      setAssociated(sortObjectsBySum(data));
+      console.log('Associated items and count:', inRack);
     }
   }, [raw]);
 

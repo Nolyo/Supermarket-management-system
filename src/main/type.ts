@@ -46,6 +46,12 @@ export type CommonSave = {
     DailyPriceChanges?: DailyPriceChanges;
     PreviousPrices?: Array<{ ProductID: number; Price: number }>;
     Prices?: Array<{ ProductID: number; Price: number }>;
+    PricesSetByPlayer: Array<{ ProductID: number; Price: number }>;
+    BoxDatas: Array<{
+      ProductID: number;
+      ProductCount: number;
+      IsOpen: boolean;
+    }>;
   };
 };
 
@@ -70,7 +76,13 @@ export type Item = {
 };
 
 export type AssociatedItem = {
-  [key: number]: { rackCount?: number; item: Item; storeCount?: number };
+  [key: number]: {
+    rackCount?: number;
+    item: Item;
+    storeCount?: number;
+    marketPrice?: number;
+    userPrice?: number;
+  };
 };
 
 export default SaveFileType;

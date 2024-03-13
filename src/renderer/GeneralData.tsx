@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SaveFileType from '../main/type';
@@ -16,12 +15,7 @@ export default function GeneralData(props: GeneralDataProps) {
   const { data } = props;
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log(data);
-  }, [data]);
-
-  const changeLanguage = (lng) => {
+  const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
 

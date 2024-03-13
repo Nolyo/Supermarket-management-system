@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import SaveFileType, { AssociatedItem } from '../main/type';
 
 import PriceChanged from './components/PriceChanged';
+import formatDollar from './utils';
 
 type GeneralDataProps = {
   data: SaveFileType;
@@ -77,6 +78,8 @@ export default function Products(props: GeneralDataProps) {
         <thead>
           <tr className="table-row">
             <th>{t('products.img')}</th>
+            <th>{t('products.youPrice')}</th>
+            <th>{t('products.marketPrice')}</th>
             <th>{t('products.product')}</th>
             <th>{t('products.store')}</th>
             <th>{t('products.stockage')}</th>
@@ -99,6 +102,8 @@ export default function Products(props: GeneralDataProps) {
                     alt="logo product"
                   />
                 </td>
+                <td>{formatDollar(item.userPrice || 0)}</td>
+                <td>{formatDollar(item.marketPrice || 0)}</td>
                 <td>
                   {userLng === 'en' ? item.item.en_name : item.item.name}{' '}
                   {item.item.brand}
