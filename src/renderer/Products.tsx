@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import SaveFileType, { AssociatedItem, Item } from '../main/type';
 import Card from './components/Card';
 import items from '../../.erb/scripts/items.json';
 import upArrowRed from '../../assets/up-arrow-red.svg';
 import downArrowGreen from '../../assets/down-arrow-green.svg';
-import { useTranslation } from 'react-i18next';
 import formatDollar from './utils';
 
 type GeneralDataProps = {

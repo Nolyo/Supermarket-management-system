@@ -29,12 +29,20 @@ export default function GeneralData(props: GeneralDataProps) {
     <div className="align">
       <h1>{t('general-data.title')}</h1>
       <div className="flex">
-        <div className="cursor" onClick={() => changeLanguage('en')}>
+        <button
+          type="button"
+          className="button"
+          onClick={() => changeLanguage('en')}
+        >
           <img src={english} alt="Logo github" width={45} />
-        </div>
-        <div className="cursor" onClick={() => changeLanguage('fr')}>
+        </button>
+        <button
+          type="button"
+          className="button"
+          onClick={() => changeLanguage('fr')}
+        >
           <img src={french} alt="Logo github" width={45} />
-        </div>
+        </button>
       </div>
       <div className="flex">
         <Card
