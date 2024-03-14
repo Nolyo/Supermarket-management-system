@@ -4,6 +4,7 @@
 
 - Correction images erronées de 2 articles
 - Les cartons au sol sont compté dans stockage
+- UI / UX
 
 ## Added
 

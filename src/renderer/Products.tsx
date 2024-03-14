@@ -15,6 +15,7 @@ export default function Products(props: GeneralDataProps) {
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<AssociatedItem>({});
   const [userLng, setUserLng] = useState('en');
+  const [moreInfo, setMoreInfo] = useState<boolean>(false);
 
   useEffect(() => {
     const lng = i18n.language;
@@ -48,6 +49,10 @@ export default function Products(props: GeneralDataProps) {
     }
   }
 
+  function handleMoreInfo() {
+    setMoreInfo(!moreInfo);
+  }
+
   return (
     <div className="align">
       <div>
@@ -59,13 +64,23 @@ export default function Products(props: GeneralDataProps) {
         style={{ justifyContent: 'space-between', margin: 0 }}
       >
         <h1>{t('products.product')}</h1>
-        <div className="blue">
+        <div>
           <button type="button" onClick={handleRefresh}>
             {t('products.refresh')}
           </button>
         </div>
-        <div>
+        <div className="flex">
+          <label htmlFor="moreInfo">
+            <input
+              type="checkbox"
+              checked={moreInfo}
+              id="moreInfo"
+              onChange={handleMoreInfo}
+            />
+            More info
+          </label>
           <input
+            id="searchInput"
             className="search-input"
             type="search"
             value={search}
@@ -78,12 +93,16 @@ export default function Products(props: GeneralDataProps) {
         <thead>
           <tr className="table-row">
             <th>{t('products.img')}</th>
-            <th>{t('products.youPrice')}</th>
-            <th>{t('products.marketPrice')}</th>
             <th>{t('products.product')}</th>
             <th>{t('products.store')}</th>
             <th>{t('products.stockage')}</th>
             <th>{t('products.total')}</th>
+            {moreInfo && (
+              <>
+                <th>{t('products.yourPrice')}</th>
+                <th>{t('products.marketPrice')}</th>
+              </>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -102,8 +121,6 @@ export default function Products(props: GeneralDataProps) {
                     alt="logo product"
                   />
                 </td>
-                <td>{formatDollar(item.userPrice || 0)}</td>
-                <td>{formatDollar(item.marketPrice || 0)}</td>
                 <td>
                   {userLng === 'en' ? item.item.en_name : item.item.name}{' '}
                   {item.item.brand}
@@ -111,6 +128,12 @@ export default function Products(props: GeneralDataProps) {
                 <td>{item.storeCount || 0}</td>
                 <td>{item.rackCount || 0}</td>
                 <td>{(item.rackCount || 0) + (item.storeCount || 0)}</td>
+                {moreInfo && (
+                  <>
+                    <td>{formatDollar(item.userPrice || 0)}</td>
+                    <td>{formatDollar(item.marketPrice || 0)}</td>
+                  </>
+                )}
               </tr>
             );
           })}

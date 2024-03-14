@@ -11,12 +11,13 @@ body {
       #dd5789 51.77%,
       #7a2c9e 129.35%);
   font-family: sans-serif;
-  /* overflow-y: hidden; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
+#root {
+  min-width: 1280px;
+}
 
 button {
   background-color: white;
@@ -135,6 +136,7 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  border-radius: 7px;
 }
 
 .table td,

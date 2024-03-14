@@ -28,14 +28,14 @@ export default function GeneralData(props: GeneralDataProps) {
           className="button"
           onClick={() => changeLanguage('en')}
         >
-          <img src={english} alt="Logo github" width={45} />
+          <img src={english} alt="Logo github" width={80} />
         </button>
         <button
           type="button"
           className="button"
           onClick={() => changeLanguage('fr')}
         >
-          <img src={french} alt="Logo github" width={45} />
+          <img src={french} alt="Logo github" width={80} />
         </button>
       </div>
       <div className="flex">

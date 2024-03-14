@@ -25,7 +25,11 @@ export default function PriceChanged(props: PriceChangedType) {
     const newPrice = data.Price.value.Prices?.find(
       (old) => old.ProductID === parseInt(item?.id || '0', 10),
     );
-    if (!item || !oldPrice || !newPrice) {
+    const userPrice = data.Price.value.PricesSetByPlayer?.find(
+      (p) => p.ProductID === parseInt(item?.id || '0', 10),
+    );
+
+    if (!item || !oldPrice || !newPrice || !userPrice) {
       return false;
     }
 
@@ -64,6 +68,9 @@ export default function PriceChanged(props: PriceChangedType) {
               </li>
               <li>
                 {t('products.new_price')}: {formatDollar(newPrice?.Price)}
+              </li>
+              <li>
+                {t('products.yourPrice')}: {formatDollar(userPrice?.Price)}
               </li>
             </ul>
           </div>
