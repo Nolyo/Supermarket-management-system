@@ -31,12 +31,15 @@ export type DailyPriceChanges = {
 
 export type DisplayedProductData = { [key: string]: number };
 
+type Price = { ProductID: number; Price: number };
+
 export type CommonSave = {
   ___type: string;
   value: {
     Purchased?: boolean;
     StorageLevel?: number;
     CashiersData?: Array<number>;
+    RestockersData?: Array<number>;
     UnlockedLicenses?: Array<number>;
     Bills?: Array<ExpensesSave>;
     Rents?: Array<ExpensesSave>;
@@ -44,8 +47,15 @@ export type CommonSave = {
     RackDatas?: Array<RackData>;
     DisplayedProductData?: DisplayedProductData;
     DailyPriceChanges?: DailyPriceChanges;
-    PreviousPrices?: Array<{ ProductID: number; Price: number }>;
-    Prices?: Array<{ ProductID: number; Price: number }>;
+    PreviousPrices?: Array<Price>;
+    Prices?: Array<Price>;
+    PricesSetByPlayer: Array<Price>;
+    AverageCosts: Array<Price>;
+    BoxDatas: Array<{
+      ProductID: number;
+      ProductCount: number;
+      IsOpen: boolean;
+    }>;
   };
 };
 
@@ -70,7 +80,14 @@ export type Item = {
 };
 
 export type AssociatedItem = {
-  [key: number]: { rackCount?: number; item: Item; storeCount?: number };
+  [key: number]: {
+    rackCount?: number;
+    item: Item;
+    storeCount?: number;
+    marketPrice?: number;
+    userPrice?: number;
+    averageCost?: number;
+  };
 };
 
 export default SaveFileType;

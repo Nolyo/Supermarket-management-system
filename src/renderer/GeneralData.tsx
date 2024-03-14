@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SaveFileType from '../main/type';
@@ -7,6 +6,8 @@ import discord from '../../assets/discord.svg';
 import github from '../../assets/github.svg';
 import french from '../../assets/french.svg';
 import english from '../../assets/english.svg';
+import spanish from '../../assets/es.svg';
+import german from '../../assets/de.svg';
 import formatDollar from './utils';
 
 type GeneralDataProps = {
@@ -16,37 +17,46 @@ export default function GeneralData(props: GeneralDataProps) {
   const { data } = props;
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log(data);
-  }, [data]);
-
-  const changeLanguage = (lng) => {
+  const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
 
   return (
     <div className="align">
-      <h1>{t('general-data.title')}</h1>
+      <h1>{t('generalData.title')}</h1>
       <div className="flex">
         <button
           type="button"
           className="button"
           onClick={() => changeLanguage('en')}
         >
-          <img src={english} alt="Logo github" width={45} />
+          <img src={english} alt="Logo github" width={80} />
         </button>
         <button
           type="button"
           className="button"
           onClick={() => changeLanguage('fr')}
         >
-          <img src={french} alt="Logo github" width={45} />
+          <img src={french} alt="Logo github" width={80} />
+        </button>
+        <button
+          type="button"
+          className="button"
+          onClick={() => changeLanguage('es')}
+        >
+          <img src={spanish} alt="Logo github" width={80} />
+        </button>
+        <button
+          type="button"
+          className="button"
+          onClick={() => changeLanguage('de')}
+        >
+          <img src={german} alt="Logo github" width={80} />
         </button>
       </div>
       <div className="flex">
         <Card
-          title={t('general-data.storage')}
+          title={t('generalData.storage')}
           content={
             <>
               {data?.Storage.value.Purchased && (
@@ -57,41 +67,36 @@ export default function GeneralData(props: GeneralDataProps) {
           }
         />
         <Card
-          title={t('general-data.employees')}
+          title={t('generalData.employees')}
           content={
-            data?.Employees.value.CashiersData ? (
-              <p>
-                {t('general-data.cashiers', {
-                  count: data?.Employees.value.CashiersData.length,
-                })}
-              </p>
-            ) : (
-              <p>{t('general-data.no-cashiers')}</p>
-            )
+            <p>
+              {t('generalData.cashiers', {
+                count: data?.Employees.value.CashiersData?.length,
+              })}
+              {t('generalData.restocker', {
+                count: data?.Employees.value.RestockersData?.length,
+              })}
+            </p>
           }
         />
         <Card
-          title={t('general-data.licenses')}
+          title={t('generalData.licenses')}
           content={
-            data?.Progression.value.UnlockedLicenses ? (
-              <p>
-                {t('general-data.licence', {
-                  count: data?.Progression.value.UnlockedLicenses.length,
-                })}
-              </p>
-            ) : (
-              <p>{t('general-data.no-licence')}</p>
-            )
+            <p>
+              {t('generalData.licence', {
+                count: data?.Progression.value.UnlockedLicenses?.length,
+              })}
+            </p>
           }
         />
       </div>
       <div className="flex">
         <Card
-          title={t('general-data.invoices')}
+          title={t('generalData.invoices')}
           content={
             data?.Expenses.value.Bills && data?.Expenses.value.Rents ? (
               <p>
-                {t('general-data.billsAndRent', {
+                {t('generalData.billsAndRent', {
                   bills: data?.Expenses.value.Bills.length,
                   rents: data?.Expenses.value.Rents.length,
                 })}
@@ -102,13 +107,13 @@ export default function GeneralData(props: GeneralDataProps) {
           }
         />
         <Card
-          title={t('general-data.money')}
+          title={t('generalData.money')}
           content={<p>{formatDollar(data?.Progression.value.Money || 0)}</p>}
         />
       </div>
       <div className="center mt-5">
         <p>{t('description')}</p>
-        <p>{t('stay-connect')}</p>
+        <p>{t('stayConnect')}</p>
         <p>{t('ty')}</p>
         <div className="flex">
           <Link

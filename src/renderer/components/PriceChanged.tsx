@@ -14,10 +14,11 @@ export default function PriceChanged(props: PriceChangedType) {
   const { data, userLng } = props;
   const { t } = useTranslation();
   const priceChangeds = data.Price.value.DailyPriceChanges;
+
   const priceChangedElement = Object.keys(priceChangeds || {}).map((i) => {
     const price: DailyPriceChanges = priceChangeds?.[parseInt(i, 10)];
     const item: Item | undefined = items.find(
-      (it) => parseInt(it.id, 10) === parseInt(price.ProductID, 10),
+      (it) => parseInt(it.id, 10) === price.ProductID,
     );
     const oldPrice = data.Price.value.PreviousPrices?.find(
       (old) => old.ProductID === parseInt(item?.id || '0', 10),
@@ -25,7 +26,11 @@ export default function PriceChanged(props: PriceChangedType) {
     const newPrice = data.Price.value.Prices?.find(
       (old) => old.ProductID === parseInt(item?.id || '0', 10),
     );
-    if (!item || !oldPrice || !newPrice) {
+    const userPrice = data.Price.value.PricesSetByPlayer?.find(
+      (p) => p.ProductID === parseInt(item?.id || '0', 10),
+    );
+
+    if (!item || !oldPrice || !newPrice || !userPrice) {
       return false;
     }
 
@@ -41,6 +46,7 @@ export default function PriceChanged(props: PriceChangedType) {
               alignItems: 'center',
               padding: '5px 0',
               fontSize: '0.8em',
+              gap: '5px',
             }}
           >
             <div>
@@ -51,12 +57,14 @@ export default function PriceChanged(props: PriceChangedType) {
               )}
             </div>
             <span>
-              {userLng === 'en' ? item.en_name : item.name} {item.brand}
+              {item.name[userLng]}
+              {item.brand}
             </span>
           </div>
         }
         content={
           <div className="flex">
+            <img width={60} src={item.img} alt="price up" />
             <ul>
               <li>
                 {t('products.old_price')}: {formatDollar(oldPrice?.Price)}

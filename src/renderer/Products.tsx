@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SaveFileType, { AssociatedItem } from '../main/type';
-
 import PriceChanged from './components/PriceChanged';
+import formatDollar from './utils';
 
 type GeneralDataProps = {
   data: SaveFileType;
@@ -14,6 +14,7 @@ export default function Products(props: GeneralDataProps) {
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<AssociatedItem>({});
   const [userLng, setUserLng] = useState('en');
+  const [moreInfo, setMoreInfo] = useState<boolean>(false);
 
   useEffect(() => {
     const lng = i18n.language;
@@ -27,7 +28,7 @@ export default function Products(props: GeneralDataProps) {
         return acc;
       }
       if (
-        item.item.name.toLowerCase().includes(search.toLowerCase()) ||
+        item.item.name[userLng].toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())
       ) {
         acc[key] = item;
@@ -41,10 +42,8 @@ export default function Products(props: GeneralDataProps) {
     setSearch(e.target.value);
   }
 
-  function handleRefresh() {
-    if (window.electron) {
-      window.electron.ipcRenderer.sendMessage('reload');
-    }
+  function handleMoreInfo() {
+    setMoreInfo(!moreInfo);
   }
 
   return (
@@ -58,13 +57,18 @@ export default function Products(props: GeneralDataProps) {
         style={{ justifyContent: 'space-between', margin: 0 }}
       >
         <h1>{t('products.product')}</h1>
-        <div className="blue">
-          <button type="button" onClick={handleRefresh}>
-            {t('products.refresh')}
-          </button>
-        </div>
-        <div>
+        <div className="flex">
+          <label htmlFor="moreInfo">
+            <input
+              type="checkbox"
+              checked={moreInfo}
+              id="moreInfo"
+              onChange={handleMoreInfo}
+            />
+            More info
+          </label>
           <input
+            id="searchInput"
             className="search-input"
             type="search"
             value={search}
@@ -81,6 +85,14 @@ export default function Products(props: GeneralDataProps) {
             <th>{t('products.store')}</th>
             <th>{t('products.stockage')}</th>
             <th>{t('products.total')}</th>
+            {moreInfo && (
+              <>
+                <th>{t('products.yourPrice')}</th>
+                <th>{t('products.marketPrice')}</th>
+                <th>{t('products.winRate')}</th>
+                {/* <th>{t('products.averageCost')}</th> */}
+              </>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -100,12 +112,24 @@ export default function Products(props: GeneralDataProps) {
                   />
                 </td>
                 <td>
-                  {userLng === 'en' ? item.item.en_name : item.item.name}{' '}
+                  {item.item.name[userLng]}
                   {item.item.brand}
                 </td>
                 <td>{item.storeCount || 0}</td>
                 <td>{item.rackCount || 0}</td>
                 <td>{(item.rackCount || 0) + (item.storeCount || 0)}</td>
+                {moreInfo && (
+                  <>
+                    <td>{formatDollar(item.userPrice || 0)}</td>
+                    <td>{formatDollar(item.marketPrice || 0)}</td>
+                    <td>
+                      {formatDollar(
+                        (item.userPrice || 0) - (item.marketPrice || 0),
+                      )}
+                    </td>
+                    {/* <td>{formatDollar(item.averageCost || 0)}</td> */}
+                  </>
+                )}
               </tr>
             );
           })}

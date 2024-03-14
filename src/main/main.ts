@@ -11,7 +11,7 @@
 import path from 'path';
 import fs from 'fs';
 import os from 'os';
-import { app, BrowserWindow, shell, ipcMain } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, IpcMainEvent } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
@@ -26,33 +26,6 @@ class AppUpdater {
 }
 
 let mainWindow: BrowserWindow | null = null;
-
-// Get save File
-ipcMain.on('get-save-file', async (event) => {
-  const { username } = os.userInfo();
-  const filePath = path.join(
-    'C:',
-    'Users',
-    username,
-    'AppData',
-    'LocalLow',
-    'Nokta Games',
-    'Supermarket Simulator',
-    'saveFile.es3',
-  );
-
-  try {
-    const data = fs.readFileSync(filePath, 'utf8');
-    // In es3 alphanumeric keys are not quoted, so we need to add quotes to them
-    const correctedData = data.replace(/([{,]\s*)(\d+)(\s*:)/g, '$1"$2"$3');
-    const tmpPath = path.join(os.tmpdir(), 'saveFile.es3');
-    fs.writeFileSync(tmpPath, correctedData, 'utf8');
-    event.reply('get-save-file', correctedData);
-  } catch (err) {
-    console.error(err);
-    event.reply('get-save-file', null);
-  }
-});
 
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
@@ -75,6 +48,20 @@ const isDebug =
 if (isDebug) {
   require('electron-debug')();
 }
+
+const reloadData = async (event: IpcMainEvent, filePath: string) => {
+  try {
+    const data = fs.readFileSync(filePath, 'utf8');
+    // In es3 alphanumeric keys are not quoted, so we need to add quotes to them
+    const correctedData = data.replace(/([{,]\s*)(\d+)(\s*:)/g, '$1"$2"$3');
+    const tmpPath = path.join(os.tmpdir(), 'saveFile.es3');
+    fs.writeFileSync(tmpPath, correctedData, 'utf8');
+    event.reply('get-save-file', correctedData);
+  } catch (err) {
+    console.error(err);
+    event.reply('get-save-file', null);
+  }
+};
 
 const installExtensions = async () => {
   const installer = require('electron-devtools-installer');
@@ -150,6 +137,27 @@ const createWindow = async () => {
 /**
  * Add event listeners...
  */
+// Get save File
+ipcMain.on('get-save-file', async (event) => {
+  const { username } = os.userInfo();
+  const filePath = path.join(
+    'C:',
+    'Users',
+    username,
+    'AppData',
+    'LocalLow',
+    'Nokta Games',
+    'Supermarket Simulator',
+    'saveFile.es3',
+  );
+  fs.watch(filePath, (eventType, filename) => {
+    if (eventType === 'change') {
+      console.log(`the file ${filename} has been updated`);
+      reloadData(event, filePath);
+    }
+  });
+  reloadData(event, filePath);
+});
 
 app.on('window-all-closed', () => {
   // Respect the OSX convention of having the application in memory even
