@@ -113,7 +113,7 @@ export default function Products(props: GeneralDataProps) {
                 </td>
                 <td>
                   {item.item.name[userLng]}
-                  {item.item.brand}
+                  {item.item.brand} ({item.item.quantity})
                 </td>
                 <td>{item.storeCount || 0}</td>
                 <td>{item.rackCount || 0}</td>
