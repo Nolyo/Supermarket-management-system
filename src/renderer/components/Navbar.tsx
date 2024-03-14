@@ -3,9 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import discord from '../../../assets/discord.svg';
 
-// import shoppingCart from '../../../assets/cart-shopping-solid.svg';
-// import circleInfo from '../../../assets/circle-info-solid.svg';
-
 type NavbarType = {
   show: 'general' | 'products';
   setShow: Dispatch<SetStateAction<'general' | 'products'>>;

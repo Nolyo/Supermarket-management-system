@@ -12,6 +12,3 @@
 - Auto reload, des que vous sauvegardé votre partie les datas sont misent à jour automatiquement sans perdre les filtres de recherche
 
 ## Todo
-
-- De nouvelles langue devraient arriver dans la journée.
--

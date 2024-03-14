@@ -16,7 +16,7 @@ i18n
       en: {
         translation: {
           helloWorld: 'Hello world <3',
-          ty: 'Thank you @loup13 for translation. Dev by @nolyoShifumi',
+          ty: 'Trad by @loup13. Dev by @nolyoShifumi',
           description:
             'This product is made to help you manage your stock in the Supermarket simulator game.',
           stayConnect:
@@ -60,7 +60,7 @@ i18n
       fr: {
         translation: {
           helloWorld: 'Bonjour le monde <3',
-          ty: 'Merci @loup13 pour la traduction, Dev par @nolyoShifumi ',
+          ty: 'Trad par @loup13, Dev par @nolyoShifumi ',
           description:
             'Ce produit est conçu pour vous aider à gérer votre stock dans le jeu de simulation de supermarché.',
           stayConnect:
@@ -102,7 +102,7 @@ i18n
       es: {
         translation: {
           helloWorld: 'Hola mundo <3',
-          ty: 'Gracias @loup13 por la traducción. Desarrollado por @nolyoShifumi',
+          ty: 'Trad por @loup13. Desarrollado por @nolyoShifumi',
           description:
             'Este producto está hecho para ayudarte a gestionar tu stock en el juego de simulación de supermercados.',
           stayConnect:
@@ -146,7 +146,7 @@ i18n
       de: {
         translation: {
           helloWorld: 'Hallo Welt <3',
-          ty: 'Danke @loup13 für die Übersetzung. Entwickelt von @nolyoShifumi',
+          ty: 'Übersetzung von @loup1. Entwickelt von @nolyoShifumi',
           description:
             'Dieses Produkt wurde entwickelt, um Ihnen bei der Verwaltung Ihres Lagerbestands im Supermarkt-Simulationsspiel zu helfen.',
           stayConnect:
