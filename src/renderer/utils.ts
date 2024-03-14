@@ -24,8 +24,14 @@ export function associatePriceToItem(
       allPrices?.PricesSetByPlayer?.find((p) => p.ProductID === currentId) ||
       defaultPrice;
 
+    // const averageCost =
+    //   allPrices?.AverageCosts?.find((p) => p.ProductID === currentId) ||
+    //   defaultPrice;
+
     associatedItem.marketPrice = marketPrice.Price;
     associatedItem.userPrice = userPrice.Price;
+    // associatedItem.averageCost = averageCost.Price;
+
     return data;
   });
 }

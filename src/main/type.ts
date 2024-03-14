@@ -31,6 +31,8 @@ export type DailyPriceChanges = {
 
 export type DisplayedProductData = { [key: string]: number };
 
+type Price = { ProductID: number; Price: number };
+
 export type CommonSave = {
   ___type: string;
   value: {
@@ -45,9 +47,10 @@ export type CommonSave = {
     RackDatas?: Array<RackData>;
     DisplayedProductData?: DisplayedProductData;
     DailyPriceChanges?: DailyPriceChanges;
-    PreviousPrices?: Array<{ ProductID: number; Price: number }>;
-    Prices?: Array<{ ProductID: number; Price: number }>;
-    PricesSetByPlayer: Array<{ ProductID: number; Price: number }>;
+    PreviousPrices?: Array<Price>;
+    Prices?: Array<Price>;
+    PricesSetByPlayer: Array<Price>;
+    AverageCosts: Array<Price>;
     BoxDatas: Array<{
       ProductID: number;
       ProductCount: number;
@@ -83,6 +86,7 @@ export type AssociatedItem = {
     storeCount?: number;
     marketPrice?: number;
     userPrice?: number;
+    averageCost?: number;
   };
 };
 

@@ -90,6 +90,8 @@ export default function Products(props: GeneralDataProps) {
               <>
                 <th>{t('products.yourPrice')}</th>
                 <th>{t('products.marketPrice')}</th>
+                <th>{t('products.winRate')}</th>
+                {/* <th>{t('products.averageCost')}</th> */}
               </>
             )}
           </tr>
@@ -121,6 +123,12 @@ export default function Products(props: GeneralDataProps) {
                   <>
                     <td>{formatDollar(item.userPrice || 0)}</td>
                     <td>{formatDollar(item.marketPrice || 0)}</td>
+                    <td>
+                      {formatDollar(
+                        (item.userPrice || 0) - (item.marketPrice || 0),
+                      )}
+                    </td>
+                    {/* <td>{formatDollar(item.averageCost || 0)}</td> */}
                   </>
                 )}
               </tr>

@@ -62,6 +62,7 @@ export default function PriceChanged(props: PriceChangedType) {
         }
         content={
           <div className="flex">
+            <img width={60} src={item.img} alt="price up" />
             <ul>
               <li>
                 {t('products.old_price')}: {formatDollar(oldPrice?.Price)}
