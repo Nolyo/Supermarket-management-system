@@ -6,11 +6,10 @@ import discord from '../../../assets/discord.svg';
 type NavbarType = {
   show: 'general' | 'products';
   setShow: Dispatch<SetStateAction<'general' | 'products'>>;
-  reloadData: () => void;
 };
 
 export default function Navbar(props: NavbarType) {
-  const { show, setShow, reloadData } = props;
+  const { show, setShow } = props;
   const { t } = useTranslation();
 
   return (
@@ -30,9 +29,9 @@ export default function Navbar(props: NavbarType) {
         >
           {t('products.title')}
         </button>
-        <button onClick={() => reloadData()} type="button">
+        {/* <button onClick={() => reloadData()} type="button">
           {t('products.refresh')}
-        </button>
+        </button> */}
       </div>
       <Link
         title="Join our community"

@@ -5,6 +5,7 @@ import items from '../../../.erb/scripts/items.json';
 import upArrowRed from '../../../assets/up-arrow-red.svg';
 import downArrowGreen from '../../../assets/down-arrow-green.svg';
 import formatDollar from '../utils';
+import { useEffect } from 'react';
 
 type PriceChangedType = {
   data: SaveFileType;
@@ -14,6 +15,7 @@ export default function PriceChanged(props: PriceChangedType) {
   const { data, userLng } = props;
   const { t } = useTranslation();
   const priceChangeds = data.Price.value.DailyPriceChanges;
+
   const priceChangedElement = Object.keys(priceChangeds || {}).map((i) => {
     const price: DailyPriceChanges = priceChangeds?.[parseInt(i, 10)];
     const item: Item | undefined = items.find(
@@ -56,7 +58,8 @@ export default function PriceChanged(props: PriceChangedType) {
               )}
             </div>
             <span>
-              {userLng === 'en' ? item.en_name : item.name} {item.brand}
+              {item.name[userLng]}
+              {item.brand}
             </span>
           </div>
         }

@@ -166,7 +166,7 @@ a:hover {
 
 .navbar {
  display: flex;
- justify-content: space-between;
+ justify-content: center;
  gap: 10px;
  background-color: #1f1d34;
  width: calc(100vw);

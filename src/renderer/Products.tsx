@@ -29,7 +29,7 @@ export default function Products(props: GeneralDataProps) {
         return acc;
       }
       if (
-        item.item.name.toLowerCase().includes(search.toLowerCase()) ||
+        item.item.name[userLng].toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())
       ) {
         acc[key] = item;
@@ -113,7 +113,7 @@ export default function Products(props: GeneralDataProps) {
                   />
                 </td>
                 <td>
-                  {userLng === 'en' ? item.item.en_name : item.item.name}{' '}
+                  {item.item.name[userLng]}
                   {item.item.brand}
                 </td>
                 <td>{item.storeCount || 0}</td>

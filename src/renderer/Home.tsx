@@ -138,7 +138,7 @@ function Home() {
 
   return (
     <>
-      <Navbar setShow={setShow} reloadData={reloadData} show={show} />
+      <Navbar setShow={setShow} show={show} />
       {show === 'products' && <Products data={raw} associated={associated} />}
       {show === 'general' && <GeneralData data={raw} />}
     </>
