@@ -9,10 +9,9 @@ import SaveFileType, {
   RackData,
 } from '../main/type';
 import items from '../../.erb/scripts/items.json';
-import shoppingCart from '../../assets/cart-shopping-solid.svg';
-import circleInfo from '../../assets/circle-info-solid.svg';
 import { associatePriceToItem } from './utils';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function associateProductsAndItems(
   products: DisplayedProductData,
@@ -106,7 +105,7 @@ function Home() {
   const [associated, setAssociated] = useState<AssociatedItem>({});
   const [show, setShow] = useState<'general' | 'products'>('products');
 
-  function reloadData() {
+  const reloadData = () => {
     if (window.electron) {
       // calling IPC exposed from preload script
       window.electron.ipcRenderer.on('get-save-file', async (arg) => {
@@ -115,7 +114,7 @@ function Home() {
       });
       window.electron.ipcRenderer.sendMessage('get-save-file');
     }
-  }
+  };
 
   useEffect(() => {
     reloadData();
@@ -138,30 +137,11 @@ function Home() {
   }
 
   return (
-    <div>
-      <div className="navbar">
-        <button
-          type="button"
-          onClick={() => setShow('general')}
-          className={show === 'general' ? 'active' : ''}
-        >
-          <img width={48} src={circleInfo} alt="text" />
-        </button>
-        <button
-          className={show === 'products' ? 'active' : ''}
-          type="button"
-          onClick={() => setShow('products')}
-        >
-          <img width={48} src={shoppingCart} alt="text" />
-        </button>
-
-        <button type="button" onClick={() => reloadData()}>
-          Reload
-        </button>
-      </div>
+    <>
+      <Navbar setShow={setShow} reloadData={reloadData} show={show} />
       {show === 'products' && <Products data={raw} associated={associated} />}
       {show === 'general' && <GeneralData data={raw} />}
-    </div>
+    </>
   );
 }
 
