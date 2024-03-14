@@ -2,993 +2,637 @@
   {
     "id": "33",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/1/15/Cereal_Chokipik.png",
-    "name": {
-      "fr": "Céréale",
-      "en": "Cereal",
-      "de": "Getreide",
-      "es": "Cereal",
-      "it": "cereale"
-    },
+    "name": "Céréale",
     "brand": "(Chokipik)",
+    "en_name": "Cereal",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "70",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/54/Sliced_Bread_Ron%27s.png",
-    "name": {
-      "fr": "Pain de Mie",
-      "en": "Sliced Bread",
-      "de": "Weiches Brot",
-      "es": "Pan",
-      "it": "Pane morbido"
-    },
+    "name": "Pain de Mie",
     "brand": "(Ron's)",
+    "en_name": "Sliced Bread",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "83",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/0e/Flour_Kraftung.png",
-    "name": {
-      "fr": "Farine",
-      "en": "Flour",
-      "de": "Mehl",
-      "es": "Harina",
-      "it": "Farina"
-    },
+    "name": "Farine",
     "brand": "(Kraftung)",
+    "en_name": "Flour",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "84",
-    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/54/Sliced_Bread_Ron%27s.png",
-    "name": {
-      "fr": "Huile",
-      "en": "Oil",
-      "de": "Öl",
-      "es": "Aceite",
-      "it": "Olio"
-    },
+    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/5b/Oil_Lespieds.png",
+    "name": "Huile",
     "brand": "(Lespieds)",
+    "en_name": "Oil",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "85",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/a9/Pasta_Panzati.png",
-    "name": {
-      "fr": "Pâtes",
-      "en": "Pasta",
-      "de": "Pasta",
-      "es": "Pasta",
-      "it": "Pasta"
-    },
+    "name": "Pâtes",
     "brand": "(Panzati)",
+    "en_name": "Pasta",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "147",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/97/Sugar_Powdered_Susu.png",
-    "name": {
-      "fr": "Sucre en poudre",
-      "en": "Sugar Powdered",
-      "de": "Puderzucker",
-      "es": "Azúcar en polvo",
-      "it": "Zucchero a velo"
-    },
+    "name": "Sucre en poudre",
     "brand": "(Susu)",
+    "en_name": "Sugar Powdered",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "24",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b0/Bottled_Water_Aotte.png",
-    "name": {
-      "fr": "Eau en bouteille",
-      "en": "Bottled Water",
-      "de": "In Flaschen abgefülltes Wasser",
-      "es": "Agua embotellada",
-      "it": "Acqua in bottiglia"
-    },
+    "name": "Eau en bouteille",
     "brand": "(Aotte)",
+    "en_name": "Bottled Water",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "39",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/82/Cheese_Comt%C3%A9.png",
-    "name": {
-      "fr": "Fromage",
-      "en": "Cheese",
-      "de": "Käse",
-      "es": "Café tostado oscuro",
-      "it": "Formaggio"
-    },
+    "name": "Fromage",
     "brand": "(Comté)",
+    "en_name": "Cheese",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "55",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c3/Coffee_Dark_Roast_Narvalo.png",
-    "name": {
-      "fr": "Café torréfié foncé",
-      "en": "Dark Roast Coffee",
-      "de": "Dunkler Röstkaffee",
-      "es": "Café tostado oscuro",
-      "it": "Caffè dalla tostatura scura"
-    },
+    "name": "Café torréfié foncé",
     "brand": "(Narvalo)",
+    "en_name": "Coffee Dark Roast",
     "quantity": "x7",
     "storageType": "Gondole"
   },
   {
     "id": "62",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/38/Eggs_%288-Pack%29_Bio.png",
-    "name": {
-      "fr": "Oeufs - paquet de 8",
-      "en": "Eggs - pack of 8",
-      "de": "Eier - Packung mit 8 Stück",
-      "es": "Huevos - paquete de 8",
-      "it": "Uova - confezione da 8"
-    },
+    "name": "Oeufs - paquet de 8",
     "brand": "(Bio)",
+    "en_name": "Eggs 8-Pack",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "66",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/ae/Milk_Bourlait.png",
-    "name": {
-      "fr": "Lait",
-      "en": "Milk",
-      "de": "Milch",
-      "es": "Leche",
-      "it": "Latte"
-    },
+    "name": "Lait",
     "brand": "(Bourlait)",
+    "en_name": "Milk",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "151",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b1/Tea_Black_Tea_Palace.png",
-    "name": {
-      "fr": "Thé Noir",
-      "en": "Black tea",
-      "de": "Schwarzer Tee",
-      "es": "Té negro",
-      "it": "Tè nero"
-    },
+    "name": "Thé Noir",
     "brand": "(Tea Palace)",
+    "en_name": "Tea Black",
     "quantity": "x20",
     "storageType": "Gondole"
   },
   {
     "id": "68",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/cf/Peanut_Butter_PB%27s.png",
-    "name": {
-      "fr": "Beurre de Cacahuéte",
-      "en": "Peanut butter",
-      "de": "Erdnussbutter",
-      "es": "Mantequilla de cacahuete",
-      "it": "Burro di arachidi"
-    },
+    "name": "Beurre de Cacahuéte",
     "brand": "(PB's)",
+    "en_name": "Peanut Butter",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "99",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/66/Flour_Farine.png",
-    "name": {
-      "fr": "Farine",
-      "en": "Flour",
-      "de": "Mehl",
-      "es": "Harina",
-      "it": "Farina"
-    },
+    "name": "Farine",
     "brand": "(Farine)",
+    "en_name": "Flour",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "117",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d8/Olive_Oil_Tupiges.png",
-    "name": {
-      "fr": "Huile d'Olive",
-      "en": "Olive oil",
-      "de": "Olivenöl",
-      "es": "Aceite de oliva",
-      "it": "Olio d'oliva"
-    },
+    "name": "Huile d'Olive",
     "brand": "(Tupiges)",
+    "en_name": "Olive Oil",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "119",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/84/Pasta_Spaghetti_Elo.png",
-    "name": {
-      "fr": "Pâtes Spaghetti",
-      "en": "Spaghetti Pasta",
-      "de": "Spaghetti-Nudeln",
-      "es": "Pasta De Espagueti",
-      "it": "Spaghetti"
-    },
+    "name": "Pâtes Spaghetti",
     "brand": "(Elo)",
+    "en_name": "Pasta Spaghetti",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "128",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d6/Rice_Basmati_Lustupacru.png",
-    "name": {
-      "fr": "Riz Basmati",
-      "en": "Basmati rice",
-      "de": "Basmati-Reis",
-      "es": "Arroz basmati",
-      "it": "Riso basmati"
-    },
+    "name": "Riz Basmati",
     "brand": "(Lustupacru)",
+    "en_name": "Rice Basmati",
     "quantity": "x10",
     "storageType": "Gondole"
   },
   {
     "id": "132",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/57/Salt_Labalaine.png",
-    "name": {
-      "fr": "Sel",
-      "en": "Salt",
-      "de": "Salz",
-      "es": "Sal",
-      "it": "Sale"
-    },
+    "name": "Sel",
     "brand": "(Labalaine)",
+    "en_name": "Salt",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "67",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/51/Orange_Juice_Bio_Juice.png",
-    "name": {
-      "fr": "Jus d'Orange",
-      "en": "Orange juice",
-      "de": "Orangensaft",
-      "es": "Jugo de naranja",
-      "it": "succo d'arancia"
-    },
+    "name": "Jus d'Orange",
     "brand": "(Bio Juice)",
+    "en_name": "Orange Juice",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "73",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/dc/Soda_Cola.png",
-    "name": {
-      "fr": "Soda",
-      "en": "Soda",
-      "de": "Limonade",
-      "es": "soda",
-      "it": "Bibita"
-    },
+    "name": "Soda",
     "brand": "(Cola)",
+    "en_name": "Soda",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "74",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d7/Soda_Zap.png",
-    "name": {
-      "fr": "Soda",
-      "en": "Soda",
-      "de": "Limonade",
-      "es": "soda",
-      "it": "Bibita"
-    },
+    "name": "Soda",
     "brand": "(Zap)",
+    "en_name": "Soda",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "86",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/2/2d/Apple_Juice_Bio_Juice.png",
-    "name": {
-      "fr": "Jus de Pomme",
-      "en": "Apple juice",
-      "de": "Apfelsaft",
-      "es": "jugo de manzana",
-      "it": "succo di mela"
-    },
+    "name": "Jus de Pomme",
     "brand": "(Bio Juice)",
+    "en_name": "Apple Juice",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "115",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/a3/Milk_6-Pack_Labol.png",
-    "name": {
-      "fr": "Lait - Pack de 6",
-      "en": "Milk - Pack of 6",
-      "de": "Milch – 6er-Pack",
-      "es": "Leche - Paquete de 6",
-      "it": "Latte - Confezione da 6"
-    },
+    "name": "Lait - Pack de 6",
     "brand": "(Labol)",
+    "en_name": "Milk 6-Pack",
     "quantity": "x6",
     "storageType": "Gondole"
   },
   {
     "id": "139",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/61/Soda_Turko.png",
-    "name": {
-      "fr": "Soda",
-      "en": "Soda",
-      "de": "Limonade",
-      "es": "soda",
-      "it": "Bibita"
-    },
+    "name": "Soda",
     "brand": "(Turko)",
+    "en_name": "Soda",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "26",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/36/Cake_Bon_Papa.png",
-    "name": {
-      "fr": "Gâteau",
-      "en": "Cake",
-      "de": "Kuchen",
-      "es": "Pastel",
-      "it": "Torta"
-    },
+    "name": "Gâteau",
     "brand": "(Bon Papa)",
+    "en_name": "Cake",
     "quantity": "x15",
     "storageType": "Gondole"
   },
   {
     "id": "30",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d4/Cake_P%C3%A9pites.png",
-    "name": {
-      "fr": "Gâteau",
-      "en": "Cake",
-      "de": "Kuchen",
-      "es": "Pastel",
-      "it": "Torta"
-    },
+    "name": "Gâteau",
     "brand": "(Pépites)",
+    "en_name": "Cake",
     "quantity": "x18",
     "storageType": "Gondole"
   },
   {
     "id": "32",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/bd/Candy_Bonbek.png",
-    "name": {
-      "fr": "Bonbon",
-      "en": "Candy",
-      "de": "Süßigkeiten",
-      "es": "Dulce",
-      "it": "Caramella"
-    },
+    "name": "Bonbon",
     "brand": "(Bonbek)",
+    "en_name": "Candy",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "34",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/3a/Cereal_Crispy_Chibi.png",
-    "name": {
-      "fr": "Céréale",
-      "en": "Cereal",
-      "de": "Getreide",
-      "es": "Cereal",
-      "it": "Cereal"
-    },
+    "name": "Céréale",
     "brand": "(Crispy Chibi)",
+    "en_name": "Cereal",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "46",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/5a/Chocolate_Bar_Chocotte.png",
-    "name": {
-      "fr": "Bar Chocolat",
-      "en": "Chocolate Bar",
-      "de": "Schokoladenriegel",
-      "es": "Barra de chocolate",
-      "it": "Barretta di cioccolato"
-    },
+    "name": "Bar Chocolat",
     "brand": "(Chocotte)",
+    "en_name": "Chocolate Bar",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "161",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/34/Yoghurt_Fr%C3%BCgen.png",
-    "name": {
-      "fr": "Yaourt",
-      "en": "Yogurt",
-      "de": "Joghurt",
-      "es": "Yogur",
-      "it": "Yogurt"
-    },
+    "name": "Yaourt",
     "brand": "(Frügen)",
+    "en_name": "Yoghurt",
     "quantity": "x30",
     "storageType": "Gondole"
   },
   {
     "id": "10",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/8f/Bleach_Jaja_Vevel.png",
-    "name": {
-      "fr": "Eau de Javel",
-      "en": "Bleach",
-      "de": "Bleichen",
-      "es": "Lejía",
-      "it": "Candeggina"
-    },
+    "name": "Eau de Javel",
     "brand": "(Jaja Vevel)",
+    "en_name": "Bleach",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "52",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/bb/Cleaner_Touprop.png",
-    "name": {
-      "fr": "Produit Nettoyant",
-      "en": "Cleaner",
-      "de": "Reiniger",
-      "es": "Limpiador",
-      "it": "Più pulito"
-    },
+    "name": "Produit Nettoyant",
     "brand": "(Touprop)",
+    "en_name": "Cleaner",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "61",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/97/Dishwasher_Tablet_Cleandish.png",
-    "name": {
-      "fr": "Pastilles Lave-Vaisselle",
-      "en": "Dishwasher Tablets",
-      "de": "Spülmaschinen-Tabs",
-      "es": "Pastillas para lavavajillas",
-      "it": "Pastiglie per lavastoviglie"
-    },
+    "name": "Pastilles Lave-Vaisselle",
     "brand": "(Cleandish)",
+    "en_name": "Dishwasher Tablet",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "63",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/89/Hand_Soap_Savion.png",
-    "name": {
-      "fr": "Savon pour les Mains",
-      "en": "Hand Soap",
-      "de": "Handseife",
-      "es": "Jabón de mano",
-      "it": "Sapone per le mani"
-    },
+    "name": "Savon pour les Mains",
     "brand": "(Savion)",
+    "en_name": "Hand Soap",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "69",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/7/74/Shampoo_Kaya.png",
-    "name": {
-      "fr": "Shampoing",
-      "en": "Shampoo",
-      "de": "Shampoo",
-      "es": "Champú",
-      "it": "Shampoo"
-    },
+    "name": "Shampoing",
     "brand": "(Kaya)",
+    "en_name": "Shampoo",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "75",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c7/Toilet_Paper_Poudou.png",
-    "name": {
-      "fr": "Papier toilette",
-      "en": "Toilet paper",
-      "de": "Klopapier",
-      "es": "Papel higiénico",
-      "it": "Carta igienica"
-    },
+    "name": "Papier toilette",
     "brand": "(Poudou)",
+    "en_name": "Toilet Paper",
     "quantity": "x4",
     "storageType": "Gondole"
   },
   {
     "id": "36",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/38/Cheese_Mozarella_Don_Bernardo.png",
-    "name": {
-      "fr": "Mozzarella",
-      "en": "Mozzarella",
-      "de": "Mozzarella",
-      "es": "Queso Mozzarella",
-      "it": "Mozzarella"
-    },
+    "name": "Mozzarella",
     "brand": "(Don Bernardo)",
+    "en_name": "Cheese Mozarella",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "37",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/56/Cheese_Parmesan_Don_Bernardo.png",
-    "name": {
-      "fr": "Parmesan",
-      "en": "Parmesan cheese",
-      "de": "Parmesan Käse",
-      "es": "queso parmesano",
-      "it": "formaggio Parmigiano"
-    },
+    "name": "Parmesan",
     "brand": "(Don Bernardo)",
+    "en_name": "Cheese Parmesan",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "64",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/7/76/Honey_Hone.png",
-    "name": {
-      "fr": "Miel",
-      "en": "Honey",
-      "de": "Honig",
-      "es": "Miel",
-      "it": "Miele"
-    },
+    "name": "Miel",
     "brand": "(Hone)",
+    "en_name": "Honey",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "76",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/3b/Tuna_Stark.png",
-    "name": {
-      "fr": "Thon",
-      "en": "Tuna",
-      "de": "Thunfisch",
-      "es": "Atún",
-      "it": "Tonno"
-    },
+    "name": "Thon",
     "brand": "(Stark)",
+    "en_name": "Tuna",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "95",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/37/Eggs_%284-Pack%29_Bio.png",
-    "name": {
-      "fr": "Oeufs - Pack de 4",
-      "en": "Eggs - Pack of 4",
-      "de": "Eier – 4 Stück",
-      "es": "Huevos - Paquete de 4",
-      "it": "Uova - Confezione da 4"
-    },
+    "name": "Oeufs - Pack de 4",
     "brand": "(Bio)",
+    "en_name": "Eggs 4-Pack",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "146",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/61/Sugar_Powdered_Pablo.png",
-    "name": {
-      "fr": "Sucre en Poudre",
-      "en": "Powdered sugar",
-      "de": "Puderzucker",
-      "es": "Azúcar en polvo",
-      "it": "Zucchero a velo"
-    },
+    "name": "Sucre en Poudre",
     "brand": "(Pablo)",
+    "en_name": "Sugar Powdered",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "25",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b7/Butter_Paysans.png",
-    "name": {
-      "fr": "Beurre",
-      "en": "Butter",
-      "de": "Butter",
-      "es": "Manteca",
-      "it": "Burro"
-    },
+    "name": "Beurre",
     "brand": "(Paysans)",
+    "en_name": "Butter",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "35",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/a9/Cereal_Honey_Bees.png",
-    "name": {
-      "fr": "Céréale",
-      "en": "Cereal",
-      "de": "Getreide",
-      "es": "Cereal",
-      "it": "Cereale"
-    },
+    "name": "Céréale",
     "brand": "(Honey Bees)",
+    "en_name": "Cereal",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "42",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/99/Chicken_Mwef.png",
-    "name": {
-      "fr": "Poulet",
-      "en": "Chicken",
-      "de": "Huhn",
-      "es": "Pollo",
-      "it": "Pollo"
-    },
+    "name": "Poulet",
     "brand": "(Mwef)",
+    "en_name": "Chicken",
     "quantity": "x4",
     "storageType": "Gondole"
   },
   {
     "id": "101",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c5/French_Fries_Vandame%27s.png",
-    "name": {
-      "fr": "Frites",
-      "en": "Fries",
-      "de": "Fritten",
-      "es": "Patatas fritas",
-      "it": "Patatine fritte"
-    },
+    "name": "Frites",
     "brand": "(Vandame's)",
+    "en_name": "French Fries",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "123",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/1/16/Pizza_Mixed_DeNiro.png",
-    "name": {
-      "fr": "Pizza Mixte",
-      "en": "Mixed Pizza",
-      "de": "Gemischte Pizza",
-      "es": "Pizza Mixta",
-      "it": "Pizza Mista"
-    },
+    "name": "Pizza Mixte",
     "brand": "(DeNiro)",
+    "en_name": "Pizza Mixed",
     "quantity": "x32",
     "storageType": "Gondole"
   },
   {
     "id": "125",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/41/Potato_Bag_Miam.png",
-    "name": {
-      "fr": "Sac de Pommes de Terre",
-      "en": "Bag of Potatoes",
-      "de": "Tüte Kartoffeln",
-      "es": "Bolsa de patatas",
-      "it": "Borsa di patate"
-    },
+    "name": "Sac de Pommes de Terre",
     "brand": "(Miam)",
+    "en_name": "Potato Bag",
     "quantity": "x4",
     "storageType": "Gondole"
   },
   {
     "id": "41",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/8b/Cheese_Mimolette.png",
-    "name": {
-      "fr": "Fromage",
-      "en": "Cheese",
-      "de": "Käse",
-      "es": "Queso",
-      "it": "Formaggio"
-    },
+    "name": "Fromage",
     "brand": "(Mimolette)",
+    "en_name": "Cheese",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "56",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/6b/Coffee_Light_Roast_Narvalo.png",
-    "name": {
-      "fr": "Café Torréfié Léger",
-      "en": "Light Roast Coffee",
-      "de": "Leicht gerösteter Kaffee",
-      "es": "Café tostado ligero",
-      "it": "Caffè dalla tostatura leggera"
-    },
+    "name": "Café Torréfié Léger",
     "brand": "(Narvalo)",
+    "en_name": "Coffee Light Roast",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "96",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/62/Eggs_%2812-Pack%29_Bio.png",
-    "name": {
-      "fr": "Oeufs - Pack de 12",
-      "en": "Eggs - Pack of 12",
-      "de": "Eier – 12 Stück",
-      "es": "Huevos - Paquete de 12",
-      "it": "Uova - Confezione da 12"
-    },
+    "name": "Oeufs - Pack de 12",
     "brand": "(Bio)",
+    "en_name": "Eggs 12-Pack",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "120",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/01/Pasta_Elbows_Lustupacru.png",
-    "name": {
-      "fr": "Pâtes Coquillettes",
-      "en": "Coquillette Pasta",
-      "de": "Coquillette-Nudeln",
-      "es": "Pasta Coquilette",
-      "it": "Pasta Coquillette"
-    },
+    "name": "Pâtes Coquillettes",
     "brand": "(Lustupacru)",
+    "en_name": "Pasta Elbows",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "141",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/60/Sugar_Brown_Susu.png",
-    "name": {
-      "fr": "Sucre Brun",
-      "en": "Brown sugar",
-      "de": "brauner Zucker",
-      "es": "Azúcar moreno",
-      "it": "zucchero di canna"
-    },
+    "name": "Sucre Brun",
     "brand": "(Susu)",
+    "en_name": "Sugar Brown",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "152",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/3e/Tea_Green_Tea_Palace.png",
-    "name": {
-      "fr": "Thé Vert",
-      "en": "Green tea",
-      "de": "Grüner Tee",
-      "es": "Té verde",
-      "it": "Tè verde"
-    },
+    "name": "Thé Vert",
     "brand": "(TeaPalace)",
+    "en_name": "Tea Green",
     "quantity": "x48",
     "storageType": "Gondole"
   },
   {
     "id": "116",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/7/75/Moussaka_Ronpoint.png",
-    "name": {
-      "fr": "Moussaka",
-      "en": "Moussaka",
-      "de": "Moussaka",
-      "es": "Musaca",
-      "it": "moussaka"
-    },
+    "name": "Moussaka",
     "brand": "(Ronpoint)",
+    "en_name": "Moussaka",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "131",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/49/Salmon_Nordic_Harbor.png",
-    "name": {
-      "fr": "Saumon",
-      "en": "Salmon",
-      "de": "Lachs",
-      "es": "Salmón",
-      "it": "Salmone"
-    },
+    "name": "Saumon",
     "brand": "(Nordic Harbor)",
+    "en_name": "Salmon",
     "quantity": "x20",
     "storageType": "Gondole"
   },
   {
     "id": "134",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b1/Scallop_Gratin_Prypiat.png",
-    "name": {
-      "fr": "Saint-Jacques gratinées",
-      "en": "Gratinated scallops",
-      "de": "Gratinierte Jakobsmuscheln",
-      "es": "Vieiras gratinadas",
-      "it": "Capesante gratinate"
-    },
+    "name": "Saint-Jacques gratinées",
     "brand": "(Prypiat)",
+    "en_name": "Scallop Gratin",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "140",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/1/13/Steak_Bovora.png",
-    "name": {
-      "fr": "Steak",
-      "en": "Steak",
-      "de": "Steak",
-      "es": "Bife",
-      "it": "Bistecca"
-    },
+    "name": "Steak",
     "brand": "(Bovora)",
+    "en_name": "Steak",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "149",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/cf/Sushi_Large_Ulego.png",
-    "name": {
-      "fr": "Grand Sushi",
-      "en": "Large Sushi",
-      "de": "Großes Sushi",
-      "es": "Sushi grande",
-      "it": "Sushi grande"
-    },
+    "name": "Grand Sushi",
     "brand": "(Ulego)",
+    "en_name": "Sushi Large",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "150",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c3/Sushi_Small_Ulego.png",
-    "name": {
-      "fr": "Petit Sushi",
-      "en": "Small Sushi",
-      "de": "Kleines Sushi",
-      "es": "Sushi pequeño",
-      "it": "Piccolo Sushi"
-    },
+    "name": "Petit Sushi",
     "brand": "(Ulego)",
+    "en_name": "Sushi Small",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "157",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/98/Veal_Chop_Bovora.png",
-    "name": {
-      "fr": "Côte de Veau",
-      "en": "Veal chop",
-      "de": "Kalbskotelett",
-      "es": "chuleta de ternera",
-      "it": "Cotoletta"
-    },
+    "name": "Côte de Veau",
     "brand": "(Bovora)",
+    "en_name": "Veal Chop",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "58",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/4d/Crab_Stick_Sans.png",
-    "name": {
-      "fr": "Bâtonnet de Crabe",
-      "en": "Crab stick",
-      "de": "Krabbenstäbchen",
-      "es": "Palo de cangrejo",
-      "it": "Bastoncino di granchio"
-    },
+    "name": "Bâtonnet de Crabe",
     "brand": "(Sans)",
+    "en_name": "Crab Stick",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "107",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/80/Hot_Sauce_Hothot.png",
-    "name": {
-      "fr": "Sauce Piquante",
-      "en": "Hot sauce",
-      "de": "Scharfe Soße",
-      "es": "Salsa picante",
-      "it": "Salsa piccante"
-    },
+    "name": "Sauce Piquante",
     "brand": "(Hothot)",
+    "en_name": "Hot Sauce",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "108",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/2/29/Ice_cream_Chocolate_Maxi_Cone.png",
-    "name": {
-      "fr": "Glace chocolat & pistache",
-      "en": "Chocolate and pistachio ice cream",
-      "de": "Schokoladen- und Pistazieneis",
-      "es": "Helado de chocolate y pistacho",
-      "it": "Gelato al cioccolato e pistacchio"
-    },
+    "name": "Glace chocolat & pistache",
     "brand": "(Maxi Cone)",
+    "en_name": "Ice cream Chocolate",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "111",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b1/Ketchup_Kekette.png",
-    "name": {
-      "fr": "Ketchup",
-      "en": "Ketchup",
-      "de": "Ketchup",
-      "es": "Salsa de tomate",
-      "it": "Ketchup"
-    },
+    "name": "Ketchup",
     "brand": "(Kekette)",
+    "en_name": "Ketchup",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "114",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/1/1d/Mayonnaise_Yoyo.png",
-    "name": {
-      "fr": "Mayonnaise",
-      "en": "Mayonnaise",
-      "de": "Mayonnaise",
-      "es": "Mayonesa",
-      "it": "Maionese"
-    },
+    "name": "Mayonnaise",
     "brand": "(Yoyo)",
+    "en_name": "Mayonnaise",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "122",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/3e/Pizza_Cheddar_ChezzyPizz.png",
-    "name": {
-      "fr": "Pizza au Cheddar",
-      "en": "Cheddar Pizza",
-      "de": "Cheddar-Pizza",
-      "es": "Pizza con queso cheddar",
-      "it": "Pizza al formaggio cheddar"
-    },
+    "name": "Pizza au Cheddar",
     "brand": "(ChezzyPizz)",
+    "en_name": "Pizza Cheddar",
     "quantity": "x32",
     "storageType": "Gondole"
   },
   {
     "id": "1",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/96/Beer_Blonde_Ale_-_6_Pack_Fess.png",
-    "name": {
-      "fr": "Bière Blonde Ale - PACK de 6",
-      "en": "Blonde Ale Beer - PACK of 6",
-      "de": "Blondes Ale-Bier – 6er-PACK",
-      "es": "Cerveza Ale Rubia - PAQUETE de 6",
-      "it": "Birra Blonde Ale - PACK da 6"
-    },
+    "name": "Bière Blonde Ale - PACK de 6",
     "brand": "(Fess)",
+    "en_name": "Beer Blonde Ale 6-Pack",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "2",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/3e/Beer_Blonde_Ale_-_Keg_Fess.png",
+    "name": "Fût Bière Blonde Ale Keg",
     "brand": "(Fess)",
-    "name": {
-      "fr": "Fût Bière Blonde Ale Keg",
-      "en": "Barrel Blonde Ale Keg Beer",
-      "de": "Blondes Fassbier vom Fass",
-      "es": "Barril Rubio Ale Barril Cerveza",
-      "it": "Birra in barile Blonde Ale"
-    },
+    "en_name": "Beer Blonde Ale Keg",
     "quantity": "x6",
     "storageType": "Gondole"
   },
   {
     "id": "3",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b8/Beer_Blonde_Ale_Fess.png",
-    "name": {
-      "fr": "Bière Blonde Ale",
-      "en": "Blonde Ale Beer",
-      "de": "Blondes Ale-Bier",
-      "es": "Cerveza Ale Rubia",
-      "it": "Birra Blonde Ale"
-    },
+    "name": "Bière Blonde Ale",
     "brand": "(Fess)",
+    "en_name": "Beer Blonde Ale",
     "quantity": "x15",
     "storageType": "Gondole"
   },
   {
     "id": "9",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/0c/Beer_Lager_Teochew.png",
-    "name": {
-      "fr": "Bière Blonde Ale",
-      "en": "Lager Beer",
-      "de": "Lagerbier",
-      "es": "Cerveza lager",
-      "it": "Birra chiara"
-    },
+    "name": "Bière Lager",
     "brand": "(Teochew)",
     "en_name": "Beer Lager",
     "quantity": "x15",
@@ -997,114 +641,72 @@
   {
     "id": "44",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/0b/Chips_Covidos.png",
+    "name": "Chips",
     "brand": "(Covidos)",
-    "name": {
-      "fr": "Chips",
-      "en": "Crisps",
-      "de": "Kartoffelchips",
-      "es": "Papas fritas",
-      "it": "Patatine fritte"
-    },
+    "en_name": "Chips",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "65",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/aa/Houmus_Bibi.png",
-    "name": {
-      "fr": "Houmus",
-      "en": "Hummus",
-      "de": "Hummus",
-      "es": "Hummus",
-      "it": "Hummus"
-    },
+    "name": "Houmus",
     "brand": "(Bibi)",
+    "en_name": "Houmus",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "77",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/50/Vodka_Eay.png",
-    "name": {
-      "fr": "Vodka",
-      "en": "Vodka",
-      "de": "Wodka",
-      "es": "Vodka",
-      "it": "Vodka"
-    },
+    "name": "Vodka",
     "brand": "(Eay)",
+    "en_name": "Vodka",
     "quantity": "x12",
     "storageType": "Gondole"
   },
-
   {
     "id": "43",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/44/Chips_Chipos.png",
-    "name": {
-      "fr": "Chips",
-      "en": "Crisps",
-      "de": "Kartoffelchips",
-      "es": "Papas fritas",
-      "it": "Patatine fritte"
-    },
+    "name": "Chips",
     "brand": "(Chipos)",
+    "en_name": "Chips",
     "quantity": "x16",
     "storageType": "Gondole"
   },
-
   {
     "id": "100",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/6a/Flour_Sublett%27s.png",
-    "name": {
-      "fr": "Farine",
-      "en": "Flour",
-      "de": "Mehl",
-      "es": "Harina",
-      "it": "Farina"
-    },
+    "name": "Farine",
     "brand": "(Sublett's)",
+    "en_name": "Flour",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "113",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/61/Mashed_Potatoes_Puray.png",
-    "name": {
-      "fr": "Purée de Pommes de Terre",
-      "en": "Mashed Potatoes",
-      "de": "Kartoffelpüree",
-      "es": "Puré de papas",
-      "it": "Purè di patate"
-    },
+    "name": "Purée de Pommes de Terre",
     "brand": "(Puray)",
+    "en_name": "Mashed Potatoes",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "121",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/03/Pepper_Afyon.png",
-    "name": {
-      "fr": "Poivre",
-      "en": "Pepper",
-      "de": "Pfeffer",
-      "es": "Pimienta",
-      "it": "Pepe"
-    },
+    "name": "Poivre",
     "brand": "(Afyon)",
+    "en_name": "Pepper",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "129",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/03/Rice_Elo.png",
-    "name": {
-      "fr": "Riz",
-      "en": "Rice",
-      "de": "Reis",
-      "es": "Arroz",
-      "it": "Riso"
-    },
+    "name": "Riz",
     "brand": "(Elo)",
+    "en_name": "Rice",
     "quantity": "x10",
     "storageType": "Gondole"
   },
@@ -1120,1148 +722,738 @@
   {
     "id": "145",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b4/Sugar_Powdered_Boully.png",
-    "name": {
-      "fr": "Sucre en Poudre",
-      "en": "Powdered Sugar",
-      "de": "Puderzucker",
-      "es": "Azúcar en polvo",
-      "it": "Zucchero a velo"
-    },
+    "name": "Sucre en Poudre",
     "brand": "(Boully)",
+    "en_name": "Sugar Powdered",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "11",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/9a/Bleach_WC_Boeff.png",
-    "name": {
-      "fr": "Eau de Javel",
-      "en": "Bleach",
-      "de": "Chlorbleichlauge",
-      "es": "Lejía",
-      "it": "Candeggina"
-    },
+    "name": "Eau de Javel",
     "brand": "(WC Boeff)",
+    "en_name": "Bleach",
     "quantity": "x6",
     "storageType": "Gondole"
   },
   {
     "id": "50",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/2/26/Cleaner_Kilemol.png",
-    "name": {
-      "fr": "Nettoyant",
-      "en": "Cleaner",
-      "de": "Reinigungsmittel",
-      "es": "Limpiador",
-      "it": "Detergente"
-    },
+    "name": "Nettoyant",
     "brand": "(Kilemo)",
+    "en_name": "Cleaner",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "59",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/7/79/Dishwasher_Tablet_Boum.png",
-    "name": {
-      "fr": "Tablette Lave-Vaisselle",
-      "en": "Dishwasher Tablet",
-      "de": "Spülmaschinentabs",
-      "es": "Pastilla para lavavajillas",
-      "it": "Tavoletta per lavastoviglie"
-    },
+    "name": "Tablette Lave-Vaisselle",
     "brand": "(Boum)",
+    "en_name": "Dishwasher Tablet",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "91",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/53/Cleaner_Yamo.png",
-    "name": {
-      "fr": "Produit Nettoyant",
-      "en": "Cleaner",
-      "de": "Reinigungsmittel",
-      "es": "Limpiador",
-      "it": "Detergente"
-    },
+    "name": "Produit Nettoyant",
     "brand": "(Yamo)",
+    "en_name": "Cleaner",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "92",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b0/Dish_Soap_Durian_Sapu.png",
-    "name": {
-      "fr": "Liquide Vaisselle Durian",
-      "en": "Dish Soap Durian",
-      "de": "Durian Geschirrspülmittel",
-      "es": "Jabón para platos Durian",
-      "it": "Sapone per piatti Durian"
-    },
+    "name": "Liquide Vaisselle Durian",
     "brand": "(Sapu)",
+    "en_name": "Dish Soap Durian",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "153",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/1/1e/Toilet_Paper_Bidet.png",
-    "name": {
-      "fr": "Papier toilette",
-      "en": "Toilet Paper",
-      "de": "Toilettenpapier",
-      "es": "Papel higiénico",
-      "it": "Carta igienica"
-    },
+    "name": "Papier toilette",
     "brand": "(Bidet)",
+    "en_name": "Toilet Paper",
     "quantity": "x4",
     "storageType": "Gondole"
   },
   {
     "id": "102",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/e4/Galette_Ham%26Cheese_Prypiat.png",
-    "name": {
-      "fr": "Galette Jambon-Fromage",
-      "en": "Ham & Cheese Galette",
-      "de": "Schinken-Käse-Galette",
-      "es": "Galette de jamón y queso",
-      "it": "Galette prosciutto e formaggio"
-    },
+    "name": "Galette Jambon-Fromage",
     "brand": "(Prypiat)",
+    "en_name": "Galette Ham&Cheese",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "104",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/ae/Ground_Beef_Bovora.png",
-    "name": {
-      "fr": "Boeuf Haché",
-      "en": "Ground Beef",
-      "de": "Hackfleisch",
-      "es": "Carne molida",
-      "it": "Carne macinata"
-    },
+    "name": "Boeuf Haché",
     "brand": "(Bovora)",
+    "en_name": "Ground Beef",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "105",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/ab/Ham_Pastry_Ronpoint.png",
-    "name": {
-      "fr": "Feuilleté au Jambon",
-      "en": "Ham Pastry",
-      "de": "Schinkengebäck",
-      "es": "Pastel de jamón",
-      "it": "Sfoglia al prosciutto"
-    },
+    "name": "Feuilleté au Jambon",
     "brand": "(Ronpoint)",
+    "en_name": "Ham Pastry",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "106",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/04/Ham_B%26K.png",
-    "name": {
-      "fr": "Jambon",
-      "en": "Ham",
-      "de": "Schinken",
-      "es": "Jamón",
-      "it": "Prosciutto"
-    },
+    "name": "Jambon",
     "brand": "(B&K)",
+    "en_name": "Ham",
     "quantity": "x20",
     "storageType": "Gondole"
   },
   {
     "id": "112",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/e6/Lasagne_Ronpoint.png",
-    "name": {
-      "fr": "Lasagnes",
-      "en": "Lasagne",
-      "de": "Lasagne",
-      "es": "Lasaña",
-      "it": "Lasagne"
-    },
+    "name": "Lasagnes",
     "brand": "(Ronpoint)",
+    "en_name": "Lasagne",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "127",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/1/13/Proscuito_Sapore.png",
-    "name": {
-      "fr": "Jambon séché",
-      "en": "Prosciutto",
-      "de": "Luftgetrockneter Schinken",
-      "es": "Jamón seco",
-      "it": "Prosciutto crudo"
-    },
+    "name": "Jambon séché",
     "brand": "(Sapore)",
+    "en_name": "Proscuito",
     "quantity": "x20",
     "storageType": "Gondole"
   },
   {
     "id": "164",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/39/Chicken_Leg_Bovora.png",
-    "name": {
-      "fr": "Cuisse de Poulet",
-      "en": "Chicken Leg",
-      "de": "Hühnerkeule",
-      "es": "Muslo de pollo",
-      "it": "Coscia di pollo"
-    },
+    "name": "Cuisse de Poulet",
     "brand": "(Bovora)",
+    "en_name": "Chicken Leg",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "57",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/49/Coffee_Medium_Roast_Narvalo.png",
-    "name": {
-      "fr": "Café torréfié moyen",
-      "en": "Coffee Medium Roast",
-      "de": "Mittlere Röstkaffee",
-      "es": "Café tostado medio",
-      "it": "Caffè tostato medio"
-    },
+    "name": "Café torréfié moyen",
     "brand": "(Narvalo)",
+    "en_name": "Coffee Medium Roast",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "135",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/f/f1/Soda_Jus_Tsistu.png",
-    "name": {
-      "fr": "Soda",
-      "en": "Soda",
-      "de": "Soda",
-      "es": "Soda",
-      "it": "Soda"
-    },
+    "name": "Soda",
     "brand": "(Jus Tsistu)",
+    "en_name": "Soda",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "136",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/03/Soda_Koujeima.png",
-    "name": {
-      "fr": "Soda",
-      "en": "Soda",
-      "de": "Soda",
-      "es": "Soda",
-      "it": "Soda"
-    },
+    "name": "Soda",
     "brand": "(Koujeima)",
+    "en_name": "Soda",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "137",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/ea/Soda_Pulp.png",
-    "name": {
-      "fr": "Soda",
-      "en": "Soda",
-      "de": "Soda",
-      "es": "Soda",
-      "it": "Soda"
-    },
+    "name": "Soda",
     "brand": "(Pulp)",
+    "en_name": "Soda",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "138",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/e0/Soda_Ropico.png",
-    "name": {
-      "fr": "Soda",
-      "en": "Soda",
-      "de": "Soda",
-      "es": "Soda",
-      "it": "Soda"
-    },
+    "name": "Soda",
     "brand": "(Ropico)",
+    "en_name": "Soda",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "144",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/be/Sugar_Light_Brown_Daron.png",
-    "name": {
-      "fr": "Sucre brun clair",
-      "en": "Light Brown Sugar",
-      "de": "Hellbrauner Zucker",
-      "es": "Azúcar moreno claro",
-      "it": "Zucchero di canna chiaro"
-    },
+    "name": "Sucre brun clair",
     "brand": "(Daron)",
+    "en_name": "Sugar Light Brown",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "103",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/cc/Green_Beans_MrBean.png",
-    "name": {
-      "fr": "Haricots verts",
-      "en": "Green Beans",
-      "de": "Grüne Bohnen",
-      "es": "Judías verdes",
-      "it": "Fagiolini"
-    },
+    "name": "Haricots verts",
     "brand": "(MrBean)",
+    "en_name": "Green Beans",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "109",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c2/Ice_cream_Vanille_Maxi_Cone.png",
-    "name": {
-      "fr": "Glace Vanille",
-      "en": "Vanilla Ice Cream",
-      "de": "Vanilleeis",
-      "es": "Helado de vainilla",
-      "it": "Gelato alla vaniglia"
-    },
+    "name": "Glace Vanille",
     "brand": "(Maxi Cone)",
+    "en_name": "Ice cream Vanilla",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "110",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c2/Ice_cream_Vanille_Maxi_Cone.png",
-    "name": {
-      "fr": "Glace smarties",
-      "en": "Smarties Ice Cream",
-      "de": "Smarties Eis",
-      "es": "Helado de Smarties",
-      "it": "Gelato Smarties"
-    },
+    "name": "Glace smarties",
     "brand": "(Bonbe)",
+    "en_name": "Ice cream",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "124",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/49/Pizza_Bigtony.png",
-    "name": {
-      "fr": "Pizza Raclette",
-      "en": "Raclette Pizza",
-      "de": "Raclette-Pizza",
-      "es": "Pizza de raclette",
-      "it": "Pizza raclette"
-    },
+    "name": "Pizza Raclette",
     "brand": "(Bigtony)",
+    "en_name": "Pizza",
     "quantity": "x32",
     "storageType": "Gondole"
   },
   {
     "id": "126",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d5/Potato_Pops_Spok.png",
-    "name": {
-      "fr": "Pommes de terre Pops",
-      "en": "Potato Pops",
-      "de": "Kartoffel-Pops",
-      "es": "Papas Pops",
-      "it": "Patate Pops"
-    },
+    "name": "Pommes de terre Pops",
     "brand": "(Spok)",
+    "en_name": "Potato Pops",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
-    "id": "126",
-    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d5/Potato_Pops_Spok.png",
-    "name": {
-      "fr": "Pommes de terre Pops",
-      "en": "Potato Pops",
-      "de": "Kartoffel-Pops",
-      "es": "Papas Pops",
-      "it": "Patate Pops"
-    },
-    "brand": "(Spok)",
+    "id": "158",
+    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/bb/Veggie_Mix_Ege.png",
+    "name": "Mix Végétarien",
+    "brand": "(Ege)",
+    "en_name": "Veggie Mix",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "6",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/5f/Beer_Brown_Ale_BK.png",
-    "name": {
-      "fr": "Bière Blonde Ale",
-      "en": "Brown Ale Beer",
-      "de": "Braunbier Ale",
-      "es": "Cerveza Rubia Ale",
-      "it": "Birra Bionda Ale"
-    },
+    "name": "Bière Blonde Ale",
     "brand": "(BK)",
+    "en_name": "Beer Brown Ale",
     "quantity": "x15",
     "storageType": "Gondole"
   },
   {
     "id": "7",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/ef/Beer_Lager_-_6_Pack_Teochew.png",
-    "name": {
-      "fr": "Bière blonde paquet de 6",
-      "en": "Lager Beer 6-Pack",
-      "de": "Lagerbier 6er-Pack",
-      "es": "Cerveza Lager paquete de 6",
-      "it": "Birra Lager confezione da 6"
-    },
+    "name": "Bière blonde paquet de 6",
     "brand": "(Teochew)",
+    "en_name": "Beer Lager 6-Pack",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "8",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/99/Beer_Lager_-_Keg_Teochew.png",
-    "name": {
-      "fr": "Fût de bière blonde",
-      "en": "Lager Beer Keg",
-      "de": "Lagerbier Fass",
-      "es": "Barril de cerveza rubia",
-      "it": "Fusto di birra bionda"
-    },
+    "name": "Fût de bière blonde",
     "brand": "(Teochew)",
+    "en_name": "Beer Lager Keg",
     "quantity": "x6",
     "storageType": "Gondole"
   },
   {
     "id": "78",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/85/Vodka_Magnat.png",
-    "name": {
-      "fr": "Vodka",
-      "en": "Vodka",
-      "de": "Wodka",
-      "es": "Vodka",
-      "it": "Vodka"
-    },
+    "name": "Vodka",
     "brand": "(Magnat)",
+    "en_name": "Vodka",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "79",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/52/Whiskey_Grand_Marnier.png",
-    "name": {
-      "fr": "Whiskey",
-      "en": "Whiskey",
-      "de": "Whiskey",
-      "es": "Whiskey",
-      "it": "Whiskey"
-    },
+    "name": "Whiskey",
     "brand": "(Grand Marnier)",
+    "en_name": "Whiskey",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "82",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/38/Wine_Chebon.png",
-    "name": {
-      "fr": "Vin",
-      "en": "Wine",
-      "de": "Wein",
-      "es": "Vino",
-      "it": "Vino"
-    },
+    "name": "Vin",
     "brand": "(Chebon)",
+    "en_name": "Wine",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "38",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/f/fc/Cheese_Parmesan_Eros.png",
-    "name": {
-      "fr": "Fromage Parmesan",
-      "en": "Parmesan Cheese",
-      "de": "Parmesankäse",
-      "es": "Queso Parmesano",
-      "it": "Formaggio Parmigiano"
-    },
+    "name": "Fromage Parmesan",
     "brand": "(Eros)",
+    "en_name": "Cheese Parmesan",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "40",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/db/Cheese_Gruyere.png",
-    "name": {
-      "fr": "Fromage",
-      "en": "Cheese",
-      "de": "Käse",
-      "es": "Queso",
-      "it": "Formaggio"
-    },
+    "name": "Fromage",
     "brand": "(Gruyere)",
+    "en_name": "Cheese",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "54",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/2/23/Cr%C3%A8me_Fra%C3%AEche_Epaisse_Etron.png",
-    "name": {
-      "fr": "Créme Fraîche",
-      "en": "Thick Fresh Cream",
-      "de": "Dicke frische Sahne",
-      "es": "Crema fresca espesa",
-      "it": "Panna fresca spessa"
-    },
+    "name": "Créme Fraîche",
     "brand": "(Etron)",
+    "en_name": "Crème Fraîche Epaisse",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "118",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/bd/Pasta_Penne_Parillo.png",
-    "name": {
-      "fr": "Pâtes Penne",
-      "en": "Penne Pasta",
-      "de": "Penne-Nudeln",
-      "es": "Pasta Penne",
-      "it": "Penne"
-    },
+    "name": "Pâtes Penne",
     "brand": "(Parillo)",
+    "en_name": "Pasta Penne",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "130",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/dc/Rice_Long_Grain_Uncle_Tony%27s.png",
-    "name": {
-      "fr": "Riz à grains longs",
-      "en": "Long Grain Rice",
-      "de": "Langkornreis",
-      "es": "Arroz de grano largo",
-      "it": "Riso a chicchi lunghi"
-    },
+    "name": "Riz à grains longs",
     "brand": "(Uncle Tony's)",
+    "en_name": "Rice Long Grain",
     "quantity": "x10",
     "storageType": "Gondole"
   },
   {
     "id": "142",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/3b/Sugar_Cane_Daron.png",
-    "name": {
-      "fr": "Sucre de Canne",
-      "en": "Cane Sugar",
-      "de": "Rohrzucker",
-      "es": "Azúcar de caña",
-      "it": "Zucchero di canna"
-    },
+    "name": "Sucre de Canne",
     "brand": "(Daron)",
+    "en_name": "Sugar Cane",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "162",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/ae/Yoghurt_Madone.png",
-    "name": {
-      "fr": "Yaourt Nature",
-      "en": "Plain Yogurt",
-      "de": "Naturjoghurt",
-      "es": "Yogur natural",
-      "it": "Yogurt naturale"
-    },
+    "name": "Yaourt Nature",
     "brand": "(Madone)",
+    "en_name": "Yoghurt",
     "quantity": "x30",
     "storageType": "Gondole"
   },
   {
     "id": "53",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b4/Cleaner_Wesh.png",
-    "name": {
-      "fr": "Produit Nettoyant",
-      "en": "Cleaner",
-      "de": "Reinigungsmittel",
-      "es": "Producto de limpieza",
-      "it": "Prodotto per la pulizia"
-    },
+    "name": "Produit Nettoyant",
     "brand": "(Wesh)",
+    "en_name": "Cleaner",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "60",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/ed/Dishwasher_Tablet_Cemagik.png",
-    "name": {
-      "fr": "Pastilles Lave-Vaisselle",
-      "en": "Dishwasher Tablets",
-      "de": "Geschirrspülertabs",
-      "es": "Pastillas para lavavajillas",
-      "it": "Tavolette per lavastoviglie"
-    },
+    "name": "Pastilles Lave-Vaisselle",
     "brand": "(Cemagik)",
+    "en_name": "Dishwasher Tablet",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "93",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/44/Dish_Soap_Lemon_Mouss.png",
-    "name": {
-      "fr": "Liquide Vaisselle Citron",
-      "en": "Lemon Dish Soap",
-      "de": "Zitronengeschirrspülmittel",
-      "es": "Jabón para platos de limón",
-      "it": "Detersivo per piatti al limone"
-    },
+    "name": "Liquide Vaisselle Citron",
     "brand": "(Mouss)",
+    "en_name": "Dish Soap Lemon",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "97",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/39/Fabric_Softener_Souplesse.png",
-    "name": {
-      "fr": "Adoucissant",
-      "en": "Fabric Softener",
-      "de": "Weichspüler",
-      "es": "Suavizante de telas",
-      "it": "Ammorbidente"
-    },
+    "name": "Adoucissant",
     "brand": "(Souplesse)",
+    "en_name": "Fabric Softener",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "12",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/df/Book_Abc.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Abc)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "13",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/88/Book_Colors.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Colors)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "14",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/40/Book_Donnine.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Donnine)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "15",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/0/0f/Book_Electromagnetic_Field.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Electromagnetic Field)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "16",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/50/Book_I_Won%27t_Share.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(I Won't Share)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "18",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b7/Book_Mother_and_Child.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Mother and Child)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "51",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/b5/Cleaner_Le_Triangle.png",
-    "name": {
-      "fr": "Produit Nettoyant",
-      "en": "Cleaner",
-      "de": "Reinigungsmittel",
-      "es": "Producto de limpieza",
-      "it": "Prodotto per la pulizia"
-    },
+    "name": "Produit Nettoyant",
     "brand": "(Le Triangle)",
+    "en_name": "Cleaner",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "89",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/6e/Cat_Food_Miaoumiam.png",
-    "name": {
-      "fr": "Nourriture pour chat",
-      "en": "Cat Food",
-      "de": "Katzenfutter",
-      "es": "Comida para gatos",
-      "it": "Cibo per gatti"
-    },
+    "name": "Nourriture pour chat",
     "brand": "(Miaoumiam)",
+    "en_name": "Cat Food",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "90",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/64/Cat_Food_Patpat.png",
-    "name": {
-      "fr": "Nourriture pour chat",
-      "en": "Cat Food",
-      "de": "Katzenfutter",
-      "es": "Comida para gatos",
-      "it": "Cibo per gatti"
-    },
+    "name": "Nourriture pour chat",
     "brand": "(Patpat)",
+    "en_name": "Cat Food",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "94",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/4d/Dog_Food_Patpat.png",
-    "name": {
-      "fr": "Nourriture pour chiens",
-      "en": "Dog Food",
-      "de": "Hundefutter",
-      "es": "Comida para perros",
-      "it": "Cibo per cani"
-    },
+    "name": "Nourriture pour chiens",
     "brand": "(Patpat)",
+    "en_name": "Dog Food",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "27",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/4d/Dog_Food_Patpat.png",
-    "name": {
-      "fr": "Gâteau Citron",
-      "en": "Lemon Cake",
-      "de": "Zitronenkuchen",
-      "es": "Pastel de limón",
-      "it": "Torta al limone"
-    },
+    "name": "Gâteau Citron",
     "brand": "(Gerbe)",
+    "en_name": "Cake",
     "quantity": "x15",
     "storageType": "Gondole"
   },
   {
     "id": "28",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c0/Cake_Marbr%C3%A9.png",
-    "name": {
-      "fr": "Gâteau Marbré",
-      "en": "Marble Cake",
-      "de": "Marmorkuchen",
-      "es": "Pastel marmolado",
-      "it": "Torta marmorizzata"
-    },
+    "name": "Gâteau Marbré",
     "brand": "(Marbré)",
+    "en_name": "Cake",
     "quantity": "x18",
     "storageType": "Gondole"
   },
   {
     "id": "45",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/e2/Chips_Vin%27s.png",
-    "name": {
-      "fr": "Chips",
-      "en": "Chips",
-      "de": "Kartoffelchips",
-      "es": "Papas fritas",
-      "it": "Patatine"
-    },
+    "name": "Chips",
     "brand": "(Vin's)",
+    "en_name": "Chips",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "49",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/2/22/Chocolate_Spread_Patatartine.png",
-    "name": {
-      "fr": "Pâte à Tartiner Chocolat",
-      "en": "Chocolate Spread",
-      "de": "Schokoladenaufstrich",
-      "es": "Crema de chocolate",
-      "it": "Crema di cioccolato"
-    },
+    "name": "Pâte à Tartiner Chocolat",
     "brand": "(Patatartine)",
+    "en_name": "Chocolate Spread",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "71",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/9/91/Soda_Can_-_6_Pack_Cola.png",
-    "name": {
-      "fr": "Canette de soda paquet de 6",
-      "en": "Soda Can 6-Pack",
-      "de": "Dosen-Cola 6er Pack",
-      "es": "Paquete de 6 latas de refresco",
-      "it": "Pacco da 6 lattine di soda"
-    },
+    "name": "Canette de soda paquet de 6",
     "brand": "(Cola)",
+    "en_name": "Soda Can 6-Pack",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "72",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/7/74/Soda_Can_-_6_Pack_Zap.png",
-    "name": {
-      "fr": "Canette de soda paquet de 6",
-      "en": "Soda Can 6-Pack",
-      "de": "Dosen-Cola 6er Pack",
-      "es": "Paquete de 6 latas de refresco",
-      "it": "Pacco da 6 lattine di soda"
-    },
+    "name": "Canette de soda paquet de 6",
     "brand": "(Zap)",
+    "en_name": "Soda Can 6-Pack",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "87",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/67/Bottled_Water_Fort-Lacs.png",
-    "name": {
-      "fr": "Bouteille d'Eau",
-      "en": "Bottled Water",
-      "de": "Flasche Wasser",
-      "es": "Botella de agua",
-      "it": "Bottiglia d'acqua"
-    },
+    "name": "Bouteille d'Eau",
     "brand": "(Fort-Lacs)",
+    "en_name": "Bottled Water",
     "quantity": "x24",
     "storageType": "Gondole"
   },
   {
     "id": "98",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/47/Fabric_Softener_Toudou.png",
-    "name": {
-      "fr": "Adoucissant",
-      "en": "Fabric Softener",
-      "de": "Weichspüler",
-      "es": "Suavizante de telas",
-      "it": "Ammorbidente"
-    },
+    "name": "Adoucissant",
     "brand": "(Toudou)",
+    "en_name": "Fabric Softener",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "154",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/42/Paper_Towel_Compact.png",
-    "name": {
-      "fr": "Essuie-tout",
-      "en": "Paper Towel",
-      "de": "Küchenrolle",
-      "es": "Toalla de papel",
-      "it": "Carta assorbente"
-    },
+    "name": "Essuie-tout",
     "brand": "(Compact)",
+    "en_name": "Paper Towel",
     "quantity": "x4",
     "storageType": "Gondole"
   },
   {
     "id": "155",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/ed/Toilet_Paper_Petus.png",
-    "name": {
-      "fr": "Papier toilette",
-      "en": "Toilet Paper",
-      "de": "Toilettenpapier",
-      "es": "Papel higiénico",
-      "it": "Carta igienica"
-    },
+    "name": "Papier toilette",
     "brand": "(Petus)",
+    "en_name": "Toilet Paper",
     "quantity": "x4",
     "storageType": "Gondole"
   },
   {
     "id": "156",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/58/Toothpaste_Signoulos.png",
-    "name": {
-      "fr": "Dentifrice",
-      "en": "Toothpaste",
-      "de": "Zahnpasta",
-      "es": "Pasta dental",
-      "it": "Dentifricio"
-    },
+    "name": "Dentifrice",
     "brand": "(Signoulos)",
+    "en_name": "Toothpaste",
     "quantity": "x16",
     "storageType": "Gondole"
   },
   {
     "id": "17",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/4a/Book_Krok.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Krok)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "19",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/8/8b/Book_Once_Upon_A_Time.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Once Upon A Time)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "20",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/3/3a/Book_Piticha.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Piticha)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "21",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/f/f6/Book_The_Surprise.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(The Surprise)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "22",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d5/Book_Vintage_Story.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Vintage Story)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "23",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/5c/Book_Wombat.png",
-    "name": {
-      "fr": "Livre",
-      "en": "Book",
-      "de": "Buch",
-      "es": "Libro",
-      "it": "Libro"
-    },
+    "name": "Livre",
     "brand": "(Wombat)",
+    "en_name": "Book",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "29",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/a/a1/Cake_Prairie.png",
-    "name": {
-      "fr": "Gâteau Prairie",
-      "en": "Prairie Cake",
-      "de": "Prairie-Kuchen",
-      "es": "Pastel Prairie",
-      "it": "Torta Prairie"
-    },
+    "name": "Gâteau Prairie",
     "brand": "(Prairie)",
+    "en_name": "Cake",
     "quantity": "x18",
     "storageType": "Gondole"
   },
   {
     "id": "31",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d3/Cake_St_Michmich.png",
-    "name": {
-      "fr": "Gâteau Michmich",
-      "en": "St Michmich Cake",
-      "de": "St Michmich Kuchen",
-      "es": "Pastel St Michmich",
-      "it": "Torta St Michmich"
-    },
+    "name": "Gâteau Michmich",
     "brand": "(St Michmich)",
+    "en_name": "Cake",
     "quantity": "x15",
     "storageType": "Gondole"
   },
   {
     "id": "47",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/5d/Chocolate_Bar_Denorme.png",
-    "name": {
-      "fr": "Barre de Chocolat",
-      "en": "Chocolate Bar",
-      "de": "Schokoladenriegel",
-      "es": "Barra de chocolate",
-      "it": "Tavoletta di cioccolato"
-    },
+    "name": "Barre de Chocolat",
     "brand": "(Denorme)",
+    "en_name": "Chocolate Bar",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "48",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/2/21/Chocolate_Powder_Boudain.png",
-    "name": {
-      "fr": "Chocolat en poudre",
-      "en": "Chocolate Powder",
-      "de": "Kakaopulver",
-      "es": "Polvo de cacao",
-      "it": "Cacao in polvere"
-    },
+    "name": "Chocolat en poudre",
     "brand": "(Boudain)",
+    "en_name": "Chocolate Powder",
     "quantity": "x8",
     "storageType": "Gondole"
   },
   {
     "id": "148",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c7/Sugar_Daron.png",
-    "name": {
-      "fr": "Sucre",
-      "en": "Sugar",
-      "de": "Zucker",
-      "es": "Azúcar",
-      "it": "Zucchero"
-    },
+    "name": "Sucre",
     "brand": "(Daron)",
+    "en_name": "Sugar",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "163",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/7/73/Yoghurt_Yowp.png",
-    "name": {
-      "fr": "Yaourt",
-      "en": "Yoghurt",
-      "de": "Joghurt",
-      "es": "Yogur",
-      "it": "Yogurt"
-    },
+    "name": "Yaourt",
     "brand": "(Yowp)",
+    "en_name": "Yoghurt",
     "quantity": "x30",
     "storageType": "Gondole"
   },
   {
     "id": "4",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/ca/Beer_Brown_Ale_-_6_Pack_BK.png",
-    "name": {
-      "fr": "Bière Blonde Ale PACK de 6",
-      "en": "Beer Brown Ale 6-Pack",
-      "de": "Braunes Ale Bier 6er Pack",
-      "es": "Cerveza Rubia Ale Pack de 6",
-      "it": "Birra Bionda Ale Confezione da 6"
-    },
+    "name": "Bière Blonde Ale PACK de 6",
     "brand": "(BK)",
+    "en_name": "Beer Brown Ale 6-Pack",
     "quantity": "x9",
     "storageType": "Gondole"
   },
   {
     "id": "5",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/48/Beer_Brown_Ale_%28Keg%29_Degl.png",
-    "name": {
-      "fr": "Fût de bière brune",
-      "en": "Beer Brown Ale Keg",
-      "de": "Fass Braunes Ale Bier",
-      "es": "Barril de cerveza negra",
-      "it": "Fusto di birra scura"
-    },
+    "name": "Fût de bière brune",
     "brand": "(Degl)",
+    "en_name": "Beer Brown Ale Keg",
     "quantity": "x6",
     "storageType": "Gondole"
   },
   {
     "id": "80",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/5e/Whiskey_Jack_Sublett.png",
-    "name": {
-      "fr": "Whiskey",
-      "en": "Whiskey",
-      "de": "Whiskey",
-      "es": "Whiskey",
-      "it": "Whiskey"
-    },
+    "name": "Whiskey",
     "brand": "(Jack Sublett)",
+    "en_name": "Whiskey",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "81",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c3/Whiskey_Japanese.png",
-    "name": {
-      "fr": "Whiskey",
-      "en": "Whiskey",
-      "de": "Whiskey",
-      "es": "Whiskey",
-      "it": "Whiskey"
-    },
+    "name": "Whiskey",
     "brand": "(Japanese)",
+    "en_name": "Whiskey",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "159",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/f/f1/Wine_Heng.png",
-    "name": {
-      "fr": "Vin",
-      "en": "Wine",
-      "de": "Wein",
-      "es": "Vino",
-      "it": "Vino"
-    },
+    "name": "Vin",
     "brand": "(Heng)",
+    "en_name": "Wine",
     "quantity": "x12",
     "storageType": "Gondole"
   },
   {
     "id": "160",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/e/e5/Wine_Pouilleux.png",
-    "name": {
-      "fr": "Vin",
-      "en": "Wine",
-      "de": "Wein",
-      "es": "Vino",
-      "it": "Vino"
-    },
+    "name": "Vin",
     "brand": "(Pouilleux)",
+    "en_name": "Wine",
     "quantity": "x12",
     "storageType": "Gondole"
   }

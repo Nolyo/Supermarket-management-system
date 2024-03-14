@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import SaveFileType, { AssociatedItem, Item } from '../main/type';
-import Card from './components/Card';
-import items from '../../.erb/scripts/items.json';
-import upArrowRed from '../../assets/up-arrow-red.svg';
-import downArrowGreen from '../../assets/down-arrow-green.svg';
+import SaveFileType, { AssociatedItem } from '../main/type';
+
+import PriceChanged from './components/PriceChanged';
 import formatDollar from './utils';
 
 type GeneralDataProps = {
@@ -17,61 +15,7 @@ export default function Products(props: GeneralDataProps) {
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<AssociatedItem>({});
   const [userLng, setUserLng] = useState('en');
-  const priceChangeds = data.Price.value.DailyPriceChanges;
-  /* eslint-disable */
-  const priceChangedElement = Object.keys(priceChangeds).map((i) => {
-    const price = priceChangeds?.[parseInt(i, 10)];
-
-    const item: Item | undefined = items.find((it) => it.id == price.ProductID);
-    const oldPrice = data.Price.value.PreviousPrices?.find(
-      (old) => old.ProductID == parseInt(item?.id || '0'),
-    );
-    const newPrice = data.Price.value.Prices?.find(
-      (old) => old.ProductID == parseInt(item?.id || '0'),
-    );
-    if (!item || !oldPrice || !newPrice) {
-      return false;
-    }
-
-    return (
-      <Card
-        title={
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              width: '100%',
-              alignItems: 'center',
-              padding: '5px 0',
-              fontSize: '0.8em',
-            }}
-          >
-            <div>
-              {oldPrice?.Price > newPrice?.Price ? (
-                <img width={20} src={downArrowGreen} alt="price down" />
-              ) : (
-                <img width={20} src={upArrowRed} alt="price up" />
-              )}
-            </div>
-            <span>{userLng === 'en' ? item.en_name : item.name}</span>
-          </div>
-        }
-        content={
-          <div className="flex">
-            <ul>
-              <li>
-                {t('products.old_price')}: {formatDollar(oldPrice?.Price)}
-              </li>
-              <li>
-                {t('products.new_price')}: {formatDollar(newPrice?.Price)}
-              </li>
-            </ul>
-          </div>
-        }
-      />
-    );
-    /* eslint-enable */
-  });
+  const [moreInfo, setMoreInfo] = useState<boolean>(false);
 
   useEffect(() => {
     const lng = i18n.language;
@@ -85,7 +29,7 @@ export default function Products(props: GeneralDataProps) {
         return acc;
       }
       if (
-        item.item.name.toLowerCase().includes(search.toLowerCase()) ||
+        item.item.name[userLng].toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())
       ) {
         acc[key] = item;
@@ -99,30 +43,33 @@ export default function Products(props: GeneralDataProps) {
     setSearch(e.target.value);
   }
 
-  function handleRefresh() {
-    if (window.electron) {
-      window.electron.ipcRenderer.sendMessage('reload');
-    }
+  function handleMoreInfo() {
+    setMoreInfo(!moreInfo);
   }
 
   return (
     <div className="align">
       <div>
         <h2>{t('products.price_changed')}</h2>
-        <div className="flex">{priceChangedElement}</div>
+        <PriceChanged data={data} userLng={userLng} />
       </div>
       <div
         className="flex"
         style={{ justifyContent: 'space-between', margin: 0 }}
       >
         <h1>{t('products.product')}</h1>
-        <div className="blue">
-          <button type="button" onClick={handleRefresh}>
-            {t('products.refresh')}
-          </button>
-        </div>
-        <div>
+        <div className="flex">
+          <label htmlFor="moreInfo">
+            <input
+              type="checkbox"
+              checked={moreInfo}
+              id="moreInfo"
+              onChange={handleMoreInfo}
+            />
+            More info
+          </label>
           <input
+            id="searchInput"
             className="search-input"
             type="search"
             value={search}
@@ -139,6 +86,14 @@ export default function Products(props: GeneralDataProps) {
             <th>{t('products.store')}</th>
             <th>{t('products.stockage')}</th>
             <th>{t('products.total')}</th>
+            {moreInfo && (
+              <>
+                <th>{t('products.yourPrice')}</th>
+                <th>{t('products.marketPrice')}</th>
+                <th>{t('products.winRate')}</th>
+                {/* <th>{t('products.averageCost')}</th> */}
+              </>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -154,16 +109,28 @@ export default function Products(props: GeneralDataProps) {
                       objectFit: 'contain',
                     }}
                     src={item.item.img}
-                    alt=""
+                    alt="logo product"
                   />
                 </td>
                 <td>
-                  {userLng === 'en' ? item.item.en_name : item.item.name}{' '}
+                  {item.item.name[userLng]}
                   {item.item.brand}
                 </td>
                 <td>{item.storeCount || 0}</td>
                 <td>{item.rackCount || 0}</td>
                 <td>{(item.rackCount || 0) + (item.storeCount || 0)}</td>
+                {moreInfo && (
+                  <>
+                    <td>{formatDollar(item.userPrice || 0)}</td>
+                    <td>{formatDollar(item.marketPrice || 0)}</td>
+                    <td>
+                      {formatDollar(
+                        (item.userPrice || 0) - (item.marketPrice || 0),
+                      )}
+                    </td>
+                    {/* <td>{formatDollar(item.averageCost || 0)}</td> */}
+                  </>
+                )}
               </tr>
             );
           })}
