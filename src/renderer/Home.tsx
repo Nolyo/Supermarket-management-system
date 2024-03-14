@@ -106,7 +106,7 @@ function Home() {
   const [associated, setAssociated] = useState<AssociatedItem>({});
   const [show, setShow] = useState<'general' | 'products'>('products');
 
-  useEffect(() => {
+  function reloadData() {
     if (window.electron) {
       // calling IPC exposed from preload script
       window.electron.ipcRenderer.on('get-save-file', async (arg) => {
@@ -115,6 +115,10 @@ function Home() {
       });
       window.electron.ipcRenderer.sendMessage('get-save-file');
     }
+  }
+
+  useEffect(() => {
+    reloadData();
   }, []);
 
   useEffect(() => {
@@ -149,6 +153,10 @@ function Home() {
           onClick={() => setShow('products')}
         >
           <img width={48} src={shoppingCart} alt="text" />
+        </button>
+
+        <button type="button" onClick={() => reloadData()}>
+          Reload
         </button>
       </div>
       {show === 'products' && <Products data={raw} associated={associated} />}

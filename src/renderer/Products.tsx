@@ -43,12 +43,6 @@ export default function Products(props: GeneralDataProps) {
     setSearch(e.target.value);
   }
 
-  function handleRefresh() {
-    if (window.electron) {
-      window.electron.ipcRenderer.sendMessage('reload');
-    }
-  }
-
   function handleMoreInfo() {
     setMoreInfo(!moreInfo);
   }
@@ -64,11 +58,6 @@ export default function Products(props: GeneralDataProps) {
         style={{ justifyContent: 'space-between', margin: 0 }}
       >
         <h1>{t('products.product')}</h1>
-        <div>
-          <button type="button" onClick={handleRefresh}>
-            {t('products.refresh')}
-          </button>
-        </div>
         <div className="flex">
           <label htmlFor="moreInfo">
             <input

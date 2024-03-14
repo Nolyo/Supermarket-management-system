@@ -53,29 +53,24 @@ export default function GeneralData(props: GeneralDataProps) {
         <Card
           title={t('general-data.employees')}
           content={
-            data?.Employees.value.CashiersData ? (
-              <p>
-                {t('general-data.cashiers', {
-                  count: data?.Employees.value.CashiersData.length,
-                })}
-              </p>
-            ) : (
-              <p>{t('general-data.no-cashiers')}</p>
-            )
+            <p>
+              {t('general-data.cashiers', {
+                count: data?.Employees.value.CashiersData?.length,
+              })}
+              {t('general-data.restocker', {
+                count: data?.Employees.value.RestockersData?.length,
+              })}
+            </p>
           }
         />
         <Card
           title={t('general-data.licenses')}
           content={
-            data?.Progression.value.UnlockedLicenses ? (
-              <p>
-                {t('general-data.licence', {
-                  count: data?.Progression.value.UnlockedLicenses.length,
-                })}
-              </p>
-            ) : (
-              <p>{t('general-data.no-licence')}</p>
-            )
+            <p>
+              {t('general-data.licence', {
+                count: data?.Progression.value.UnlockedLicenses?.length,
+              })}
+            </p>
           }
         />
       </div>

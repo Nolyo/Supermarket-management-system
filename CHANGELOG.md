@@ -9,3 +9,4 @@
 ## Added
 
 - Market price and your price (hidden / show)
+- Auto reload, des que vous sauvegarder votre partie les data sont mise a jour automatiquement sans perdre les filtres de recherche

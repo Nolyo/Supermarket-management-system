@@ -37,6 +37,7 @@ export type CommonSave = {
     Purchased?: boolean;
     StorageLevel?: number;
     CashiersData?: Array<number>;
+    RestockersData?: Array<number>;
     UnlockedLicenses?: Array<number>;
     Bills?: Array<ExpensesSave>;
     Rents?: Array<ExpensesSave>;
