@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import Products from './Products';
 import GeneralData from './GeneralData';
@@ -101,46 +101,52 @@ function sortObjectsBySum(objects: AssociatedItem) {
 }
 
 function Home() {
-  const [raw, setRow] = useState<SaveFileType | null>(null);
+  const [row, setRow] = useState<SaveFileType | null>(null);
   const [associated, setAssociated] = useState<AssociatedItem>({});
   const [show, setShow] = useState<'general' | 'products'>('products');
 
-  const reloadData = () => {
+  function setLog(arg: string) {
+    window.electron.ipcRenderer.sendMessage('log', arg);
+  }
+
+  const reloadData = useCallback(() => {
+    setLog('Starting client request for reading save file');
     if (window.electron) {
       // calling IPC exposed from preload script
       window.electron.ipcRenderer.on('get-save-file', async (arg) => {
         const bdata = await JSON.parse(arg as string);
         setRow(bdata);
+        setLog('File received in client');
       });
       window.electron.ipcRenderer.sendMessage('get-save-file');
     }
-  };
-
-  useEffect(() => {
-    reloadData();
   }, []);
 
   useEffect(() => {
-    if (raw) {
-      const inRack = countItemInRack(raw);
-      const onFloorAndRack = countItemOnFloor(raw, inRack);
-      const data = countItemInStore(raw, onFloorAndRack);
-      associatePriceToItem(raw, data);
-      setAssociated(sortObjectsBySum(inRack));
-      // eslint-disable-next-line no-console
-      console.log('Associated items and count:', inRack);
-    }
-  }, [raw]);
+    reloadData();
+  }, [reloadData]);
 
-  if (!raw) {
+  useEffect(() => {
+    if (row) {
+      const inRack = countItemInRack(row);
+      const onFloorAndRack = countItemOnFloor(row, inRack);
+      const data = countItemInStore(row, onFloorAndRack);
+      const a = associatePriceToItem(row, data);
+      setAssociated(sortObjectsBySum(a));
+      // eslint-disable-next-line no-console
+      console.log('Associated items and count:', a);
+    }
+  }, [row]);
+
+  if (!row) {
     return false;
   }
 
   return (
     <>
       <Navbar setShow={setShow} show={show} />
-      {show === 'products' && <Products data={raw} associated={associated} />}
-      {show === 'general' && <GeneralData data={raw} />}
+      {show === 'products' && <Products data={row} associated={associated} />}
+      {show === 'general' && <GeneralData data={row} />}
     </>
   );
 }

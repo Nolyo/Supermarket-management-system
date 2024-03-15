@@ -14,7 +14,7 @@ export default function Products(props: GeneralDataProps) {
   const [search, setSearch] = useState('');
   const [filtered, setFiltered] = useState<AssociatedItem>({});
   const [userLng, setUserLng] = useState('en');
-  const [moreInfo, setMoreInfo] = useState<boolean>(false);
+  const [moreInfo, setMoreInfo] = useState<boolean>(true);
 
   useEffect(() => {
     const lng = i18n.language;
