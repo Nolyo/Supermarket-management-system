@@ -42,6 +42,7 @@ class AppUpdater {
     autoUpdater.checkForUpdatesAndNotify();
 
     autoUpdater.on('update-downloaded', () => {
+      console.log('test');
       autoUpdater.quitAndInstall(true, true);
     });
   }

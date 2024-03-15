@@ -273,7 +273,7 @@ export default class MenuBuilder {
         },
       },
       {
-        label: 'v-1.4.4',
+        label: '1.4.5',
         click() {
           shell.openExternal(
             'https://github.com/Nolyo/Supermarket-management-system/releases',

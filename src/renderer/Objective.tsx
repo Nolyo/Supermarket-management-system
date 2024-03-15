@@ -9,7 +9,7 @@ export default function Objective() {
       <Navbar show={show} setShow={setShow} />
       <div className="quantity">
         <h1 className="center">Set you quantity</h1>
-        <div className="flex">hello</div>
+        <div className="flex">Soon</div>
       </div>
     </>
   );
