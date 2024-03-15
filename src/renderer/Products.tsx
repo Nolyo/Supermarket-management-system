@@ -16,6 +16,10 @@ export default function Products(props: GeneralDataProps) {
   const [userLng, setUserLng] = useState('en');
   const [moreInfo, setMoreInfo] = useState<boolean>(true);
 
+  function setLog(arg: string) {
+    window.electron.ipcRenderer.sendMessage('log', arg);
+  }
+
   useEffect(() => {
     const lng = i18n.language;
     setUserLng(lng);
@@ -36,7 +40,7 @@ export default function Products(props: GeneralDataProps) {
       return acc;
     }, {} as AssociatedItem);
     setFiltered(filteredA);
-  }, [search, associated]);
+  }, [search, associated, userLng]);
 
   function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
     setSearch(e.target.value);
@@ -98,6 +102,7 @@ export default function Products(props: GeneralDataProps) {
         <tbody>
           {Object.keys(filtered).map((key) => {
             const item = filtered[parseInt(key, 10)];
+            setLog(item.item.name.fr);
             return (
               <tr className="table-row" key={key}>
                 <td>
