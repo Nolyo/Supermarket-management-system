@@ -35,11 +35,15 @@ if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir, { recursive: true });
 }
 log.transports.file.resolvePath = () => logFilePath;
+
 class AppUpdater {
   constructor() {
-    log.transports.file.level = 'info';
     autoUpdater.logger = log;
     autoUpdater.checkForUpdatesAndNotify();
+
+    autoUpdater.on('update-downloaded', () => {
+      autoUpdater.quitAndInstall(true, true);
+    });
   }
 }
 
