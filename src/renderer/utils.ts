@@ -34,4 +34,6 @@ export function associatePriceToItem(
 
     return data;
   });
+
+  return datas;
 }

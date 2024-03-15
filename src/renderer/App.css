@@ -6,10 +6,11 @@ body {
   position: relative;
   color: white;
   height: 100vh;
-  background: linear-gradient(200.96deg,
+  /* background: linear-gradient(200.96deg,
       #fedc2a -29.09%,
       #dd5789 51.77%,
-      #7a2c9e 129.35%);
+      #7a2c9e 129.35%); */
+      background-color: #262c40;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -65,14 +66,15 @@ a:hover {
 
 .card {
   padding: 0;
-  border-radius: 10px;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  border-radius: 4px;
+  /* box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14); */
   width: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  border: 1px solid;
 }
 
 .card-title {
@@ -82,11 +84,11 @@ a:hover {
   font-weight: bold;
   align-self: flex-start;
   padding: 10px;
-  border-radius: 5px;
-  background-color: black;
+  background-color: #1e2b55;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  border-bottom: 1px solid;
 }
 
 .search-input {
@@ -150,17 +152,17 @@ a:hover {
 }
 
 .table tr:nth-child(even) {
-  background-color: #995c82;
+  background-color: #151822;
 }
 
 .table tr:hover {
-  background-color: #d187b5;
+  background-color: #1e2b55;
 }
 
 .table th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #611042;
+  background-color: #1e2b55;
   color: white;
 }
 
