@@ -17,6 +17,24 @@ import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 
+const appDataPath = process.env.APPDATA;
+const logFilePath = path.join(
+  appDataPath as string,
+  'supermarket-management',
+  'logs',
+  'log.log',
+);
+const logDir = path.join(
+  appDataPath as string,
+  'supermarket-management',
+  'logs',
+);
+
+if (!fs.existsSync(logDir)) {
+  log.info('Create logDir');
+  fs.mkdirSync(logDir, { recursive: true });
+}
+log.transports.file.resolvePath = () => logFilePath;
 class AppUpdater {
   constructor() {
     log.transports.file.level = 'info';
@@ -26,11 +44,14 @@ class AppUpdater {
 }
 
 let mainWindow: BrowserWindow | null = null;
-
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
   console.log(msgTemplate(arg));
   event.reply('ipc-example', msgTemplate('ponggggg'));
+});
+
+ipcMain.on('log', async (event, arg) => {
+  log.info(arg);
 });
 
 ipcMain.on('reload', async () => {
@@ -51,14 +72,18 @@ if (isDebug) {
 
 const reloadData = async (event: IpcMainEvent, filePath: string) => {
   try {
+    log.info('Attempting to read the backup file');
     const data = fs.readFileSync(filePath, 'utf8');
+    log.info(`Read file ${filePath} with size ${data.length} bytes`);
+
     // In es3 alphanumeric keys are not quoted, so we need to add quotes to them
     const correctedData = data.replace(/([{,]\s*)(\d+)(\s*:)/g, '$1"$2"$3');
     const tmpPath = path.join(os.tmpdir(), 'saveFile.es3');
     fs.writeFileSync(tmpPath, correctedData, 'utf8');
+
     event.reply('get-save-file', correctedData);
   } catch (err) {
-    console.error(err);
+    log.error(err);
     event.reply('get-save-file', null);
   }
 };
@@ -134,6 +159,8 @@ const createWindow = async () => {
   new AppUpdater();
 };
 
+let watcher: fs.FSWatcher | null = null;
+
 /**
  * Add event listeners...
  */
@@ -150,13 +177,16 @@ ipcMain.on('get-save-file', async (event) => {
     'Supermarket Simulator',
     'saveFile.es3',
   );
-  fs.watch(filePath, (eventType, filename) => {
-    if (eventType === 'change') {
-      console.log(`the file ${filename} has been updated`);
-      reloadData(event, filePath);
-    }
-  });
   reloadData(event, filePath);
+
+  if (!watcher) {
+    watcher = fs.watch(filePath, (eventType, filename) => {
+      if (eventType === 'change') {
+        log.info(`the file ${filename} has been updated`);
+        reloadData(event, filePath);
+      }
+    });
+  }
 });
 
 app.on('window-all-closed', () => {
