@@ -159,7 +159,7 @@ const createWindow = async () => {
   new AppUpdater();
 };
 
-let watcher: fs.FSWatcher | null = null;
+// let watcher: fs.FSWatcher | null = null;
 
 /**
  * Add event listeners...
@@ -179,14 +179,14 @@ ipcMain.on('get-save-file', async (event) => {
   );
   reloadData(event, filePath);
 
-  if (!watcher) {
-    watcher = fs.watch(filePath, (eventType, filename) => {
-      if (eventType === 'change') {
-        log.info(`the file ${filename} has been updated`);
-        reloadData(event, filePath);
-      }
-    });
-  }
+  // if (!watcher) {
+  //   watcher = fs.watch(filePath, (eventType, filename) => {
+  //     if (eventType === 'change') {
+  //       log.info(`the file ${filename} has been updated`);
+  //       reloadData(event, filePath);
+  //     }
+  //   });
+  // }
 });
 
 app.on('window-all-closed', () => {
