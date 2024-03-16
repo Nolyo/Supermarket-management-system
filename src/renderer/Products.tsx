@@ -31,6 +31,10 @@ export default function Products(props: GeneralDataProps) {
       if (!item.item) {
         return acc;
       }
+      const itemName = item.item.name[userLng];
+      if (!itemName) {
+        setLog(`Current item do not have translated name ${item.item.name.fr}`);
+      }
       if (
         item.item.name[userLng].toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())

@@ -990,7 +990,6 @@
       "it": "Birra chiara"
     },
     "brand": "(Teochew)",
-    "en_name": "Beer Lager",
     "quantity": "x15",
     "storageType": "Gondole"
   },
@@ -1111,7 +1110,13 @@
   {
     "id": "133",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/c/c9/Sandwich_Bread_Ron%27s.png",
-    "name": "Pain de mie",
+    "name": {
+      "fr": "Pain de Mie",
+      "en": "Sliced Bread",
+      "de": "Weiches Brot",
+      "es": "Pan",
+      "it": "Pane morbido"
+    },
     "brand": "(Ron's)",
     "en_name": "Sandwich Bread",
     "quantity": "x8",
