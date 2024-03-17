@@ -1473,20 +1473,6 @@
     "storageType": "Gondole"
   },
   {
-    "id": "126",
-    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/d/d5/Potato_Pops_Spok.png",
-    "name": {
-      "fr": "Pommes de terre Pops",
-      "en": "Potato Pops",
-      "de": "Kartoffel-Pops",
-      "es": "Papas Pops",
-      "it": "Patate Pops"
-    },
-    "brand": "(Spok)",
-    "quantity": "x12",
-    "storageType": "Gondole"
-  },
-  {
     "id": "6",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/5/5f/Beer_Brown_Ale_BK.png",
     "name": {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SaveFileType, { AssociatedItem } from '../main/type';
 import PriceChanged from './components/PriceChanged';
-import formatDollar from './utils';
+import formatDollar, { setLog } from './utils';
 
 type GeneralDataProps = {
   data: SaveFileType;
@@ -15,10 +15,6 @@ export default function Products(props: GeneralDataProps) {
   const [filtered, setFiltered] = useState<AssociatedItem>({});
   const [userLng, setUserLng] = useState('en');
   const [moreInfo, setMoreInfo] = useState<boolean>(true);
-
-  function setLog(arg: string) {
-    window.electron.ipcRenderer.sendMessage('log', arg);
-  }
 
   useEffect(() => {
     const lng = i18n.language;
@@ -57,12 +53,16 @@ export default function Products(props: GeneralDataProps) {
   return (
     <div className="align">
       <div>
-        <h2>{t('products.price_changed')}</h2>
+        {/* <h2>{t('products.price_changed')}</h2> */}
         <PriceChanged data={data} userLng={userLng} />
       </div>
       <div
         className="flex"
-        style={{ justifyContent: 'space-between', margin: 0 }}
+        style={{
+          justifyContent: 'space-between',
+          margin: 0,
+          padding: '0 10px',
+        }}
       >
         <h1>{t('products.product')}</h1>
         <div className="flex">
@@ -106,7 +106,6 @@ export default function Products(props: GeneralDataProps) {
         <tbody>
           {Object.keys(filtered).map((key) => {
             const item = filtered[parseInt(key, 10)];
-            setLog(item.item.name.fr);
             return (
               <tr className="table-row" key={key}>
                 <td>

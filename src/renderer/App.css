@@ -10,7 +10,7 @@ body {
       #fedc2a -29.09%,
       #dd5789 51.77%,
       #7a2c9e 129.35%); */
-      background-color: #262c40;
+  background-color: #262c40;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -23,14 +23,11 @@ body {
 }
 
 button {
-  background-color: white;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 10px;
   border: none;
   appearance: none;
   font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
   transition: all ease-in 0.1s;
   cursor: pointer;
   opacity: 0.9;
@@ -148,7 +145,7 @@ a:hover {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
-  font-weight: bold ;
+  font-weight: bold;
 }
 
 .table tr:nth-child(even) {
@@ -167,22 +164,22 @@ a:hover {
 }
 
 .navbar {
- display: flex;
- justify-content: center;
- gap: 10px;
- background-color: #1f1d34;
- width: calc(100vw);
- padding: 20px 0;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1f1d34;
+  width: calc(100vw);
+  padding: 20px 0;
+  align-items: center;
 }
 .navbar button {
   background-color: transparent;
-  color: #fff
+  color: #fff;
 }
 
 .navbar button:hover {
   background-color: transparent;
-  color: #d68d04
+  color: #d68d04;
 }
 /* .navbar {
  display: flex;
@@ -199,4 +196,28 @@ button.active {
   margin: 0;
   padding: 0;
   background: transparent;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.line div {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  background-color: #459df0;
+  color: #fff;
+}
+
+input[type='checkbox'] {
+  width: 30px;
+}
+
+.error {
+  font-size: 2em;
+  color: red;
 }

@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import SaveFileType from '../main/type';
-import Card from './components/Card';
-import discord from '../../assets/discord.svg';
-import github from '../../assets/github.svg';
-import french from '../../assets/french.svg';
-import english from '../../assets/english.svg';
-import spanish from '../../assets/es.svg';
-import german from '../../assets/de.svg';
-import formatDollar from './utils';
+import SaveFileType from '../../main/type';
+import Card from '../components/Card';
+import discord from '../../../assets/discord.svg';
+import github from '../../../assets/github.svg';
+import french from '../../../assets/french.svg';
+import english from '../../../assets/english.svg';
+import spanish from '../../../assets/es.svg';
+import german from '../../../assets/de.svg';
+import formatDollar from '../utils';
 
 type GeneralDataProps = {
   data: SaveFileType | null;

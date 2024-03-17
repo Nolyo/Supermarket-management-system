@@ -73,8 +73,7 @@ export type Item = {
   id: string;
   img: string;
   brand: string;
-  name: string;
-  en_name: string;
+  name: { fr: string; en: string; es: string; it: string; de: string };
   quantity: string;
   storageType: string;
 };

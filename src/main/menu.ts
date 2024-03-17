@@ -239,13 +239,13 @@ export default class MenuBuilder {
                     );
                   },
                 },
-                {
-                  label: 'Toggle &Developer Tools',
-                  accelerator: 'Alt+Ctrl+I',
-                  click: () => {
-                    this.mainWindow.webContents.toggleDevTools();
-                  },
-                },
+                // {
+                //   label: 'Toggle &Developer Tools',
+                //   accelerator: 'Alt+Ctrl+I',
+                //   click: () => {
+                //     this.mainWindow.webContents.toggleDevTools();
+                //   },
+                // },
               ]
             : [
                 {
@@ -280,7 +280,7 @@ export default class MenuBuilder {
         },
       },
       {
-        label: '1.4.8',
+        label: '1.4.9',
         click() {
           shell.openExternal(
             'https://github.com/Nolyo/Supermarket-management-system/releases',

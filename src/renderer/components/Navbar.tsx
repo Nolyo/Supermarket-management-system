@@ -3,13 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import discord from '../../../assets/discord.svg';
 
-type NavbarType = {
-  show: 'general' | 'products';
-  setShow: Dispatch<SetStateAction<'general' | 'products'>>;
-};
-
-export default function Navbar(props: NavbarType) {
-  const { show, setShow } = props;
+export default function Navbar() {
   const [active, setActive] = useState<'general' | 'products' | 'quantity'>(
     'general',
   );
@@ -19,18 +13,17 @@ export default function Navbar(props: NavbarType) {
   const { pathname } = location;
 
   useEffect(() => {
-    if (pathname === 'quantity') {
+    if (pathname === '/quantity') {
       setActive('quantity');
-    } else if (show === 'general') {
+    } else if (pathname === '/general') {
       setActive('general');
     } else {
       setActive('products');
     }
-  }, [pathname, show]);
+  }, [pathname]);
 
   function handleClick(type: 'general' | 'products') {
-    setShow(type);
-    route('/');
+    route(`/${type}`);
   }
 
   return (
@@ -52,7 +45,8 @@ export default function Navbar(props: NavbarType) {
         </button>
 
         <button
-          onClick={() => route('/quantity')}
+          // onClick={() => route('/quantity')}
+          onClick={() => alert('Soon')}
           className={active === 'quantity' ? 'active' : ''}
           type="button"
         >
