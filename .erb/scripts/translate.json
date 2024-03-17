@@ -2,7 +2,7 @@
   "en": {
     "translation": {
       "helloWorld": "Hello world <3",
-      "ty": "Trad by @loup13. Dev by @nolyoShifumi",
+      "ty": "Trad by @loup13 and @tr1ptees (nl). Dev by @nolyoShifumi",
       "description": "This product is made to help you manage your stock in the Supermarket simulator game.",
       "stayConnect": "Join our discord to be kept informed of updates and developments",
       "generalData": {
@@ -158,6 +158,47 @@
         "averageCost": "Durchschnittskosten",
         "winRate": "Gewinn",
         "moreInfo": "Mehr Infos"
+      }
+    }
+  },
+  "nl": {
+    "translation": {
+      "helloWorld": "Hallo wereld <3",
+      "ty": "Vertaling door @loup13 en @tr1ptees (nl). Ontwikkeld door @nolyoShifumi",
+      "description": "Dit product is bedoeld om u te helpen bij het beheren van uw voorraad in het Supermarket simulator spel.",
+      "stayConnect": "Sluit u aan bij onze Discord om op de hoogte te blijven van updates en ontwikkelingen",
+      "generalData": {
+        "title": "Algemene Gegevens",
+        "storage": "Opslag",
+        "employees": "Medewerkers",
+        "licenses": "Vergunningen",
+        "invoices": "Facturen",
+        "money": "Geld",
+        "cashiers": "U heeft {{count}} kassier(s)",
+        "restocker": " en {{count}} bijvuller(s)",
+        "noCashiers": "U heeft geen kassiers ❌",
+        "noRestockers": "U heeft geen bijvullers ❌",
+        "licence": "U heeft {{count}} vergunning(en) vrijgegeven",
+        "noLicence": "U heeft geen vergunning vrijgegeven ❌",
+        "billsAndRent": "U heeft {{bills}} rekening(en) en {{rents}} huur(en) te betalen"
+      },
+      "products": {
+        "title": "Producten",
+        "price_changed": "Prijs gewijzigd van de dag",
+        "old_price": "Oude prijs",
+        "new_price": "Nieuwe prijs",
+        "refresh": "Verversen",
+        "search-product": "Zoek een product",
+        "img": "Afbeelding",
+        "product": "Product",
+        "store": "Winkel",
+        "stockage": "Voorraad",
+        "total": "Totaal",
+        "marketPrice": "Koopprijs",
+        "yourPrice": "Uw Prijs",
+        "averageCost": "Gemiddelde Kostprijs",
+        "winRate": "Winst",
+        "moreInfo": "Meer Informatie"
       }
     }
   }

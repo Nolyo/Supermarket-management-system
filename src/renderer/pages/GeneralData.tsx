@@ -8,6 +8,7 @@ import french from '../../../assets/french.svg';
 import english from '../../../assets/english.svg';
 import spanish from '../../../assets/es.svg';
 import german from '../../../assets/de.svg';
+import nl from '../../../assets/nl.svg';
 import formatDollar from '../utils';
 
 type GeneralDataProps = {
@@ -52,6 +53,13 @@ export default function GeneralData(props: GeneralDataProps) {
           onClick={() => changeLanguage('de')}
         >
           <img src={german} alt="Logo github" width={80} />
+        </button>
+        <button
+          type="button"
+          className="button"
+          onClick={() => changeLanguage('nl')}
+        >
+          <img src={nl} alt="Nl trad" width={80} />
         </button>
       </div>
       <div className="flex">

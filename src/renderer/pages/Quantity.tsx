@@ -3,15 +3,19 @@ import items from '../../../.erb/scripts/items.json';
 import { AssociatedItem } from '../../main/type';
 
 export default function Quantity() {
-  const list = [1, 2, 5, 10];
+  const list = [1, 2, 5, 10, 'half', 'full'];
 
-  function handleChange(item: AssociatedItem, value: string) {
-    console.log(item, parseInt(value, 10));
-  }
+  // function handleChange(item: AssociatedItem, value: string) {
+  //   console.log(item, parseInt(value, 10));
+  // }
 
-  function handleSetAllItems(value: number) {
+  function handleSetAllItems(value: number | string) {
     window.document.querySelectorAll('.set-quantity').forEach((input) => {
-      (input as HTMLInputElement).value = value.toString();
+      if (typeof value === 'number') {
+        (input as HTMLInputElement).value = value.toString();
+      } else {
+        console.log(value);
+      }
     });
   }
 
@@ -20,8 +24,7 @@ export default function Quantity() {
     const inputs = document.querySelectorAll('.set-quantity');
     const itemsQuantities = [];
     inputs.forEach((input, index) => {
-      // items
-      console.log(items[index].name.fr, input.value);
+      console.log(items[index].name.fr, (input as HTMLInputElement).value);
     });
   }
 

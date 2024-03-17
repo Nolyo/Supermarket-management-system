@@ -7,12 +7,12 @@
       "en": "Cereal",
       "de": "Getreide",
       "es": "Cereal",
-      "it": "cereale",
-      "nl": "Graan"
+      "it": "cereale"
     },
     "brand": "(Chokipik)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "70",
@@ -22,12 +22,12 @@
       "en": "Sliced Bread",
       "de": "Weiches Brot",
       "es": "Pan",
-      "it": "Pane morbido",
-      "nl": "Gesneden brood"
+      "it": "Pane morbido"
     },
     "brand": "(Ron's)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "83",
@@ -37,12 +37,12 @@
       "en": "Flour",
       "de": "Mehl",
       "es": "Harina",
-      "it": "Farina",
-      "nl": "Bloem"
+      "it": "Farina"
     },
     "brand": "(Kraftung)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "84",
@@ -52,12 +52,12 @@
       "en": "Oil",
       "de": "Öl",
       "es": "Aceite",
-      "it": "Olio",
-      "nl": "Olie"
+      "it": "Olio"
     },
     "brand": "(Lespieds)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "85",
@@ -67,12 +67,12 @@
       "en": "Pasta",
       "de": "Pasta",
       "es": "Pasta",
-      "it": "Pasta",
-      "nl": "Pasta"
+      "it": "Pasta"
     },
     "brand": "(Panzati)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "147",
@@ -82,12 +82,12 @@
       "en": "Sugar Powdered",
       "de": "Puderzucker",
       "es": "Azúcar en polvo",
-      "it": "Zucchero a velo",
-      "nl": "Poedersuiker"
+      "it": "Zucchero a velo"
     },
     "brand": "(Susu)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "24",
@@ -97,12 +97,12 @@
       "en": "Bottled Water",
       "de": "In Flaschen abgefülltes Wasser",
       "es": "Agua embotellada",
-      "it": "Acqua in bottiglia",
-      "nl": "Water in een fles"
+      "it": "Acqua in bottiglia"
     },
     "brand": "(Aotte)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "39",
@@ -112,12 +112,12 @@
       "en": "Cheese",
       "de": "Käse",
       "es": "Café tostado oscuro",
-      "it": "Formaggio",
-      "nl": "kaas"
+      "it": "Formaggio"
     },
     "brand": "(Comté)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "55",
@@ -127,12 +127,12 @@
       "en": "Dark Roast Coffee",
       "de": "Dunkler Röstkaffee",
       "es": "Café tostado oscuro",
-      "it": "Caffè dalla tostatura scura",
-      "nl": "Donker gebrande koffie"
+      "it": "Caffè dalla tostatura scura"
     },
     "brand": "(Narvalo)",
     "quantity": "x7",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "62",
@@ -142,12 +142,12 @@
       "en": "Eggs - pack of 8",
       "de": "Eier - Packung mit 8 Stück",
       "es": "Huevos - paquete de 8",
-      "it": "Uova - confezione da 8",
-      "nl": "Eieren - doos van 8"
+      "it": "Uova - confezione da 8"
     },
     "brand": "(Bio)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "66",
@@ -157,12 +157,12 @@
       "en": "Milk",
       "de": "Milch",
       "es": "Leche",
-      "it": "Latte",
-      "nl": "Melk"
+      "it": "Latte"
     },
     "brand": "(Bourlait)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "151",
@@ -172,12 +172,12 @@
       "en": "Black tea",
       "de": "Schwarzer Tee",
       "es": "Té negro",
-      "it": "Tè nero",
-      "nl": "Zwarte thee"
+      "it": "Tè nero"
     },
     "brand": "(Tea Palace)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "68",
@@ -187,12 +187,12 @@
       "en": "Peanut butter",
       "de": "Erdnussbutter",
       "es": "Mantequilla de cacahuete",
-      "it": "Burro di arachidi",
-      "nl": "Pindakaas"
+      "it": "Burro di arachidi"
     },
     "brand": "(PB's)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "99",
@@ -202,12 +202,27 @@
       "en": "Flour",
       "de": "Mehl",
       "es": "Harina",
-      "it": "Farina",
-      "nl": "Bloem"
+      "it": "Farina"
     },
     "brand": "(Farine)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
+  },
+  {
+    "id": "88",
+    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/ba/Bottled_Water_Montcuq.png",
+    "name": {
+      "fr": "Bouteille d'eau",
+      "en": "Bottled Water",
+      "de": "Flasche Wasser",
+      "es": "Botella de agua",
+      "it": "Bottiglia d'acqua"
+    },
+    "brand": "(Montcuq)",
+    "quantity": "x8",
+    "storageType": "Frigo",
+    "size": 1
   },
   {
     "id": "117",
@@ -217,12 +232,12 @@
       "en": "Olive oil",
       "de": "Olivenöl",
       "es": "Aceite de oliva",
-      "it": "Olio d'oliva",
-      "nl": "Olijfolie"
+      "it": "Olio d'oliva"
     },
     "brand": "(Tupiges)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "119",
@@ -232,12 +247,12 @@
       "en": "Spaghetti Pasta",
       "de": "Spaghetti-Nudeln",
       "es": "Pasta De Espagueti",
-      "it": "Spaghetti",
-      "nl": "Spaghetti"
+      "it": "Spaghetti"
     },
     "brand": "(Elo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "128",
@@ -247,12 +262,12 @@
       "en": "Basmati rice",
       "de": "Basmati-Reis",
       "es": "Arroz basmati",
-      "it": "Riso basmati",
-      "nl": "Basmati rijst"
+      "it": "Riso basmati"
     },
     "brand": "(Lustupacru)",
     "quantity": "x10",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "132",
@@ -262,12 +277,12 @@
       "en": "Salt",
       "de": "Salz",
       "es": "Sal",
-      "it": "Sale",
-      "nl": "Zout"
+      "it": "Sale"
     },
     "brand": "(Labalaine)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "67",
@@ -277,12 +292,12 @@
       "en": "Orange juice",
       "de": "Orangensaft",
       "es": "Jugo de naranja",
-      "it": "succo d'arancia",
-      "nl": "Sinaasappelsap"
+      "it": "succo d'arancia"
     },
     "brand": "(Bio Juice)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "73",
@@ -292,12 +307,12 @@
       "en": "Soda",
       "de": "Limonade",
       "es": "soda",
-      "it": "Bibita",
-      "nl": "Cola"
+      "it": "Bibita"
     },
     "brand": "(Cola)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "74",
@@ -307,12 +322,12 @@
       "en": "Soda",
       "de": "Limonade",
       "es": "soda",
-      "it": "Bibita",
-      "nl": "Sprite"
+      "it": "Bibita"
     },
     "brand": "(Zap)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "86",
@@ -322,12 +337,12 @@
       "en": "Apple juice",
       "de": "Apfelsaft",
       "es": "jugo de manzana",
-      "it": "succo di mela",
-      "nl": "Appelsap"
+      "it": "succo di mela"
     },
     "brand": "(Bio Juice)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "115",
@@ -337,12 +352,12 @@
       "en": "Milk - Pack of 6",
       "de": "Milch – 6er-Pack",
       "es": "Leche - Paquete de 6",
-      "it": "Latte - Confezione da 6",
-      "nl": "Melk - Pak van 6"
+      "it": "Latte - Confezione da 6"
     },
     "brand": "(Labol)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "139",
@@ -352,12 +367,12 @@
       "en": "Soda",
       "de": "Limonade",
       "es": "soda",
-      "it": "Bibita",
-      "nl": "Cola"
+      "it": "Bibita"
     },
     "brand": "(Turko)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "26",
@@ -367,12 +382,12 @@
       "en": "Cake",
       "de": "Kuchen",
       "es": "Pastel",
-      "it": "Torta",
-      "nl": "Cake"
+      "it": "Torta"
     },
     "brand": "(Bon Papa)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "30",
@@ -382,12 +397,12 @@
       "en": "Cake",
       "de": "Kuchen",
       "es": "Pastel",
-      "it": "Torta",
-      "nl": "Cake"
+      "it": "Torta"
     },
     "brand": "(Pépites)",
     "quantity": "x18",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "32",
@@ -397,12 +412,12 @@
       "en": "Candy",
       "de": "Süßigkeiten",
       "es": "Dulce",
-      "it": "Caramella",
-      "nl": "Snoep"
+      "it": "Caramella"
     },
     "brand": "(Bonbek)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "34",
@@ -412,12 +427,12 @@
       "en": "Cereal",
       "de": "Getreide",
       "es": "Cereal",
-      "it": "Cereal",
-      "nl": "Graan"
+      "it": "Cereal"
     },
     "brand": "(Crispy Chibi)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "46",
@@ -427,12 +442,12 @@
       "en": "Chocolate Bar",
       "de": "Schokoladenriegel",
       "es": "Barra de chocolate",
-      "it": "Barretta di cioccolato",
-      "nl": "Chocoladereep"
+      "it": "Barretta di cioccolato"
     },
     "brand": "(Chocotte)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "161",
@@ -442,12 +457,12 @@
       "en": "Yogurt",
       "de": "Joghurt",
       "es": "Yogur",
-      "it": "Yogurt",
-      "nl": "Yoghurt"
+      "it": "Yogurt"
     },
     "brand": "(Frügen)",
     "quantity": "x30",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "10",
@@ -457,12 +472,12 @@
       "en": "Bleach",
       "de": "Bleichen",
       "es": "Lejía",
-      "it": "Candeggina",
-      "nl": "Bleek"
+      "it": "Candeggina"
     },
     "brand": "(Jaja Vevel)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "52",
@@ -472,12 +487,12 @@
       "en": "Cleaner",
       "de": "Reiniger",
       "es": "Limpiador",
-      "it": "Più pulito",
-      "nl": "Schoonmaakmiddel"
+      "it": "Più pulito"
     },
     "brand": "(Touprop)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "61",
@@ -487,12 +502,12 @@
       "en": "Dishwasher Tablets",
       "de": "Spülmaschinen-Tabs",
       "es": "Pastillas para lavavajillas",
-      "it": "Pastiglie per lavastoviglie",
-      "nl": "Vaatwastabletten"
+      "it": "Pastiglie per lavastoviglie"
     },
     "brand": "(Cleandish)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "63",
@@ -502,12 +517,12 @@
       "en": "Hand Soap",
       "de": "Handseife",
       "es": "Jabón de mano",
-      "it": "Sapone per le mani",
-      "nl": "Handzeep"
+      "it": "Sapone per le mani"
     },
     "brand": "(Savion)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "69",
@@ -517,12 +532,12 @@
       "en": "Shampoo",
       "de": "Shampoo",
       "es": "Champú",
-      "it": "Shampoo",
-      "nl": "Shampoo"
+      "it": "Shampoo"
     },
     "brand": "(Kaya)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "75",
@@ -532,12 +547,12 @@
       "en": "Toilet paper",
       "de": "Klopapier",
       "es": "Papel higiénico",
-      "it": "Carta igienica",
-      "nl": "Toiletpapier"
+      "it": "Carta igienica"
     },
     "brand": "(Poudou)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "36",
@@ -547,12 +562,12 @@
       "en": "Mozzarella",
       "de": "Mozzarella",
       "es": "Queso Mozzarella",
-      "it": "Mozzarella",
-      "nl": "Mozzarella"
+      "it": "Mozzarella"
     },
     "brand": "(Don Bernardo)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "37",
@@ -562,12 +577,12 @@
       "en": "Parmesan cheese",
       "de": "Parmesan Käse",
       "es": "queso parmesano",
-      "it": "formaggio Parmigiano",
-      "nl": "Parmazaanse kaas"
+      "it": "formaggio Parmigiano"
     },
     "brand": "(Don Bernardo)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "64",
@@ -577,12 +592,12 @@
       "en": "Honey",
       "de": "Honig",
       "es": "Miel",
-      "it": "Miele",
-      "nl": "Honing"
+      "it": "Miele"
     },
     "brand": "(Hone)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "76",
@@ -592,12 +607,12 @@
       "en": "Tuna",
       "de": "Thunfisch",
       "es": "Atún",
-      "it": "Tonno",
-      "nl": "Tonijn"
+      "it": "Tonno"
     },
     "brand": "(Stark)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "95",
@@ -607,12 +622,12 @@
       "en": "Eggs - Pack of 4",
       "de": "Eier – 4 Stück",
       "es": "Huevos - Paquete de 4",
-      "it": "Uova - Confezione da 4",
-      "nl": "Eieren - Doos van 4"
+      "it": "Uova - Confezione da 4"
     },
     "brand": "(Bio)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "146",
@@ -622,12 +637,12 @@
       "en": "Powdered sugar",
       "de": "Puderzucker",
       "es": "Azúcar en polvo",
-      "it": "Zucchero a velo",
-      "nl": "Poedersuiker"
+      "it": "Zucchero a velo"
     },
     "brand": "(Pablo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "25",
@@ -637,12 +652,12 @@
       "en": "Butter",
       "de": "Butter",
       "es": "Manteca",
-      "it": "Burro",
-      "nl": "Boter"
+      "it": "Burro"
     },
     "brand": "(Paysans)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "35",
@@ -652,12 +667,12 @@
       "en": "Cereal",
       "de": "Getreide",
       "es": "Cereal",
-      "it": "Cereale",
-      "nl": "Graan"
+      "it": "Cereale"
     },
     "brand": "(Honey Bees)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "42",
@@ -667,12 +682,12 @@
       "en": "Chicken",
       "de": "Huhn",
       "es": "Pollo",
-      "it": "Pollo",
-      "nl": "Kip"
+      "it": "Pollo"
     },
     "brand": "(Mwef)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "101",
@@ -682,12 +697,12 @@
       "en": "Fries",
       "de": "Fritten",
       "es": "Patatas fritas",
-      "it": "Patatine fritte",
-      "nl": "Friet"
+      "it": "Patatine fritte"
     },
     "brand": "(Vandame's)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "123",
@@ -697,12 +712,12 @@
       "en": "Mixed Pizza",
       "de": "Gemischte Pizza",
       "es": "Pizza Mixta",
-      "it": "Pizza Mista",
-      "nl": "Pizza Mixed"
+      "it": "Pizza Mista"
     },
     "brand": "(DeNiro)",
     "quantity": "x32",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "125",
@@ -712,12 +727,12 @@
       "en": "Bag of Potatoes",
       "de": "Tüte Kartoffeln",
       "es": "Bolsa de patatas",
-      "it": "Borsa di patate",
-      "nl": "Zak Aardappelen"
+      "it": "Borsa di patate"
     },
     "brand": "(Miam)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "41",
@@ -727,12 +742,12 @@
       "en": "Cheese",
       "de": "Käse",
       "es": "Queso",
-      "it": "Formaggio",
-      "nl": "Kaas"
+      "it": "Formaggio"
     },
     "brand": "(Mimolette)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "56",
@@ -742,12 +757,12 @@
       "en": "Light Roast Coffee",
       "de": "Leicht gerösteter Kaffee",
       "es": "Café tostado ligero",
-      "it": "Caffè dalla tostatura leggera",
-      "nl": "Koffie Licht gebrand"
+      "it": "Caffè dalla tostatura leggera"
     },
     "brand": "(Narvalo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "96",
@@ -757,12 +772,12 @@
       "en": "Eggs - Pack of 12",
       "de": "Eier – 12 Stück",
       "es": "Huevos - Paquete de 12",
-      "it": "Uova - Confezione da 12",
-      "nl": "Eieren - Doos van 12"
+      "it": "Uova - Confezione da 12"
     },
     "brand": "(Bio)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "120",
@@ -772,12 +787,12 @@
       "en": "Coquillette Pasta",
       "de": "Coquillette-Nudeln",
       "es": "Pasta Coquilette",
-      "it": "Pasta Coquillette",
-      "nl": "Coquillete Pasta"
+      "it": "Pasta Coquillette"
     },
     "brand": "(Lustupacru)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "141",
@@ -787,12 +802,12 @@
       "en": "Brown sugar",
       "de": "brauner Zucker",
       "es": "Azúcar moreno",
-      "it": "zucchero di canna",
-      "nl": "Bruine Suiker"
+      "it": "zucchero di canna"
     },
     "brand": "(Susu)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "152",
@@ -802,12 +817,12 @@
       "en": "Green tea",
       "de": "Grüner Tee",
       "es": "Té verde",
-      "it": "Tè verde",
-      "nl": "Groene Thee"
+      "it": "Tè verde"
     },
     "brand": "(TeaPalace)",
     "quantity": "x48",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "116",
@@ -817,12 +832,12 @@
       "en": "Moussaka",
       "de": "Moussaka",
       "es": "Musaca",
-      "it": "moussaka",
-      "nl": "Moussaka"
+      "it": "moussaka"
     },
     "brand": "(Ronpoint)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "131",
@@ -832,12 +847,12 @@
       "en": "Salmon",
       "de": "Lachs",
       "es": "Salmón",
-      "it": "Salmone",
-      "nl": "Zalm"
+      "it": "Salmone"
     },
     "brand": "(Nordic Harbor)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "134",
@@ -847,12 +862,12 @@
       "en": "Gratinated scallops",
       "de": "Gratinierte Jakobsmuscheln",
       "es": "Vieiras gratinadas",
-      "it": "Capesante gratinate",
-      "nl": "Gegratineerde Sint-Jakobsschelpen"
+      "it": "Capesante gratinate"
     },
     "brand": "(Prypiat)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "140",
@@ -862,12 +877,12 @@
       "en": "Steak",
       "de": "Steak",
       "es": "Bife",
-      "it": "Bistecca",
-      "nl": "Biefstuk"
+      "it": "Bistecca"
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "149",
@@ -877,12 +892,12 @@
       "en": "Large Sushi",
       "de": "Großes Sushi",
       "es": "Sushi grande",
-      "it": "Sushi grande",
-      "nl": "Grote Sushi"
+      "it": "Sushi grande"
     },
     "brand": "(Ulego)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "150",
@@ -892,12 +907,12 @@
       "en": "Small Sushi",
       "de": "Kleines Sushi",
       "es": "Sushi pequeño",
-      "it": "Piccolo Sushi",
-      "nl": "Kleine Sushi"
+      "it": "Piccolo Sushi"
     },
     "brand": "(Ulego)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "157",
@@ -907,12 +922,12 @@
       "en": "Veal chop",
       "de": "Kalbskotelett",
       "es": "chuleta de ternera",
-      "it": "Cotoletta",
-      "nl": "Kalfskotelet"
+      "it": "Cotoletta"
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "58",
@@ -922,12 +937,12 @@
       "en": "Crab stick",
       "de": "Krabbenstäbchen",
       "es": "Palo de cangrejo",
-      "it": "Bastoncino di granchio",
-      "nl": "Krabsticks"
+      "it": "Bastoncino di granchio"
     },
     "brand": "(Sans)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "107",
@@ -937,12 +952,12 @@
       "en": "Hot sauce",
       "de": "Scharfe Soße",
       "es": "Salsa picante",
-      "it": "Salsa piccante",
-      "nl": "Hete Saus"
+      "it": "Salsa piccante"
     },
     "brand": "(Hothot)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "108",
@@ -952,12 +967,12 @@
       "en": "Chocolate and pistachio ice cream",
       "de": "Schokoladen- und Pistazieneis",
       "es": "Helado de chocolate y pistacho",
-      "it": "Gelato al cioccolato e pistacchio",
-      "nl": "Chocolade en pistache ijs"
+      "it": "Gelato al cioccolato e pistacchio"
     },
     "brand": "(Maxi Cone)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "111",
@@ -967,12 +982,12 @@
       "en": "Ketchup",
       "de": "Ketchup",
       "es": "Salsa de tomate",
-      "it": "Ketchup",
-      "nl": "Ketchup"
+      "it": "Ketchup"
     },
     "brand": "(Kekette)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "114",
@@ -982,12 +997,12 @@
       "en": "Mayonnaise",
       "de": "Mayonnaise",
       "es": "Mayonesa",
-      "it": "Maionese",
-      "nl": "Mayonaise"
+      "it": "Maionese"
     },
     "brand": "(Yoyo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "122",
@@ -997,12 +1012,12 @@
       "en": "Cheddar Pizza",
       "de": "Cheddar-Pizza",
       "es": "Pizza con queso cheddar",
-      "it": "Pizza al formaggio cheddar",
-      "nl": "Pizza kaas"
+      "it": "Pizza al formaggio cheddar"
     },
     "brand": "(ChezzyPizz)",
     "quantity": "x32",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "1",
@@ -1012,12 +1027,12 @@
       "en": "Blonde Ale Beer - PACK of 6",
       "de": "Blondes Ale-Bier – 6er-PACK",
       "es": "Cerveza Ale Rubia - PAQUETE de 6",
-      "it": "Birra Blonde Ale - PACK da 6",
-      "nl": "Blond Bier - Pak van 6"
+      "it": "Birra Blonde Ale - PACK da 6"
     },
     "brand": "(Fess)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "2",
@@ -1028,11 +1043,11 @@
       "en": "Barrel Blonde Ale Keg Beer",
       "de": "Blondes Fassbier vom Fass",
       "es": "Barril Rubio Ale Barril Cerveza",
-      "it": "Birra in barile Blonde Ale",
-      "nl": "Blik blond bier"
+      "it": "Birra in barile Blonde Ale"
     },
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "3",
@@ -1042,12 +1057,12 @@
       "en": "Blonde Ale Beer",
       "de": "Blondes Ale-Bier",
       "es": "Cerveza Ale Rubia",
-      "it": "Birra Blonde Ale",
-      "nl": "Blond bier"
+      "it": "Birra Blonde Ale"
     },
     "brand": "(Fess)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "9",
@@ -1057,12 +1072,12 @@
       "en": "Lager Beer",
       "de": "Lagerbier",
       "es": "Cerveza lager",
-      "it": "Birra chiara",
-      "nl": "Bier Lager"
+      "it": "Birra chiara"
     },
     "brand": "(Teochew)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "44",
@@ -1073,11 +1088,11 @@
       "en": "Crisps",
       "de": "Kartoffelchips",
       "es": "Papas fritas",
-      "it": "Patatine fritte",
-      "nl": "Aardappel chips"
+      "it": "Patatine fritte"
     },
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "65",
@@ -1087,12 +1102,12 @@
       "en": "Hummus",
       "de": "Hummus",
       "es": "Hummus",
-      "it": "Hummus",
-      "nl": "Hoemmoes"
+      "it": "Hummus"
     },
     "brand": "(Bibi)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "77",
@@ -1102,12 +1117,12 @@
       "en": "Vodka",
       "de": "Wodka",
       "es": "Vodka",
-      "it": "Vodka",
-      "nl": "Wodka"
+      "it": "Vodka"
     },
     "brand": "(Eay)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
 
   {
@@ -1118,12 +1133,12 @@
       "en": "Crisps",
       "de": "Kartoffelchips",
       "es": "Papas fritas",
-      "it": "Patatine fritte",
-      "nl": "Chips"
+      "it": "Patatine fritte"
     },
     "brand": "(Chipos)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
 
   {
@@ -1134,12 +1149,12 @@
       "en": "Flour",
       "de": "Mehl",
       "es": "Harina",
-      "it": "Farina",
-      "nl": "Bloem"
+      "it": "Farina"
     },
     "brand": "(Sublett's)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "113",
@@ -1149,12 +1164,12 @@
       "en": "Mashed Potatoes",
       "de": "Kartoffelpüree",
       "es": "Puré de papas",
-      "it": "Purè di patate",
-      "nl": "Aardappel purree"
+      "it": "Purè di patate"
     },
     "brand": "(Puray)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "121",
@@ -1164,12 +1179,12 @@
       "en": "Pepper",
       "de": "Pfeffer",
       "es": "Pimienta",
-      "it": "Pepe",
-      "nl": "Peper"
+      "it": "Pepe"
     },
     "brand": "(Afyon)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "129",
@@ -1179,12 +1194,12 @@
       "en": "Rice",
       "de": "Reis",
       "es": "Arroz",
-      "it": "Riso",
-      "nl": "Rijst"
+      "it": "Riso"
     },
     "brand": "(Elo)",
     "quantity": "x10",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "133",
@@ -1194,13 +1209,13 @@
       "en": "Sliced Bread",
       "de": "Weiches Brot",
       "es": "Pan",
-      "it": "Pane morbido",
-      "nl": "Gesneden brood"
+      "it": "Pane morbido"
     },
     "brand": "(Ron's)",
     "en_name": "Sandwich Bread",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "145",
@@ -1210,12 +1225,12 @@
       "en": "Powdered Sugar",
       "de": "Puderzucker",
       "es": "Azúcar en polvo",
-      "it": "Zucchero a velo",
-      "nl": "Poedersuiker"
+      "it": "Zucchero a velo"
     },
     "brand": "(Boully)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "11",
@@ -1225,12 +1240,12 @@
       "en": "Bleach",
       "de": "Chlorbleichlauge",
       "es": "Lejía",
-      "it": "Candeggina",
-      "nl": "Bleek"
+      "it": "Candeggina"
     },
     "brand": "(WC Boeff)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "50",
@@ -1240,12 +1255,12 @@
       "en": "Cleaner",
       "de": "Reinigungsmittel",
       "es": "Limpiador",
-      "it": "Detergente",
-      "nl": "Schoonmaakmiddel"
+      "it": "Detergente"
     },
     "brand": "(Kilemo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "59",
@@ -1255,12 +1270,12 @@
       "en": "Dishwasher Tablet",
       "de": "Spülmaschinentabs",
       "es": "Pastilla para lavavajillas",
-      "it": "Tavoletta per lavastoviglie",
-      "nl": "Vaatwastabletten"
+      "it": "Tavoletta per lavastoviglie"
     },
     "brand": "(Boum)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "91",
@@ -1270,12 +1285,12 @@
       "en": "Cleaner",
       "de": "Reinigungsmittel",
       "es": "Limpiador",
-      "it": "Detergente",
-      "nl": "Schoonmaakmiddel"
+      "it": "Detergente"
     },
     "brand": "(Yamo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "92",
@@ -1285,12 +1300,12 @@
       "en": "Dish Soap Durian",
       "de": "Durian Geschirrspülmittel",
       "es": "Jabón para platos Durian",
-      "it": "Sapone per piatti Durian",
-      "nl": "Vaatwasmiddel"
+      "it": "Sapone per piatti Durian"
     },
     "brand": "(Sapu)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "153",
@@ -1300,12 +1315,12 @@
       "en": "Toilet Paper",
       "de": "Toilettenpapier",
       "es": "Papel higiénico",
-      "it": "Carta igienica",
-      "nl": "Toiletpapier"
+      "it": "Carta igienica"
     },
     "brand": "(Bidet)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "102",
@@ -1315,12 +1330,12 @@
       "en": "Ham & Cheese Galette",
       "de": "Schinken-Käse-Galette",
       "es": "Galette de jamón y queso",
-      "it": "Galette prosciutto e formaggio",
-      "nl": "Ham en Kaas Galette"
+      "it": "Galette prosciutto e formaggio"
     },
     "brand": "(Prypiat)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "104",
@@ -1330,12 +1345,12 @@
       "en": "Ground Beef",
       "de": "Hackfleisch",
       "es": "Carne molida",
-      "it": "Carne macinata",
-      "nl": "Gehakt"
+      "it": "Carne macinata"
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "105",
@@ -1345,12 +1360,12 @@
       "en": "Ham Pastry",
       "de": "Schinkengebäck",
       "es": "Pastel de jamón",
-      "it": "Sfoglia al prosciutto",
-      "nl": "Hamgebak"
+      "it": "Sfoglia al prosciutto"
     },
     "brand": "(Ronpoint)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "106",
@@ -1360,12 +1375,12 @@
       "en": "Ham",
       "de": "Schinken",
       "es": "Jamón",
-      "it": "Prosciutto",
-      "nl": "Ham"
+      "it": "Prosciutto"
     },
     "brand": "(B&K)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "112",
@@ -1375,12 +1390,12 @@
       "en": "Lasagne",
       "de": "Lasagne",
       "es": "Lasaña",
-      "it": "Lasagne",
-      "nl": "Lasagne"
+      "it": "Lasagne"
     },
     "brand": "(Ronpoint)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "127",
@@ -1390,12 +1405,12 @@
       "en": "Prosciutto",
       "de": "Luftgetrockneter Schinken",
       "es": "Jamón seco",
-      "it": "Prosciutto crudo",
-      "nl": "Prosciutto"
+      "it": "Prosciutto crudo"
     },
     "brand": "(Sapore)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "164",
@@ -1405,12 +1420,12 @@
       "en": "Chicken Leg",
       "de": "Hühnerkeule",
       "es": "Muslo de pollo",
-      "it": "Coscia di pollo",
-      "nl": "Kippenpoot"
+      "it": "Coscia di pollo"
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "57",
@@ -1420,12 +1435,12 @@
       "en": "Coffee Medium Roast",
       "de": "Mittlere Röstkaffee",
       "es": "Café tostado medio",
-      "it": "Caffè tostato medio",
-      "nl": "Koffie Medium gebrand"
+      "it": "Caffè tostato medio"
     },
     "brand": "(Narvalo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "135",
@@ -1435,12 +1450,12 @@
       "en": "Soda",
       "de": "Soda",
       "es": "Soda",
-      "it": "Soda",
-      "nl": "Frisdrank"
+      "it": "Soda"
     },
     "brand": "(Jus Tsistu)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "136",
@@ -1450,12 +1465,12 @@
       "en": "Soda",
       "de": "Soda",
       "es": "Soda",
-      "it": "Soda",
-      "nl": "Frisdrank"
+      "it": "Soda"
     },
     "brand": "(Koujeima)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "137",
@@ -1465,12 +1480,12 @@
       "en": "Soda",
       "de": "Soda",
       "es": "Soda",
-      "it": "Soda",
-      "nl": "Frisdrank"
+      "it": "Soda"
     },
     "brand": "(Pulp)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "138",
@@ -1480,12 +1495,12 @@
       "en": "Soda",
       "de": "Soda",
       "es": "Soda",
-      "it": "Soda",
-      "nl": "Frisdrank"
+      "it": "Soda"
     },
     "brand": "(Ropico)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "144",
@@ -1495,12 +1510,12 @@
       "en": "Light Brown Sugar",
       "de": "Hellbrauner Zucker",
       "es": "Azúcar moreno claro",
-      "it": "Zucchero di canna chiaro",
-      "nl": "Lichte bruine suiker"
+      "it": "Zucchero di canna chiaro"
     },
     "brand": "(Daron)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "103",
@@ -1510,12 +1525,12 @@
       "en": "Green Beans",
       "de": "Grüne Bohnen",
       "es": "Judías verdes",
-      "it": "Fagiolini",
-      "nl": "Groene bonen"
+      "it": "Fagiolini"
     },
     "brand": "(MrBean)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "109",
@@ -1525,12 +1540,12 @@
       "en": "Vanilla Ice Cream",
       "de": "Vanilleeis",
       "es": "Helado de vainilla",
-      "it": "Gelato alla vaniglia",
-      "nl": "Vanille ijs"
+      "it": "Gelato alla vaniglia"
     },
     "brand": "(Maxi Cone)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "110",
@@ -1540,12 +1555,12 @@
       "en": "Smarties Ice Cream",
       "de": "Smarties Eis",
       "es": "Helado de Smarties",
-      "it": "Gelato Smarties",
-      "nl": "Ijs met smarties"
+      "it": "Gelato Smarties"
     },
     "brand": "(Bonbe)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "124",
@@ -1555,12 +1570,12 @@
       "en": "Raclette Pizza",
       "de": "Raclette-Pizza",
       "es": "Pizza de raclette",
-      "it": "Pizza raclette",
-      "nl": "Pizza Raclette"
+      "it": "Pizza raclette"
     },
     "brand": "(Bigtony)",
     "quantity": "x32",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "126",
@@ -1570,12 +1585,12 @@
       "en": "Potato Pops",
       "de": "Kartoffel-Pops",
       "es": "Papas Pops",
-      "it": "Patate Pops",
-      "nl": "Aardappel balletjes"
+      "it": "Patate Pops"
     },
     "brand": "(Spok)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "6",
@@ -1585,12 +1600,12 @@
       "en": "Brown Ale Beer",
       "de": "Braunbier Ale",
       "es": "Cerveza Rubia Ale",
-      "it": "Birra Bionda Ale",
-      "nl": "Bier blond"
+      "it": "Birra Bionda Ale"
     },
     "brand": "(BK)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "7",
@@ -1600,12 +1615,12 @@
       "en": "Lager Beer 6-Pack",
       "de": "Lagerbier 6er-Pack",
       "es": "Cerveza Lager paquete de 6",
-      "it": "Birra Lager confezione da 6",
-      "nl": "Blond bier - 6pack"
+      "it": "Birra Lager confezione da 6"
     },
     "brand": "(Teochew)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "8",
@@ -1615,12 +1630,12 @@
       "en": "Lager Beer Keg",
       "de": "Lagerbier Fass",
       "es": "Barril de cerveza rubia",
-      "it": "Fusto di birra bionda",
-      "nl": "Lager bier blik"
+      "it": "Fusto di birra bionda"
     },
     "brand": "(Teochew)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "78",
@@ -1630,12 +1645,12 @@
       "en": "Vodka",
       "de": "Wodka",
       "es": "Vodka",
-      "it": "Vodka",
-      "nl": "Wokda"
+      "it": "Vodka"
     },
     "brand": "(Magnat)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "79",
@@ -1645,12 +1660,12 @@
       "en": "Whiskey",
       "de": "Whiskey",
       "es": "Whiskey",
-      "it": "Whiskey",
-      "nl": "Whiskey"
+      "it": "Whiskey"
     },
     "brand": "(Grand Marnier)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "82",
@@ -1660,12 +1675,12 @@
       "en": "Wine",
       "de": "Wein",
       "es": "Vino",
-      "it": "Vino",
-      "nl": "Wijn"
+      "it": "Vino"
     },
     "brand": "(Chebon)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "38",
@@ -1675,12 +1690,12 @@
       "en": "Parmesan Cheese",
       "de": "Parmesankäse",
       "es": "Queso Parmesano",
-      "it": "Formaggio Parmigiano",
-      "nl": "Parmazaanse kaas"
+      "it": "Formaggio Parmigiano"
     },
     "brand": "(Eros)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "40",
@@ -1690,12 +1705,12 @@
       "en": "Cheese",
       "de": "Käse",
       "es": "Queso",
-      "it": "Formaggio",
-      "nl": "Kaas"
+      "it": "Formaggio"
     },
     "brand": "(Gruyere)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "54",
@@ -1705,12 +1720,12 @@
       "en": "Thick Fresh Cream",
       "de": "Dicke frische Sahne",
       "es": "Crema fresca espesa",
-      "it": "Panna fresca spessa",
-      "nl": "Dike verse room"
+      "it": "Panna fresca spessa"
     },
     "brand": "(Etron)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "118",
@@ -1720,12 +1735,12 @@
       "en": "Penne Pasta",
       "de": "Penne-Nudeln",
       "es": "Pasta Penne",
-      "it": "Penne",
-      "nl": "Penne"
+      "it": "Penne"
     },
     "brand": "(Parillo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "130",
@@ -1735,12 +1750,12 @@
       "en": "Long Grain Rice",
       "de": "Langkornreis",
       "es": "Arroz de grano largo",
-      "it": "Riso a chicchi lunghi",
-      "nl": "langkorrelige rijst "
+      "it": "Riso a chicchi lunghi"
     },
     "brand": "(Uncle Tony's)",
     "quantity": "x10",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "142",
@@ -1750,12 +1765,12 @@
       "en": "Cane Sugar",
       "de": "Rohrzucker",
       "es": "Azúcar de caña",
-      "it": "Zucchero di canna",
-      "nl": "Rietsuiker"
+      "it": "Zucchero di canna"
     },
     "brand": "(Daron)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "162",
@@ -1765,12 +1780,12 @@
       "en": "Plain Yogurt",
       "de": "Naturjoghurt",
       "es": "Yogur natural",
-      "it": "Yogurt naturale",
-      "nl": "Yoghurt Naturail"
+      "it": "Yogurt naturale"
     },
     "brand": "(Madone)",
     "quantity": "x30",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "53",
@@ -1780,12 +1795,12 @@
       "en": "Cleaner",
       "de": "Reinigungsmittel",
       "es": "Producto de limpieza",
-      "it": "Prodotto per la pulizia",
-      "nl": "Schoonmaakmiddel"
+      "it": "Prodotto per la pulizia"
     },
     "brand": "(Wesh)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "60",
@@ -1795,12 +1810,12 @@
       "en": "Dishwasher Tablets",
       "de": "Geschirrspülertabs",
       "es": "Pastillas para lavavajillas",
-      "it": "Tavolette per lavastoviglie",
-      "nl": "Vaatwastabletten"
+      "it": "Tavolette per lavastoviglie"
     },
     "brand": "(Cemagik)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "93",
@@ -1810,12 +1825,12 @@
       "en": "Lemon Dish Soap",
       "de": "Zitronengeschirrspülmittel",
       "es": "Jabón para platos de limón",
-      "it": "Detersivo per piatti al limone",
-      "nl": "Afwasmiddel citroen"
+      "it": "Detersivo per piatti al limone"
     },
     "brand": "(Mouss)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "97",
@@ -1825,12 +1840,12 @@
       "en": "Fabric Softener",
       "de": "Weichspüler",
       "es": "Suavizante de telas",
-      "it": "Ammorbidente",
-      "nl": "Wasverzachter"
+      "it": "Ammorbidente"
     },
     "brand": "(Souplesse)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "12",
@@ -1840,12 +1855,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Abc)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "13",
@@ -1855,12 +1870,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Colors)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "14",
@@ -1870,12 +1885,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Donnine)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "15",
@@ -1885,12 +1900,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Electromagnetic Field)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "16",
@@ -1900,12 +1915,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(I Won't Share)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "18",
@@ -1915,12 +1930,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Mother and Child)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "51",
@@ -1930,12 +1945,12 @@
       "en": "Cleaner",
       "de": "Reinigungsmittel",
       "es": "Producto de limpieza",
-      "it": "Prodotto per la pulizia",
-      "nl": "Schoonmaakmiddel"
+      "it": "Prodotto per la pulizia"
     },
     "brand": "(Le Triangle)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "89",
@@ -1945,12 +1960,12 @@
       "en": "Cat Food",
       "de": "Katzenfutter",
       "es": "Comida para gatos",
-      "it": "Cibo per gatti",
-      "nl": "Kattenvoer"
+      "it": "Cibo per gatti"
     },
     "brand": "(Miaoumiam)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "90",
@@ -1960,12 +1975,12 @@
       "en": "Cat Food",
       "de": "Katzenfutter",
       "es": "Comida para gatos",
-      "it": "Cibo per gatti",
-      "nl": "Kattenvoer"
+      "it": "Cibo per gatti"
     },
     "brand": "(Patpat)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "94",
@@ -1975,12 +1990,12 @@
       "en": "Dog Food",
       "de": "Hundefutter",
       "es": "Comida para perros",
-      "it": "Cibo per cani",
-      "nl": "hondenvoer"
+      "it": "Cibo per cani"
     },
     "brand": "(Patpat)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "27",
@@ -1990,12 +2005,12 @@
       "en": "Lemon Cake",
       "de": "Zitronenkuchen",
       "es": "Pastel de limón",
-      "it": "Torta al limone",
-      "nl": "Citroencake"
+      "it": "Torta al limone"
     },
     "brand": "(Gerbe)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "28",
@@ -2005,12 +2020,12 @@
       "en": "Marble Cake",
       "de": "Marmorkuchen",
       "es": "Pastel marmolado",
-      "it": "Torta marmorizzata",
-      "nl": "Marmercake"
+      "it": "Torta marmorizzata"
     },
     "brand": "(Marbré)",
     "quantity": "x18",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "45",
@@ -2020,12 +2035,12 @@
       "en": "Chips",
       "de": "Kartoffelchips",
       "es": "Papas fritas",
-      "it": "Patatine",
-      "nl": "Chips"
+      "it": "Patatine"
     },
     "brand": "(Vin's)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "49",
@@ -2035,12 +2050,12 @@
       "en": "Chocolate Spread",
       "de": "Schokoladenaufstrich",
       "es": "Crema de chocolate",
-      "it": "Crema di cioccolato",
-      "nl": "Chocoladepasta"
+      "it": "Crema di cioccolato"
     },
     "brand": "(Patatartine)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "71",
@@ -2050,12 +2065,12 @@
       "en": "Soda Can 6-Pack",
       "de": "Dosen-Cola 6er Pack",
       "es": "Paquete de 6 latas de refresco",
-      "it": "Pacco da 6 lattine di soda",
-      "nl": "Cola 6-pack"
+      "it": "Pacco da 6 lattine di soda"
     },
     "brand": "(Cola)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "72",
@@ -2065,12 +2080,12 @@
       "en": "Soda Can 6-Pack",
       "de": "Dosen-Cola 6er Pack",
       "es": "Paquete de 6 latas de refresco",
-      "it": "Pacco da 6 lattine di soda",
-      "nl": "Sprite 6-pack"
+      "it": "Pacco da 6 lattine di soda"
     },
     "brand": "(Zap)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "87",
@@ -2080,12 +2095,12 @@
       "en": "Bottled Water",
       "de": "Flasche Wasser",
       "es": "Botella de agua",
-      "it": "Bottiglia d'acqua",
-      "nl": "Water"
+      "it": "Bottiglia d'acqua"
     },
     "brand": "(Fort-Lacs)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "98",
@@ -2095,12 +2110,12 @@
       "en": "Fabric Softener",
       "de": "Weichspüler",
       "es": "Suavizante de telas",
-      "it": "Ammorbidente",
-      "nl": "Wasverzachter"
+      "it": "Ammorbidente"
     },
     "brand": "(Toudou)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "154",
@@ -2110,12 +2125,12 @@
       "en": "Paper Towel",
       "de": "Küchenrolle",
       "es": "Toalla de papel",
-      "it": "Carta assorbente",
-      "nl": "Keukenrol"
+      "it": "Carta assorbente"
     },
     "brand": "(Compact)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "155",
@@ -2125,12 +2140,12 @@
       "en": "Toilet Paper",
       "de": "Toilettenpapier",
       "es": "Papel higiénico",
-      "it": "Carta igienica",
-      "nl": "Toiletpapier"
+      "it": "Carta igienica"
     },
     "brand": "(Petus)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "156",
@@ -2140,12 +2155,12 @@
       "en": "Toothpaste",
       "de": "Zahnpasta",
       "es": "Pasta dental",
-      "it": "Dentifricio",
-      "nl": "Tandpasta"
+      "it": "Dentifricio"
     },
     "brand": "(Signoulos)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "17",
@@ -2155,12 +2170,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Krok)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "19",
@@ -2170,12 +2185,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Once Upon A Time)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "20",
@@ -2185,12 +2200,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Piticha)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "21",
@@ -2200,12 +2215,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(The Surprise)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "22",
@@ -2215,12 +2230,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Vintage Story)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "23",
@@ -2230,12 +2245,12 @@
       "en": "Book",
       "de": "Buch",
       "es": "Libro",
-      "it": "Libro",
-      "nl": "Boek"
+      "it": "Libro"
     },
     "brand": "(Wombat)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "29",
@@ -2245,12 +2260,12 @@
       "en": "Prairie Cake",
       "de": "Prairie-Kuchen",
       "es": "Pastel Prairie",
-      "it": "Torta Prairie",
-      "nl": "Pairie taart"
+      "it": "Torta Prairie"
     },
     "brand": "(Prairie)",
     "quantity": "x18",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "31",
@@ -2260,12 +2275,12 @@
       "en": "St Michmich Cake",
       "de": "St Michmich Kuchen",
       "es": "Pastel St Michmich",
-      "it": "Torta St Michmich",
-      "nl": "st Michmich cake"
+      "it": "Torta St Michmich"
     },
     "brand": "(St Michmich)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "47",
@@ -2275,12 +2290,12 @@
       "en": "Chocolate Bar",
       "de": "Schokoladenriegel",
       "es": "Barra de chocolate",
-      "it": "Tavoletta di cioccolato",
-      "nl": "Chocolade Reep"
+      "it": "Tavoletta di cioccolato"
     },
     "brand": "(Denorme)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "48",
@@ -2290,12 +2305,12 @@
       "en": "Chocolate Powder",
       "de": "Kakaopulver",
       "es": "Polvo de cacao",
-      "it": "Cacao in polvere",
-      "nl": "Chocolade poeder"
+      "it": "Cacao in polvere"
     },
     "brand": "(Boudain)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "148",
@@ -2305,12 +2320,12 @@
       "en": "Sugar",
       "de": "Zucker",
       "es": "Azúcar",
-      "it": "Zucchero",
-      "nl": "Suiker"
+      "it": "Zucchero"
     },
     "brand": "(Daron)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "163",
@@ -2320,12 +2335,12 @@
       "en": "Yoghurt",
       "de": "Joghurt",
       "es": "Yogur",
-      "it": "Yogurt",
-      "nl": "Yoghurt"
+      "it": "Yogurt"
     },
     "brand": "(Yowp)",
     "quantity": "x30",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "4",
@@ -2335,12 +2350,12 @@
       "en": "Beer Brown Ale 6-Pack",
       "de": "Braunes Ale Bier 6er Pack",
       "es": "Cerveza Rubia Ale Pack de 6",
-      "it": "Birra Bionda Ale Confezione da 6",
-      "nl": "Bruin bier 6 pack"
+      "it": "Birra Bionda Ale Confezione da 6"
     },
     "brand": "(BK)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "5",
@@ -2350,12 +2365,12 @@
       "en": "Beer Brown Ale Keg",
       "de": "Fass Braunes Ale Bier",
       "es": "Barril de cerveza negra",
-      "it": "Fusto di birra scura",
-      "nl": "Bruin bier blik"
+      "it": "Fusto di birra scura"
     },
     "brand": "(Degl)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "80",
@@ -2365,12 +2380,12 @@
       "en": "Whiskey",
       "de": "Whiskey",
       "es": "Whiskey",
-      "it": "Whiskey",
-      "nl": "Whiskey"
+      "it": "Whiskey"
     },
     "brand": "(Jack Sublett)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "81",
@@ -2380,12 +2395,12 @@
       "en": "Whiskey",
       "de": "Whiskey",
       "es": "Whiskey",
-      "it": "Whiskey",
-      "nl": "Whiskey"
+      "it": "Whiskey"
     },
     "brand": "(Japanese)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "159",
@@ -2395,12 +2410,12 @@
       "en": "Wine",
       "de": "Wein",
       "es": "Vino",
-      "it": "Vino",
-      "nl": "Wijn"
+      "it": "Vino"
     },
     "brand": "(Heng)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   },
   {
     "id": "160",
@@ -2410,11 +2425,11 @@
       "en": "Wine",
       "de": "Wein",
       "es": "Vino",
-      "it": "Vino",
-      "nl": "Wijn"
+      "it": "Vino"
     },
     "brand": "(Pouilleux)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": 1
   }
 ]
