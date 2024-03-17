@@ -1,28 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import SaveFileType, { AssociatedItem } from '../main/type';
+import SaveFileType, { AssociatedItems, lngType } from '../main/type';
 import PriceChanged from './components/PriceChanged';
 import formatDollar, { setLog } from './utils';
 
 type GeneralDataProps = {
   data: SaveFileType;
-  associated: AssociatedItem;
+  associated: AssociatedItems;
 };
+
 export default function Products(props: GeneralDataProps) {
   const { associated, data } = props;
   const { t, i18n } = useTranslation();
   const [search, setSearch] = useState('');
-  const [filtered, setFiltered] = useState<AssociatedItem>({});
-  const [userLng, setUserLng] = useState('en');
+  const [filtered, setFiltered] = useState<AssociatedItems>({});
+  const [userLng, setUserLng] = useState<lngType>('en');
   const [moreInfo, setMoreInfo] = useState<boolean>(true);
 
   useEffect(() => {
     const lng = i18n.language;
     if (!['en', 'fr', 'es', 'de', 'nl', 'it'].includes(lng)) {
-      i18n.changeLanguage('en'); // Change language to 'en' if not within the desired languages
+      i18n.changeLanguage('en');
       setUserLng('en');
     } else {
-      setUserLng(lng);
+      setUserLng(lng as lngType);
     }
   }, [i18n]);
 
@@ -32,7 +33,7 @@ export default function Products(props: GeneralDataProps) {
       if (!item.item) {
         return acc;
       }
-      let itemName = item.item.name[userLng];
+      let itemName = (item.item.name as { [key: string]: string })[userLng];
       if (!itemName) {
         setLog(`Current item do not have translated name ${item.item.name.fr}`);
         itemName = item.item.name.en;
@@ -41,10 +42,10 @@ export default function Products(props: GeneralDataProps) {
         itemName.toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())
       ) {
-        acc[key] = item;
+        (acc as { [key: string]: typeof item })[key] = item;
       }
       return acc;
-    }, {} as AssociatedItem);
+    }, {} as AssociatedItems);
     setFiltered(filteredA);
   }, [search, associated, userLng]);
 
@@ -126,7 +127,7 @@ export default function Products(props: GeneralDataProps) {
                   />
                 </td>
                 <td>
-                  {item.item.name[userLng]}
+                  {(item.item.name as { [key: string]: string })[userLng]}
                   {item.item.brand} ({item.item.quantity})
                 </td>
                 <td>{item.storeCount || 0}</td>

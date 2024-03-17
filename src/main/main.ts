@@ -63,6 +63,21 @@ ipcMain.on('reload', async () => {
   mainWindow?.webContents.reload();
 });
 
+ipcMain.on('quantity', async (event, args) => {
+  const outputPath = path.join(
+    __dirname,
+    '../../.erb/scripts/quantity_by_user.json',
+  );
+  try {
+    fs.writeFileSync(outputPath, JSON.stringify(args, null, 2));
+    event.reply('quantity', true);
+  } catch (e: unknown) {
+    event.reply('quantity', false);
+
+    log.error(e);
+  }
+});
+
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
   sourceMapSupport.install();

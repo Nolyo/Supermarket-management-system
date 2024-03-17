@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import SaveFileType, { AssociatedItem } from '../main/type';
+import SaveFileType, { AssociatedItems } from '../main/type';
 
 import {
   associatePriceToItem,
@@ -20,7 +20,7 @@ import './App.css';
 
 export default function App() {
   const [row, setRow] = useState<SaveFileType | null>(null);
-  const [associated, setAssociated] = useState<AssociatedItem>({});
+  const [associated, setAssociated] = useState<AssociatedItems>({});
   const [error, setError] = useState<string | null>(null);
 
   const reloadData = useCallback(() => {
@@ -75,7 +75,10 @@ export default function App() {
           element={<Products associated={associated} data={row} />}
         />
         <Route path="/general" element={<GeneralData data={row} />} />
-        <Route path="/quantity" element={<Objective />} />
+        <Route
+          path="/quantity"
+          element={<Objective associated={associated} />}
+        />
         <Route path="/bye" element={<Bye />} />
       </Routes>
     </Router>

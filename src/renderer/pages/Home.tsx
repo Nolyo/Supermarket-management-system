@@ -1,4 +1,4 @@
-import SaveFileType, { AssociatedItem } from '../../main/type';
+import SaveFileType, { AssociatedItems } from '../../main/type';
 
 import Products from '../Products';
 import GeneralData from './GeneralData';
@@ -6,7 +6,7 @@ import '../App.css';
 
 type HomeProps = {
   data: SaveFileType;
-  associated: AssociatedItem;
+  associated: AssociatedItems;
 };
 
 function Home(props: HomeProps) {

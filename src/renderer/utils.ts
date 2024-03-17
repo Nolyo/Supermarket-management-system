@@ -1,5 +1,5 @@
 import SaveFileType, {
-  AssociatedItem,
+  AssociatedItems,
   DisplayedProductData,
   Item,
   RackData,
@@ -21,7 +21,7 @@ export function setLog(arg: string) {
 
 export function associatePriceToItem(
   saveFile: SaveFileType,
-  datas: AssociatedItem,
+  datas: AssociatedItems,
 ) {
   Object.keys(datas).map((data) => {
     const currentId = parseInt(data, 10);
@@ -53,7 +53,7 @@ export function associatePriceToItem(
 export function associateProductsAndItems(
   products: DisplayedProductData,
   type = 'rack',
-  associated: AssociatedItem = {},
+  associated: AssociatedItems = {},
 ) {
   /* eslint-disable */
   for (const id in products) {
@@ -89,7 +89,7 @@ export function associateProductsAndItems(
 
 export function countItemInStore(
   saveFile: SaveFileType,
-  associated: AssociatedItem,
+  associated: AssociatedItems,
 ) {
   const raw = saveFile.Progression.value.DisplayedProductData;
   if (!raw) return associated;
@@ -120,7 +120,7 @@ export function countItemInRack(saveFile: SaveFileType) {
 
 export function countItemOnFloor(
   saveFile: SaveFileType,
-  associated: AssociatedItem,
+  associated: AssociatedItems,
 ) {
   const floorBoxs = saveFile.Progression.value.BoxDatas;
   const raw: { [key: number]: number } = {};
@@ -140,7 +140,7 @@ export function countItemOnFloor(
   return allAssociated;
 }
 
-export function sortObjectsBySum(objects: AssociatedItem) {
+export function sortObjectsBySum(objects: AssociatedItems) {
   return Object.entries(objects)
     .map(([id, item]) => ({
       id,

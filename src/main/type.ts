@@ -79,14 +79,16 @@ export type Item = {
 };
 
 export type AssociatedItem = {
-  [key: number]: {
-    rackCount?: number;
-    item: Item;
-    storeCount?: number;
-    marketPrice?: number;
-    userPrice?: number;
-    averageCost?: number;
-  };
+  rackCount?: number;
+  item: Item;
+  storeCount?: number;
+  marketPrice?: number;
+  userPrice?: number;
+  averageCost?: number;
 };
+
+export type AssociatedItems = AssociatedItem[];
+
+export type lngType = 'en' | 'fr' | 'es' | 'de' | 'nl' | 'it';
 
 export default SaveFileType;

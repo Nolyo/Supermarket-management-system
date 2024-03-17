@@ -45,8 +45,8 @@ export default function Navbar() {
         </button>
 
         <button
-          // onClick={() => route('/quantity')}
-          onClick={() => alert('Soon')}
+          onClick={() => route('/quantity')}
+          // onClick={() => alert('Soon')}
           className={active === 'quantity' ? 'active' : ''}
           type="button"
         >

@@ -120,6 +120,14 @@ a:hover {
 .red {
   color: red;
 }
+.green {
+  color: green;
+}
+
+.success {
+  color: green;
+  font-size: 1.5em;
+}
 
 .center {
   text-align: center;

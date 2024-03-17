@@ -12,7 +12,8 @@
     },
     "brand": "(Chokipik)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "70",
@@ -27,7 +28,8 @@
     },
     "brand": "(Ron's)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "83",
@@ -42,7 +44,8 @@
     },
     "brand": "(Kraftung)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "84",
@@ -57,7 +60,8 @@
     },
     "brand": "(Lespieds)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "85",
@@ -72,7 +76,8 @@
     },
     "brand": "(Panzati)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "147",
@@ -87,7 +92,8 @@
     },
     "brand": "(Susu)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "24",
@@ -102,7 +108,8 @@
     },
     "brand": "(Aotte)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "39",
@@ -117,7 +124,8 @@
     },
     "brand": "(Comté)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "55",
@@ -132,7 +140,8 @@
     },
     "brand": "(Narvalo)",
     "quantity": "x7",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "62",
@@ -147,7 +156,8 @@
     },
     "brand": "(Bio)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "66",
@@ -162,7 +172,8 @@
     },
     "brand": "(Bourlait)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "151",
@@ -177,7 +188,8 @@
     },
     "brand": "(Tea Palace)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "68",
@@ -192,7 +204,8 @@
     },
     "brand": "(PB's)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "99",
@@ -207,7 +220,8 @@
     },
     "brand": "(Farine)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "117",
@@ -222,7 +236,8 @@
     },
     "brand": "(Tupiges)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "119",
@@ -237,7 +252,8 @@
     },
     "brand": "(Elo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "128",
@@ -252,7 +268,8 @@
     },
     "brand": "(Lustupacru)",
     "quantity": "x10",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "132",
@@ -267,7 +284,8 @@
     },
     "brand": "(Labalaine)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "67",
@@ -282,7 +300,8 @@
     },
     "brand": "(Bio Juice)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "73",
@@ -297,7 +316,8 @@
     },
     "brand": "(Cola)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "74",
@@ -312,7 +332,8 @@
     },
     "brand": "(Zap)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "86",
@@ -327,7 +348,8 @@
     },
     "brand": "(Bio Juice)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "115",
@@ -342,7 +364,8 @@
     },
     "brand": "(Labol)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "139",
@@ -357,7 +380,8 @@
     },
     "brand": "(Turko)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "26",
@@ -372,7 +396,8 @@
     },
     "brand": "(Bon Papa)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "30",
@@ -387,7 +412,8 @@
     },
     "brand": "(Pépites)",
     "quantity": "x18",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "32",
@@ -402,7 +428,8 @@
     },
     "brand": "(Bonbek)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "34",
@@ -417,7 +444,8 @@
     },
     "brand": "(Crispy Chibi)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "46",
@@ -432,7 +460,8 @@
     },
     "brand": "(Chocotte)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "161",
@@ -447,7 +476,8 @@
     },
     "brand": "(Frügen)",
     "quantity": "x30",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "10",
@@ -462,7 +492,8 @@
     },
     "brand": "(Jaja Vevel)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "4"
   },
   {
     "id": "52",
@@ -477,7 +508,8 @@
     },
     "brand": "(Touprop)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "61",
@@ -492,7 +524,8 @@
     },
     "brand": "(Cleandish)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "63",
@@ -507,7 +540,8 @@
     },
     "brand": "(Savion)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "69",
@@ -522,7 +556,8 @@
     },
     "brand": "(Kaya)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "75",
@@ -537,7 +572,8 @@
     },
     "brand": "(Poudou)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "36",
@@ -552,7 +588,8 @@
     },
     "brand": "(Don Bernardo)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "37",
@@ -567,7 +604,8 @@
     },
     "brand": "(Don Bernardo)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "64",
@@ -582,7 +620,8 @@
     },
     "brand": "(Hone)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "76",
@@ -597,7 +636,8 @@
     },
     "brand": "(Stark)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "95",
@@ -612,7 +652,8 @@
     },
     "brand": "(Bio)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "146",
@@ -627,7 +668,8 @@
     },
     "brand": "(Pablo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "25",
@@ -642,7 +684,8 @@
     },
     "brand": "(Paysans)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "35",
@@ -657,7 +700,8 @@
     },
     "brand": "(Honey Bees)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "42",
@@ -672,7 +716,8 @@
     },
     "brand": "(Mwef)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "101",
@@ -687,7 +732,8 @@
     },
     "brand": "(Vandame's)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "123",
@@ -702,7 +748,8 @@
     },
     "brand": "(DeNiro)",
     "quantity": "x32",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "125",
@@ -717,7 +764,8 @@
     },
     "brand": "(Miam)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "41",
@@ -732,7 +780,8 @@
     },
     "brand": "(Mimolette)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "56",
@@ -747,7 +796,8 @@
     },
     "brand": "(Narvalo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "96",
@@ -762,7 +812,8 @@
     },
     "brand": "(Bio)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "120",
@@ -777,7 +828,8 @@
     },
     "brand": "(Lustupacru)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "141",
@@ -792,7 +844,8 @@
     },
     "brand": "(Susu)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "152",
@@ -807,7 +860,8 @@
     },
     "brand": "(TeaPalace)",
     "quantity": "x48",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "116",
@@ -822,7 +876,8 @@
     },
     "brand": "(Ronpoint)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "131",
@@ -837,7 +892,8 @@
     },
     "brand": "(Nordic Harbor)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "134",
@@ -852,7 +908,8 @@
     },
     "brand": "(Prypiat)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "140",
@@ -867,7 +924,8 @@
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "149",
@@ -882,7 +940,8 @@
     },
     "brand": "(Ulego)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "150",
@@ -897,7 +956,8 @@
     },
     "brand": "(Ulego)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "157",
@@ -912,7 +972,8 @@
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "58",
@@ -927,7 +988,8 @@
     },
     "brand": "(Sans)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "107",
@@ -942,7 +1004,8 @@
     },
     "brand": "(Hothot)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "108",
@@ -957,7 +1020,8 @@
     },
     "brand": "(Maxi Cone)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "111",
@@ -972,7 +1036,8 @@
     },
     "brand": "(Kekette)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "114",
@@ -987,7 +1052,8 @@
     },
     "brand": "(Yoyo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "122",
@@ -1002,7 +1068,8 @@
     },
     "brand": "(ChezzyPizz)",
     "quantity": "x32",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "1",
@@ -1017,7 +1084,8 @@
     },
     "brand": "(Fess)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "2",
@@ -1032,7 +1100,8 @@
       "nl": "Blik blond bier"
     },
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "3",
@@ -1047,7 +1116,8 @@
     },
     "brand": "(Fess)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "9",
@@ -1062,7 +1132,8 @@
     },
     "brand": "(Teochew)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "44",
@@ -1077,7 +1148,8 @@
       "nl": "Aardappel chips"
     },
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "65",
@@ -1092,7 +1164,8 @@
     },
     "brand": "(Bibi)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "77",
@@ -1107,9 +1180,9 @@
     },
     "brand": "(Eay)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
-
   {
     "id": "43",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/4/44/Chips_Chipos.png",
@@ -1123,9 +1196,9 @@
     },
     "brand": "(Chipos)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
-
   {
     "id": "100",
     "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/6/6a/Flour_Sublett%27s.png",
@@ -1139,7 +1212,8 @@
     },
     "brand": "(Sublett's)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "113",
@@ -1154,7 +1228,8 @@
     },
     "brand": "(Puray)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "121",
@@ -1169,7 +1244,8 @@
     },
     "brand": "(Afyon)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "129",
@@ -1184,7 +1260,8 @@
     },
     "brand": "(Elo)",
     "quantity": "x10",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "133",
@@ -1200,7 +1277,8 @@
     "brand": "(Ron's)",
     "en_name": "Sandwich Bread",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "145",
@@ -1215,7 +1293,8 @@
     },
     "brand": "(Boully)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "11",
@@ -1230,7 +1309,8 @@
     },
     "brand": "(WC Boeff)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "50",
@@ -1245,7 +1325,8 @@
     },
     "brand": "(Kilemo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "59",
@@ -1260,7 +1341,8 @@
     },
     "brand": "(Boum)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "91",
@@ -1275,7 +1357,8 @@
     },
     "brand": "(Yamo)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "4"
   },
   {
     "id": "92",
@@ -1290,7 +1373,8 @@
     },
     "brand": "(Sapu)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "153",
@@ -1305,7 +1389,8 @@
     },
     "brand": "(Bidet)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "102",
@@ -1320,7 +1405,8 @@
     },
     "brand": "(Prypiat)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "104",
@@ -1335,7 +1421,8 @@
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "105",
@@ -1350,7 +1437,8 @@
     },
     "brand": "(Ronpoint)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "106",
@@ -1365,7 +1453,8 @@
     },
     "brand": "(B&K)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "112",
@@ -1380,7 +1469,8 @@
     },
     "brand": "(Ronpoint)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "127",
@@ -1395,7 +1485,8 @@
     },
     "brand": "(Sapore)",
     "quantity": "x20",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "164",
@@ -1410,7 +1501,8 @@
     },
     "brand": "(Bovora)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "57",
@@ -1425,7 +1517,8 @@
     },
     "brand": "(Narvalo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "135",
@@ -1440,7 +1533,8 @@
     },
     "brand": "(Jus Tsistu)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "136",
@@ -1455,7 +1549,8 @@
     },
     "brand": "(Koujeima)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "137",
@@ -1470,7 +1565,8 @@
     },
     "brand": "(Pulp)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "138",
@@ -1485,7 +1581,8 @@
     },
     "brand": "(Ropico)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "144",
@@ -1500,7 +1597,8 @@
     },
     "brand": "(Daron)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "103",
@@ -1515,7 +1613,8 @@
     },
     "brand": "(MrBean)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "109",
@@ -1530,7 +1629,8 @@
     },
     "brand": "(Maxi Cone)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "110",
@@ -1545,7 +1645,8 @@
     },
     "brand": "(Bonbe)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "124",
@@ -1560,7 +1661,8 @@
     },
     "brand": "(Bigtony)",
     "quantity": "x32",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "126",
@@ -1575,7 +1677,8 @@
     },
     "brand": "(Spok)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "6",
@@ -1590,7 +1693,8 @@
     },
     "brand": "(BK)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "7",
@@ -1605,7 +1709,8 @@
     },
     "brand": "(Teochew)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "8",
@@ -1620,7 +1725,24 @@
     },
     "brand": "(Teochew)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
+  },
+  {
+    "id": "88",
+    "img": "https://static.wikia.nocookie.net/supermarket-simulator/images/b/ba/Bottled_Water_Montcuq.png",
+    "name": {
+      "fr": "Bouteille d'eau",
+      "en": "Bottled Water",
+      "de": "Flasche Wasser",
+      "es": "Botella de agua",
+      "it": "Bottiglia d'acqua",
+      "nl": "Water"
+    },
+    "brand": "(Montcuq)",
+    "quantity": "x8",
+    "storageType": "Frigo",
+    "size": "2"
   },
   {
     "id": "78",
@@ -1635,7 +1757,8 @@
     },
     "brand": "(Magnat)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "79",
@@ -1650,7 +1773,8 @@
     },
     "brand": "(Grand Marnier)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "82",
@@ -1665,7 +1789,8 @@
     },
     "brand": "(Chebon)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "38",
@@ -1680,7 +1805,8 @@
     },
     "brand": "(Eros)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "40",
@@ -1695,7 +1821,8 @@
     },
     "brand": "(Gruyere)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "54",
@@ -1710,7 +1837,8 @@
     },
     "brand": "(Etron)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "118",
@@ -1725,7 +1853,8 @@
     },
     "brand": "(Parillo)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "130",
@@ -1740,7 +1869,8 @@
     },
     "brand": "(Uncle Tony's)",
     "quantity": "x10",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "142",
@@ -1755,7 +1885,8 @@
     },
     "brand": "(Daron)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "162",
@@ -1770,7 +1901,8 @@
     },
     "brand": "(Madone)",
     "quantity": "x30",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "53",
@@ -1785,7 +1917,8 @@
     },
     "brand": "(Wesh)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "60",
@@ -1800,7 +1933,8 @@
     },
     "brand": "(Cemagik)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "93",
@@ -1815,7 +1949,8 @@
     },
     "brand": "(Mouss)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "97",
@@ -1830,7 +1965,8 @@
     },
     "brand": "(Souplesse)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "4"
   },
   {
     "id": "12",
@@ -1845,7 +1981,8 @@
     },
     "brand": "(Abc)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "13",
@@ -1860,7 +1997,8 @@
     },
     "brand": "(Colors)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "14",
@@ -1875,7 +2013,8 @@
     },
     "brand": "(Donnine)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "15",
@@ -1890,7 +2029,8 @@
     },
     "brand": "(Electromagnetic Field)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "16",
@@ -1905,7 +2045,8 @@
     },
     "brand": "(I Won't Share)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "18",
@@ -1920,7 +2061,8 @@
     },
     "brand": "(Mother and Child)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "51",
@@ -1935,7 +2077,8 @@
     },
     "brand": "(Le Triangle)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "89",
@@ -1950,7 +2093,8 @@
     },
     "brand": "(Miaoumiam)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "90",
@@ -1965,7 +2109,8 @@
     },
     "brand": "(Patpat)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "94",
@@ -1980,7 +2125,8 @@
     },
     "brand": "(Patpat)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "4"
   },
   {
     "id": "27",
@@ -1995,7 +2141,8 @@
     },
     "brand": "(Gerbe)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "28",
@@ -2010,7 +2157,8 @@
     },
     "brand": "(Marbré)",
     "quantity": "x18",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "45",
@@ -2025,7 +2173,8 @@
     },
     "brand": "(Vin's)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "49",
@@ -2040,7 +2189,8 @@
     },
     "brand": "(Patatartine)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "71",
@@ -2055,7 +2205,8 @@
     },
     "brand": "(Cola)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "72",
@@ -2070,7 +2221,8 @@
     },
     "brand": "(Zap)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "87",
@@ -2085,7 +2237,8 @@
     },
     "brand": "(Fort-Lacs)",
     "quantity": "x24",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "98",
@@ -2100,7 +2253,8 @@
     },
     "brand": "(Toudou)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "4"
   },
   {
     "id": "154",
@@ -2115,7 +2269,8 @@
     },
     "brand": "(Compact)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "155",
@@ -2130,7 +2285,8 @@
     },
     "brand": "(Petus)",
     "quantity": "x4",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "156",
@@ -2145,7 +2301,8 @@
     },
     "brand": "(Signoulos)",
     "quantity": "x16",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "0"
   },
   {
     "id": "17",
@@ -2160,7 +2317,8 @@
     },
     "brand": "(Krok)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "19",
@@ -2175,7 +2333,8 @@
     },
     "brand": "(Once Upon A Time)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "20",
@@ -2190,7 +2349,8 @@
     },
     "brand": "(Piticha)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "21",
@@ -2205,7 +2365,8 @@
     },
     "brand": "(The Surprise)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "22",
@@ -2220,7 +2381,8 @@
     },
     "brand": "(Vintage Story)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "23",
@@ -2235,7 +2397,8 @@
     },
     "brand": "(Wombat)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "29",
@@ -2250,7 +2413,8 @@
     },
     "brand": "(Prairie)",
     "quantity": "x18",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "31",
@@ -2265,7 +2429,8 @@
     },
     "brand": "(St Michmich)",
     "quantity": "x15",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "47",
@@ -2280,7 +2445,8 @@
     },
     "brand": "(Denorme)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "48",
@@ -2295,7 +2461,8 @@
     },
     "brand": "(Boudain)",
     "quantity": "x8",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "148",
@@ -2310,7 +2477,8 @@
     },
     "brand": "(Daron)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "163",
@@ -2325,7 +2493,8 @@
     },
     "brand": "(Yowp)",
     "quantity": "x30",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "1"
   },
   {
     "id": "4",
@@ -2340,7 +2509,8 @@
     },
     "brand": "(BK)",
     "quantity": "x9",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "2"
   },
   {
     "id": "5",
@@ -2355,7 +2525,8 @@
     },
     "brand": "(Degl)",
     "quantity": "x6",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "3"
   },
   {
     "id": "80",
@@ -2370,7 +2541,8 @@
     },
     "brand": "(Jack Sublett)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "81",
@@ -2385,7 +2557,8 @@
     },
     "brand": "(Japanese)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "159",
@@ -2400,7 +2573,8 @@
     },
     "brand": "(Heng)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   },
   {
     "id": "160",
@@ -2415,6 +2589,7 @@
     },
     "brand": "(Pouilleux)",
     "quantity": "x12",
-    "storageType": "Gondole"
+    "storageType": "Gondole",
+    "size": "5"
   }
 ]
