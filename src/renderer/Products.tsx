@@ -18,7 +18,12 @@ export default function Products(props: GeneralDataProps) {
 
   useEffect(() => {
     const lng = i18n.language;
-    setUserLng(lng);
+    if (!['en', 'fr', 'es', 'de', 'nl', 'it'].includes(lng)) {
+      i18n.changeLanguage('en'); // Change language to 'en' if not within the desired languages
+      setUserLng('en');
+    } else {
+      setUserLng(lng);
+    }
   }, [i18n]);
 
   useEffect(() => {
@@ -27,12 +32,13 @@ export default function Products(props: GeneralDataProps) {
       if (!item.item) {
         return acc;
       }
-      const itemName = item.item.name[userLng];
+      let itemName = item.item.name[userLng];
       if (!itemName) {
         setLog(`Current item do not have translated name ${item.item.name.fr}`);
+        itemName = item.item.name.en;
       }
       if (
-        item.item.name[userLng].toLowerCase().includes(search.toLowerCase()) ||
+        itemName.toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())
       ) {
         acc[key] = item;

@@ -201,5 +201,46 @@
         "moreInfo": "Meer Informatie"
       }
     }
+  },
+  "it": {
+    "translation": {
+      "helloWorld": "Ciao mondo <3",
+      "ty": "Traduzione di @loup13 e @tr1ptees (it). Sviluppato da @nolyoShifumi",
+      "description": "Questo prodotto è stato creato per aiutarti a gestire il tuo magazzino nel gioco del simulatore di supermercato.",
+      "stayConnect": "Unisciti al nostro Discord per rimanere aggiornato su aggiornamenti e sviluppi",
+      "generalData": {
+        "title": "Dati Generali",
+        "storage": "Magazzino",
+        "employees": "Dipendenti",
+        "licenses": "Licenze",
+        "invoices": "Fatture",
+        "money": "Denaro",
+        "cashiers": "Hai {{count}} cassiere(i)",
+        "restocker": " e {{count}} addetto(i) al rifornimento",
+        "noCashiers": "Non hai cassieri ❌",
+        "noRestockers": "Non hai addetti al rifornimento ❌",
+        "licence": "Hai {{count}} licenza(e) sbloccata(e)",
+        "noLicence": "Non hai licenze sbloccate ❌",
+        "billsAndRent": "Hai {{bills}} fattura(e) e {{rents}} affitto(i) da pagare"
+      },
+      "products": {
+        "title": "Prodotti",
+        "price_changed": "Prezzo modificato del giorno",
+        "old_price": "Prezzo precedente",
+        "new_price": "Nuovo prezzo",
+        "refresh": "Ricarica",
+        "search-product": "Cerca un prodotto",
+        "img": "Immagine",
+        "product": "Prodotto",
+        "store": "Negozio",
+        "stockage": "Magazzino",
+        "total": "Totale",
+        "marketPrice": "Prezzo di acquisto",
+        "yourPrice": "Il tuo prezzo",
+        "averageCost": "Costo medio",
+        "winRate": "Guadagno",
+        "moreInfo": "Ulteriori informazioni"
+      }
+    }
   }
 }

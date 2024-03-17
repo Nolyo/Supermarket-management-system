@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SaveFileType from '../../main/type';
@@ -9,6 +10,7 @@ import english from '../../../assets/english.svg';
 import spanish from '../../../assets/es.svg';
 import german from '../../../assets/de.svg';
 import nl from '../../../assets/nl.svg';
+import it from '../../../assets/it.svg';
 import formatDollar from '../utils';
 
 type GeneralDataProps = {
@@ -17,6 +19,10 @@ type GeneralDataProps = {
 export default function GeneralData(props: GeneralDataProps) {
   const { data } = props;
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    console.log(i18n.language);
+  }, [i18n]);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -60,6 +66,13 @@ export default function GeneralData(props: GeneralDataProps) {
           onClick={() => changeLanguage('nl')}
         >
           <img src={nl} alt="Nl trad" width={80} />
+        </button>
+        <button
+          type="button"
+          className="button"
+          onClick={() => changeLanguage('it')}
+        >
+          <img src={it} alt="It trad" width={80} />
         </button>
       </div>
       <div className="flex">
