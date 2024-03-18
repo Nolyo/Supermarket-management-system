@@ -25,9 +25,16 @@ jobs:
           npm run postinstall
           npm run build
 
+      - name: Decode certificate
+        run: |
+          echo "${{ secrets.CSC_KEY_BASE64 }}" | base64 --decode --ignore-garbage > key.p12
+
+          echo "Certificate decoded and saved as key.p12"
+
       - name: Publish releases
         env:
-          # This is used for uploading release assets to github
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CSC_LINK: key.p12
+          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm exec electron-builder -- --publish always --win
