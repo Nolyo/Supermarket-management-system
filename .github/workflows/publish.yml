@@ -27,7 +27,7 @@ jobs:
           npm run build
       - name: Decode certificate
         run: |
-          echo -n "${{ secrets.CSC_KEY_BASE64 }}" | base64 --decode > key.p12
+          echo "${{ secrets.CSC_KEY_BASE64 }}" | base64 --decode --ignore-garbage > key.p12
           echo "Certificate decoded and saved as key.p12"
 
       - name: Publish releases
