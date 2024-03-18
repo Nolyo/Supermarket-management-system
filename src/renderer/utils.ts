@@ -53,14 +53,13 @@ export function associatePriceToItem(
 export function associateProductsAndItems(
   products: DisplayedProductData,
   type = 'rack',
-  associated: AssociatedItems = {},
+  associated: AssociatedItems = [],
 ) {
   /* eslint-disable */
   for (const id in products) {
     const item = items.find((item) => item.id === id);
     if (!item) continue;
     //Si associated existe deja on ajoute la clé storeCount ou rackCount selon le type
-
     if (associated[parseInt(id)]) {
       if (type === 'store') {
         associated[parseInt(id)].storeCount = products[id];

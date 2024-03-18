@@ -156,6 +156,7 @@ export default function Quantity(props: PropsType) {
       {showHelp && (
         <div
           className="flex"
+          // eslint-disable-next-line
           dangerouslySetInnerHTML={{ __html: t('quantity.help') }}
         />
       )}
