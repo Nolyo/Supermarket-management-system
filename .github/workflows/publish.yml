@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - dev
 
 jobs:
   publish:
@@ -25,25 +24,17 @@ jobs:
           npm install
           npm run postinstall
           npm run build
+
       - name: Decode certificate
         run: |
           echo "${{ secrets.CSC_KEY_BASE64 }}" | base64 --decode --ignore-garbage > key.p12
+
           echo "Certificate decoded and saved as key.p12"
 
       - name: Publish releases
-        if: github.ref == 'refs/heads/main'
         env:
           CSC_LINK: key.p12
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          npm exec electron-builder -- --publish always --win --channel latest
-
-      - name: Publish to dev channel
-        if: github.ref == 'refs/heads/dev'
-        env:
-          CSC_LINK: key.p12
-          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          npm exec electron-builder -- --publish always --win --channel dev
+          npm exec electron-builder -- --publish always --win
