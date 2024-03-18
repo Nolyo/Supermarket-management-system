@@ -207,7 +207,8 @@
     "win": {
       "target": [
         "nsis"
-      ]
+      ],
+      "publisherName": "Nolyo"
     },
     "linux": {
       "target": [
