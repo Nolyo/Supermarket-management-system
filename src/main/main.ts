@@ -13,6 +13,7 @@ import fs from 'fs';
 import os from 'os';
 import { app, BrowserWindow, shell, ipcMain, IpcMainEvent } from 'electron';
 import { autoUpdater } from 'electron-updater';
+import chokidar from 'chokidar';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
@@ -76,16 +77,27 @@ if (isDebug) {
 const reloadData = async (event: IpcMainEvent, filePath: string) => {
   try {
     log.info('Attempting to read the backup file');
-    const data = fs.readFileSync(filePath, 'utf8');
-    log.info(`Read file ${filePath} with size ${data.length} bytes`);
-
-    // In es3 alphanumeric keys are not quoted, so we need to add quotes to them
-    const correctedData = data.replace(/([{,]\s*)(\d+)(\s*:)/g, '$1"$2"$3');
-
-    event.reply('get-save-file', correctedData);
+    const stream = fs.createReadStream(filePath, { encoding: 'utf8' });
+    let data = '';
+    stream.on('data', (chunk) => {
+      data += chunk;
+    });
+    stream.on('end', () => {
+      log.info(`Read file ${filePath} with size ${data.length} bytes`);
+      const correctedData = data.replace(/([{,]\s*)(\d+)(\s*:)/g, '$1"$2"$3');
+      event.reply('get-save-file', correctedData);
+    });
+    stream.on('error', (err) => {
+      log.error(err);
+      setTimeout(() => {
+        reloadData(event, filePath);
+      }, 1000);
+    });
   } catch (err) {
     log.error(err);
-    event.reply('get-save-file', null);
+    setTimeout(() => {
+      reloadData(event, filePath);
+    }, 1000);
   }
 };
 
@@ -117,8 +129,8 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     show: false,
-    // width: 1024,
-    // height: 728,
+    width: 1024,
+    height: 728,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: app.isPackaged
@@ -166,6 +178,17 @@ const createWindow = async () => {
  * Add event listeners...
  */
 // Get save File
+const watchSaveFile = (event: IpcMainEvent, filePath: string) => {
+  const watcher = chokidar.watch(filePath);
+  watcher.on('change', () => {
+    log.info(`the file ${filePath} has been updated`);
+    reloadData(event, filePath);
+  });
+  watcher.on('error', (err) => {
+    log.error(`Error watching file ${filePath}:`, err);
+  });
+};
+
 ipcMain.on('get-save-file', async (event) => {
   const { username } = os.userInfo();
   const filePath = path.join(
@@ -179,15 +202,7 @@ ipcMain.on('get-save-file', async (event) => {
     'saveFile.es3',
   );
   reloadData(event, filePath);
-
-  // if (!watcher) {
-  //   watcher = fs.watch(filePath, (eventType, filename) => {
-  //     if (eventType === 'change') {
-  //       log.info(`the file ${filename} has been updated`);
-  //       reloadData(event, filePath);
-  //     }
-  //   });
-  // }
+  watchSaveFile(event, filePath);
 });
 
 ipcMain.on('set-quantity', async (event, args) => {
