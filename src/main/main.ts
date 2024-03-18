@@ -91,13 +91,13 @@ const reloadData = async (event: IpcMainEvent, filePath: string) => {
       log.error(err);
       setTimeout(() => {
         reloadData(event, filePath);
-      }, 1000);
+      }, 1200);
     });
   } catch (err) {
     log.error(err);
     setTimeout(() => {
       reloadData(event, filePath);
-    }, 1000);
+    }, 1200);
   }
 };
 
@@ -167,12 +167,9 @@ const createWindow = async () => {
     return { action: 'deny' };
   });
 
-  // Remove this if your app does not use auto updates
   // eslint-disable-next-line
   new AppUpdater();
 };
-
-// let watcher: fs.FSWatcher | null = null;
 
 /**
  * Add event listeners...
