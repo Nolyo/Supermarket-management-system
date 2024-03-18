@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import quantityUser from '../../../.erb/scripts/quantity_by_user.json';
 import { AssociatedItem, Item, lngType } from '../../main/type';
 
 type props = {
@@ -7,17 +6,18 @@ type props = {
   item: Item;
   asso: AssociatedItem | undefined;
   countStore: boolean;
+  quantityUserRaw: { id: string; quantity: string }[] | null;
 };
 
 export default function QuantityRowTable(props: props) {
-  const { userLng, item, asso, countStore } = props;
+  const { userLng, item, asso, countStore, quantityUserRaw } = props;
   const [quantityByUser, setQuantityByUser] = useState<string>('0');
   const [stockage, setStockage] = useState(0);
 
   useEffect(() => {
-    const a = quantityUser.find((q) => q.id === item.id);
+    const a = quantityUserRaw?.find((q) => q.id === item.id);
     setQuantityByUser(a?.quantity || '0');
-  }, [item.id]);
+  }, [item.id, quantityUserRaw]);
 
   useEffect(() => {
     let total = asso?.rackCount || 0;
@@ -40,7 +40,11 @@ export default function QuantityRowTable(props: props) {
       toBuy = 0;
     }
 
-    return <span>{toBuy}</span>;
+    return (
+      <span>
+        {toBuy} {toBuy > 1 ? 'boxes' : 'box'}
+      </span>
+    );
   }
 
   return (
@@ -59,7 +63,6 @@ export default function QuantityRowTable(props: props) {
           value={quantityByUser}
           onChange={(e) => setQuantityByUser(e.target.value)}
           min={0}
-          max={50}
         />
       </td>
       <td>{stockage}</td>

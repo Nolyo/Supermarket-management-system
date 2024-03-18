@@ -1,6 +1,6 @@
 {
   "name": "supermarket-management",
-  "version": "1.5.0-beta",
+  "version": "1.5.0",
   "description": "Supermarket Management Using Electron Boilerplate",
   "license": "MIT",
   "author": {

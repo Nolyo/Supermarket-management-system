@@ -6,7 +6,7 @@
       "description": "This product is made to help you manage your stock in the Supermarket simulator game.",
       "stayConnect": "Join our discord to be kept informed of updates and developments",
       "generalData": {
-        "title": "General Data",
+        "title": "General info",
         "storage": "Storage",
         "employees": "Employees",
         "licenses": "Licenses",
@@ -37,6 +37,26 @@
         "averageCost": "Average Cost",
         "winRate": "Profit",
         "moreInfo": "More Infos"
+      },
+      "quantity": {
+        "title": "Set your quantity",
+        "quantity": "Quantity",
+        "halfSlot": "Half Slot",
+        "fullSlot": "Full Slot",
+        "fullShelf": "Full Shelf",
+        "fullRack": "Full Rack",
+        "countStore": "Count the store ?",
+        "perBox": "Per Box",
+        "desiredQuantity": "Desired quantity",
+        "toBuy": "To buy quantity",
+        "save": "Save",
+        "helpTitle": "How does it work?",
+        "help": "Set the quantity you want in your reserve (or reserve + store by checking the 'count the store' box). <br> The software calculates how many boxes are to be purchased. <br> Buttons and a custom field are available to quickly fill in the desired values. <br>Remember to save."
+      },
+      "navbar": {
+        "quantity": "Restocking",
+        "products": "Products",
+        "generalData": "General info"
       }
     }
   },
@@ -76,6 +96,26 @@
         "averageCost": "Prix moyen",
         "winRate": "Profit",
         "moreInfo": "More Infos"
+      },
+      "quantity": {
+        "title": "Définissez votre quantité",
+        "quantity": "Quantité",
+        "halfSlot": "Demi slot",
+        "fullSlot": "Slot plein",
+        "fullShelf": "Étagère pleine",
+        "fullRack": "Armoire pleine",
+        "countStore": "Compter le magasin ?",
+        "perBox": "Par boîte",
+        "desiredQuantity": "Quantité désirée",
+        "toBuy": "Quantité à acheter",
+        "save": "Sauvegarder",
+        "helpTitle": "Comment ça marche ?",
+        "help": "Définissez la quantité que vous souhaitez dans votre réserve (ou réserve + magasin en cochant la case 'compter le magasin'). <br> Le logiciel calcule combien de boîtes sont à acheter. <br> Des boutons ainsi qu'un champ personnalisé sont disponibles pour remplir rapidement les valeurs souhaitées. <br>Pensez à sauvegarder."
+      },
+      "navbar": {
+        "quantity": "Réapprovisionnement",
+        "products": "Produits",
+        "generalData": "Infos générales"
       }
     }
   },
@@ -117,6 +157,26 @@
         "averageCost": "Costo promedio",
         "winRate": "Ganancia",
         "moreInfo": "Más información"
+      },
+      "quantity": {
+        "title": "Establezca su cantidad",
+        "quantity": "Cantidad",
+        "halfSlot": "Medio espacio",
+        "fullSlot": "Espacio completo",
+        "fullShelf": "Estante completo",
+        "fullRack": "Rack completo",
+        "countStore": "¿Contar la tienda?",
+        "perBox": "Por caja",
+        "desiredQuantity": "Cantidad deseada",
+        "toBuy": "Cantidad a comprar",
+        "save": "Guardar",
+        "helpTitle": "¿Cómo funciona?",
+        "help": "Establezca la cantidad que desea en su reserva (o reserva + tienda marcando la casilla 'contar la tienda'). <br> El software calcula cuántas cajas se deben comprar. <br> Hay botones y un campo personalizado disponibles para llenar rápidamente los valores deseados. <br>Recuerde guardar."
+      },
+      "navbar": {
+        "quantity": "Reabastecimiento",
+        "products": "Productos",
+        "generalData": "Información general"
       }
     }
   },
@@ -158,6 +218,26 @@
         "averageCost": "Durchschnittskosten",
         "winRate": "Gewinn",
         "moreInfo": "Mehr Infos"
+      },
+      "quantity": {
+        "title": "Stellen Sie Ihre Menge ein",
+        "quantity": "Menge",
+        "halfSlot": "Halber Slot",
+        "fullSlot": "Voller Slot",
+        "fullShelf": "Volles Regal",
+        "fullRack": "Volles Rack",
+        "countStore": "Den Laden zählen?",
+        "perBox": "Pro Box",
+        "desiredQuantity": "Gewünschte Menge",
+        "toBuy": "Zu kaufende Menge",
+        "save": "Speichern",
+        "helpTitle": "Wie funktioniert es?",
+        "help": "Legen Sie die Menge fest, die Sie in Ihrem Reservat wünschen (oder Reservat + Laden, indem Sie das Kästchen 'den Laden zählen' ankreuzen). <br> Die Software berechnet, wie viele Kisten gekauft werden müssen. <br> Tasten und ein benutzerdefiniertes Feld sind verfügbar, um die gewünschten Werte schnell auszufüllen. <br>Denken Sie daran zu speichern."
+      },
+      "navbar": {
+        "quantity": "Wiederauffüllung",
+        "products": "Produkte",
+        "generalData": "Allgemeine Informationen"
       }
     }
   },
@@ -199,6 +279,26 @@
         "averageCost": "Gemiddelde Kostprijs",
         "winRate": "Winst",
         "moreInfo": "Meer Informatie"
+      },
+      "quantity": {
+        "title": "Stel uw hoeveelheid in",
+        "quantity": "Hoeveelheid",
+        "halfSlot": "Halve slot",
+        "fullSlot": "Volledige slot",
+        "fullShelf": "Volledige plank",
+        "fullRack": "Volledig rek",
+        "countStore": "De winkel tellen?",
+        "perBox": "Per doos",
+        "desiredQuantity": "Gewenste hoeveelheid",
+        "toBuy": "Hoeveelheid te kopen",
+        "save": "Opslaan",
+        "helpTitle": "Hoe werkt het?",
+        "help": "Stel de hoeveelheid in die u in uw reserve wilt hebben (of reserve + winkel door het vakje 'de winkel tellen' aan te vinken). <br> De software berekent hoeveel dozen er gekocht moeten worden. <br> Er zijn knoppen en een aangepast veld beschikbaar om de gewenste waarden snel in te vullen. <br>Denk eraan om op te slaan."
+      },
+      "navbar": {
+        "quantity": "Bijvullen",
+        "products": "Producten",
+        "generalData": "Algemene informatie"
       }
     }
   },
@@ -240,6 +340,26 @@
         "averageCost": "Costo medio",
         "winRate": "Guadagno",
         "moreInfo": "Ulteriori informazioni"
+      },
+      "quantity": {
+        "title": "Imposta la tua quantità",
+        "quantity": "Quantità",
+        "halfSlot": "Mezzo slot",
+        "fullSlot": "Slot completo",
+        "fullShelf": "Scaffale pieno",
+        "fullRack": "Rack completo",
+        "countStore": "Contare il negozio?",
+        "perBox": "Per scatola",
+        "desiredQuantity": "Quantità desiderata",
+        "toBuy": "Quantità da acquistare",
+        "save": "Salva",
+        "helpTitle": "Come funziona?",
+        "help": "Imposta la quantità che desideri nella tua riserva (o riserva + negozio spuntando la casella 'conta il negozio'). <br> Il software calcola quante scatole devono essere acquistate. <br> Ci sono pulsanti e un campo personalizzato disponibili per riempire rapidamente i valori desiderati. <br>Ricorda di salvare."
+      },
+      "navbar": {
+        "quantity": "Rifornimento",
+        "products": "Prodotti",
+        "generalData": "Informazioni generali"
       }
     }
   }

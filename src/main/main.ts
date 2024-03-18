@@ -18,17 +18,15 @@ import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 
 const appDataPath = process.env.APPDATA;
+const appName = 'supermarket-management';
+
 const logFilePath = path.join(
   appDataPath as string,
-  'supermarket-management',
+  appName,
   'logs',
   'log.log',
 );
-const logDir = path.join(
-  appDataPath as string,
-  'supermarket-management',
-  'logs',
-);
+const logDir = path.join(appDataPath as string, appName, 'logs');
 
 if (!fs.existsSync(logDir)) {
   log.info('Create logDir');
@@ -63,29 +61,14 @@ ipcMain.on('reload', async () => {
   mainWindow?.webContents.reload();
 });
 
-ipcMain.on('quantity', async (event, args) => {
-  const outputPath = path.join(
-    __dirname,
-    '../../.erb/scripts/quantity_by_user.json',
-  );
-  try {
-    fs.writeFileSync(outputPath, JSON.stringify(args, null, 2));
-    event.reply('quantity', true);
-  } catch (e: unknown) {
-    event.reply('quantity', false);
-
-    log.error(e);
-  }
-});
-
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
   sourceMapSupport.install();
 }
 
-// const isDebug =
-//   process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
-const isDebug = true;
+const isDebug =
+  process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
+// const isDebug = true;
 if (isDebug) {
   require('electron-debug')();
 }
@@ -98,8 +81,6 @@ const reloadData = async (event: IpcMainEvent, filePath: string) => {
 
     // In es3 alphanumeric keys are not quoted, so we need to add quotes to them
     const correctedData = data.replace(/([{,]\s*)(\d+)(\s*:)/g, '$1"$2"$3');
-    const tmpPath = path.join(os.tmpdir(), 'saveFile.es3');
-    fs.writeFileSync(tmpPath, correctedData, 'utf8');
 
     event.reply('get-save-file', correctedData);
   } catch (err) {
@@ -207,6 +188,61 @@ ipcMain.on('get-save-file', async (event) => {
   //     }
   //   });
   // }
+});
+
+ipcMain.on('set-quantity', async (event, args) => {
+  const outputPath = path.join(
+    appDataPath as string,
+    appName,
+    'quantity_by_user.json',
+  );
+  try {
+    fs.writeFileSync(outputPath, JSON.stringify(args, null, 2));
+    event.reply('set-quantity', true);
+  } catch (e: unknown) {
+    event.reply('set-quantity', false);
+
+    log.error(e);
+  }
+});
+
+// Listen for 'get-quantity' event
+ipcMain.on('get-quantity', async (event) => {
+  log.info(`Starting read quantity_by_user file`);
+
+  // Define the path for the user-specific file
+  const filePath = path.join(
+    appDataPath as string,
+    appName,
+    'quantity_by_user.json',
+  );
+
+  // Define the path for the default file
+  const defaultFilePath = path.join(
+    process.resourcesPath,
+    'assets/quantity_by_user.json',
+  );
+
+  let data;
+  try {
+    // Check if the user-specific file exists
+    if (!fs.existsSync(filePath)) {
+      // If not, read the default file and write its content to the user-specific file
+      data = fs.readFileSync(defaultFilePath, 'utf8');
+      fs.writeFileSync(filePath, data);
+      log.info(`Created file ${filePath} with size ${data.length} bytes`);
+    } else {
+      // If the user-specific file exists, read its content
+      data = fs.readFileSync(filePath, 'utf8');
+      log.info(`Read file ${filePath} with size ${data.length} bytes`);
+    }
+
+    // Send the content back to the renderer process
+    event.reply('get-quantity', data);
+  } catch (e: unknown) {
+    // Log any error that occurs during the file operations
+    log.error(e);
+  }
 });
 
 app.on('window-all-closed', () => {

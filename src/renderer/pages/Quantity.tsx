@@ -1,7 +1,6 @@
 import { FormEvent, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import items from '../../../.erb/scripts/items.json';
-import quantityUser from '../../../.erb/scripts/quantity_by_user.json';
 import { AssociatedItems, lngType } from '../../main/type';
 import QuantityRowTable from '../components/QuantityRowTable';
 
@@ -12,16 +11,21 @@ type PropsType = {
 export default function Quantity(props: PropsType) {
   const { associated } = props;
   const [userLng, setUserLng] = useState<lngType>('en');
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [countStore, setCountStore] = useState<boolean>(false);
+  const [showHelp, setShowHelp] = useState<boolean>(false);
+  const [quantityUserRaw, setQuantityUserRaw] = useState<Array<{
+    id: string;
+    quantity: string;
+  }> | null>(null);
 
   const list = [
-    { action: 'half-slot', name: 'Half Slot' },
-    { action: 'slot', name: 'Full Slot' },
-    { action: 'shelf', name: 'Full Shelfe' },
-    { action: 'rack', name: 'Full Rack Slot' },
+    { action: 'half-slot', name: 'quantity.halfSlot' },
+    { action: 'slot', name: 'quantity.fullSlot' },
+    { action: 'shelf', name: 'quantity.fullShelf' },
+    { action: 'rack', name: 'quantity.fullRack' },
   ];
 
   useEffect(() => {
@@ -36,13 +40,21 @@ export default function Quantity(props: PropsType) {
 
   useEffect(() => {
     if (window.electron) {
-      window.electron.ipcRenderer.on('quantity', async (arg) => {
+      window.electron.ipcRenderer.on('set-quantity', async (arg) => {
         if (!arg) {
           setError('Error while save quantity');
         } else {
           setSuccess('Quantity saved');
+          window.electron.ipcRenderer.sendMessage('get-quantity');
         }
       });
+      window.electron.ipcRenderer.on('get-quantity', async (arg) => {
+        const data: { id: string; quantity: string }[] = JSON.parse(
+          arg as string,
+        );
+        setQuantityUserRaw(data);
+      });
+      window.electron.ipcRenderer.sendMessage('get-quantity');
     }
   }, []);
 
@@ -104,7 +116,7 @@ export default function Quantity(props: PropsType) {
         quantity: (input as HTMLInputElement).value,
       });
     });
-    window.electron.ipcRenderer.sendMessage('quantity', itemsQuantities);
+    window.electron.ipcRenderer.sendMessage('set-quantity', itemsQuantities);
   }
 
   // ClicK on Set Button
@@ -123,6 +135,7 @@ export default function Quantity(props: PropsType) {
           userLng={userLng}
           asso={asso}
           countStore={countStore}
+          quantityUserRaw={quantityUserRaw}
         />
       );
     });
@@ -130,18 +143,33 @@ export default function Quantity(props: PropsType) {
 
   return (
     <div className="quantity">
-      <h1 className="center">Set your quantity</h1>
+      <h1 className="center">{t('quantity.title')}</h1>
+      <div className="flex">
+        <button
+          onClick={() => setShowHelp(!showHelp)}
+          className="btn-help"
+          type="button"
+        >
+          {t('quantity.helpTitle')}
+        </button>
+      </div>
+      {showHelp && (
+        <div
+          className="flex"
+          dangerouslySetInnerHTML={{ __html: t('quantity.help') }}
+        />
+      )}
       <form onSubmit={handleSubmit}>
         <div className="line">
           <div>
-            {list.map((nb) => {
+            {list.map((btn) => {
               return (
                 <button
-                  key={nb.action}
-                  onClick={() => handleSetAllItems(nb.action)}
+                  key={btn.action}
+                  onClick={() => handleSetAllItems(btn.action)}
                   type="button"
                 >
-                  {nb.name}
+                  {t(btn.name)}
                 </button>
               );
             })}
@@ -149,18 +177,19 @@ export default function Quantity(props: PropsType) {
               onChange={setCustom}
               type="number"
               className="all-quantity"
-              placeholder="Quantity"
+              placeholder={t('quantity.quantity')}
             />
             <button type="submit" className="btn-primary">
-              Save
+              {t('quantity.save')}
             </button>
           </div>
           <div>
-            {error && error}
+            {error && <div className="error">{error}</div>}
             {success && <div className="success">{success}</div>}
             <label htmlFor="countStore">
-              Count Store
+              {t('quantity.countStore')}
               <input
+                id="countStore"
                 type="checkbox"
                 checked={countStore}
                 onChange={() => setCountStore(!countStore)}
@@ -171,12 +200,12 @@ export default function Quantity(props: PropsType) {
         <table className="table">
           <thead>
             <tr>
-              <th>Image</th>
-              <th>Nom</th>
-              <th>Par boite</th>
-              <th>Desired quantity</th>
-              <th>Stock</th>
-              <th>To buy quantity</th>
+              <th>{t('products.img')}</th>
+              <th>{t('products.product')}</th>
+              <th>{t('quantity.perBox')}</th>
+              <th>{t('quantity.desiredQuantity')}</th>
+              <th>{t('products.stockage')}</th>
+              <th>{t('quantity.toBuy')}</th>
             </tr>
           </thead>
           <tbody>

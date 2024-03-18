@@ -6,20 +6,17 @@ export type Channels = 'ipc-example';
 export type SaveFile = 'get-save-file';
 export type Reload = 'reload';
 export type Log = 'log';
-export type Quantity = 'quantity';
+export type SetQuantity = 'set-quantity';
+export type GetQuantity = 'get-quantity';
+
+type Msg = Channels | SaveFile | Reload | Log | SetQuantity | GetQuantity;
 
 const electronHandler = {
   ipcRenderer: {
-    sendMessage(
-      channel: Channels | SaveFile | Reload | Log | Quantity,
-      ...args: unknown[]
-    ) {
+    sendMessage(channel: Msg, ...args: unknown[]) {
       ipcRenderer.send(channel, ...args);
     },
-    on(
-      channel: Channels | SaveFile | Reload | Log | Quantity,
-      func: (...args: unknown[]) => void,
-    ) {
+    on(channel: Msg, func: (...args: unknown[]) => void) {
       const subscription = (_event: IpcRendererEvent, ...args: unknown[]) =>
         func(...args);
       ipcRenderer.on(channel, subscription);
@@ -28,10 +25,7 @@ const electronHandler = {
         ipcRenderer.removeListener(channel, subscription);
       };
     },
-    once(
-      channel: Channels | SaveFile | Reload | Log | Quantity,
-      func: (...args: unknown[]) => void,
-    ) {
+    once(channel: Msg, func: (...args: unknown[]) => void) {
       ipcRenderer.once(channel, (_event, ...args) => func(...args));
     },
   },

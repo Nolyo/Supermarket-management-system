@@ -239,13 +239,13 @@ export default class MenuBuilder {
                     );
                   },
                 },
-                // {
-                //   label: 'Toggle &Developer Tools',
-                //   accelerator: 'Alt+Ctrl+I',
-                //   click: () => {
-                //     this.mainWindow.webContents.toggleDevTools();
-                //   },
-                // },
+                {
+                  label: 'Toggle &Developer Tools',
+                  accelerator: 'Alt+Ctrl+I',
+                  click: () => {
+                    this.mainWindow.webContents.toggleDevTools();
+                  },
+                },
               ]
             : [
                 {
@@ -264,13 +264,13 @@ export default class MenuBuilder {
                     this.mainWindow.webContents.reload();
                   },
                 },
-                {
-                  label: 'Toggle &Developer Tools',
-                  accelerator: 'Alt+Ctrl+I',
-                  click: () => {
-                    this.mainWindow.webContents.toggleDevTools();
-                  },
-                },
+                // {
+                //   label: 'Toggle &Developer Tools',
+                //   accelerator: 'Alt+Ctrl+I',
+                //   click: () => {
+                //     this.mainWindow.webContents.toggleDevTools();
+                //   },
+                // },
               ],
       },
       {
@@ -280,7 +280,7 @@ export default class MenuBuilder {
         },
       },
       {
-        label: '1.5.0 beta',
+        label: '1.5.0',
         click() {
           shell.openExternal(
             'https://github.com/Nolyo/Supermarket-management-system/releases',

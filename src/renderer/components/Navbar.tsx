@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import discord from '../../../assets/discord.svg';
@@ -22,26 +22,23 @@ export default function Navbar() {
     }
   }, [pathname]);
 
-  function handleClick(type: 'general' | 'products') {
-    route(`/${type}`);
-  }
-
   return (
     <div className="navbar">
       <div>
         <button
-          onClick={() => handleClick('general')}
+          onClick={() => route('/general')}
           className={active === 'general' ? 'active' : ''}
           type="button"
         >
-          {t('generalData.title')}
+          {t('navbar.generalData')}
         </button>
+
         <button
-          onClick={() => handleClick('products')}
+          onClick={() => route('/products')}
           className={active === 'products' ? 'active' : ''}
           type="button"
         >
-          {t('products.title')}
+          {t('navbar.products')}
         </button>
 
         <button
@@ -50,7 +47,15 @@ export default function Navbar() {
           className={active === 'quantity' ? 'active' : ''}
           type="button"
         >
-          {t('Quantity')}
+          {t('navbar.quantity')}
+        </button>
+
+        <button
+          onClick={() => window.electron.ipcRenderer.sendMessage('reload')}
+          // onClick={() => alert('Soon')}
+          type="button"
+        >
+          {t('products.refresh')}
         </button>
       </div>
       <Link

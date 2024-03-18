@@ -20,7 +20,9 @@ import './App.css';
 
 export default function App() {
   const [row, setRow] = useState<SaveFileType | null>(null);
-  const [associated, setAssociated] = useState<AssociatedItems>({});
+  const [associated, setAssociated] = useState<AssociatedItems>(
+    {} as AssociatedItems,
+  );
   const [error, setError] = useState<string | null>(null);
 
   const reloadData = useCallback(() => {

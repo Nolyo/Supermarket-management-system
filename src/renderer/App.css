@@ -125,8 +125,15 @@ a:hover {
 }
 
 .success {
-  color: green;
+  color: #fff;
+  background-color: green;
   font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 1px solid green;
+  border-radius: 7px;
+  padding: 20px;
 }
 
 .center {
@@ -210,7 +217,9 @@ button.active {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
+  align-items: center;
 }
+
 .line div {
   display: flex;
   gap: 10px;
@@ -221,11 +230,24 @@ button.active {
   color: #fff;
 }
 
+.btn-help {
+  background-color: transparent;
+  border: 2px solid #c1c4ce;
+  color: #fff;
+}
+
 input[type='checkbox'] {
   width: 30px;
 }
 
 .error {
-  font-size: 2em;
-  color: red;
+  color: #fff;
+  background-color: red;
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 1px solid red;
+  border-radius: 7px;
+  padding: 20px;
 }
