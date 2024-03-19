@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import items from '../../../.erb/scripts/items.json';
-import { AssociatedItems, OrderBy, lngType } from '../../main/type';
+import { AssociatedItems, OrderBy } from '../../main/type';
 import QuantityRowTable from '../components/QuantityRowTable';
 import HeadQuantity from '../components/HeadQuantity';
 
@@ -9,22 +9,15 @@ type PropsType = {
   associated: AssociatedItems;
   countStore: boolean;
   orderBy: OrderBy;
-  userLng: lngType;
   setCountStore: (arg0: boolean) => void;
   setOrderBy: (arg0: OrderBy) => void;
 };
 
 export default function Quantity(props: PropsType) {
-  const {
-    associated,
-    countStore,
-    setCountStore,
-    orderBy,
-    setOrderBy,
-    userLng,
-  } = props;
+  const { associated, countStore, setCountStore, orderBy, setOrderBy } = props;
   const { t } = useTranslation();
   const [showHelp, setShowHelp] = useState<boolean>(false);
+  const [showLocked, setShowLocked] = useState<boolean>(false);
 
   // Click on Save or press enter in form
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -43,10 +36,8 @@ export default function Quantity(props: PropsType) {
 
   const Tbody = () => {
     return associated.map((asso) => {
-      if (!asso.userPrice) return null;
-      return (
-        <QuantityRowTable key={asso.item.id} userLng={userLng} asso={asso} />
-      );
+      if (!showLocked && !asso.userPrice) return null;
+      return <QuantityRowTable key={asso.item.id} asso={asso} />;
     });
   };
 
@@ -75,6 +66,8 @@ export default function Quantity(props: PropsType) {
           setCountStore={setCountStore}
           orderBy={orderBy}
           setOrderBy={setOrderBy}
+          showLocked={showLocked}
+          setShowLocked={setShowLocked}
         />
         <table className="table">
           <thead>
