@@ -24,7 +24,7 @@ export type RackData = {
   RackSlots: Array<RackSlot>;
 };
 
-export type DailyPriceChanges = {
+export type DailyPriceChange = {
   ProductID: number;
   Price: number;
 };
@@ -46,7 +46,7 @@ export type CommonSave = {
     Money?: number;
     RackDatas?: Array<RackData>;
     DisplayedProductData?: DisplayedProductData;
-    DailyPriceChanges?: DailyPriceChanges;
+    DailyPriceChanges?: DailyPriceChange[];
     PreviousPrices?: Array<Price>;
     Prices?: Array<Price>;
     PricesSetByPlayer: Array<Price>;
@@ -59,6 +59,31 @@ export type CommonSave = {
   };
 };
 
+export type lngType = 'en' | 'fr' | 'es' | 'de' | 'nl' | 'it';
+
+export type Item = {
+  id: string;
+  img: string;
+  brand: string;
+  name: { [key in lngType]: string };
+  quantity: string;
+  storageType: string;
+};
+
+export type AssociatedItem = {
+  item: Item;
+  rackCount: number;
+  storeCount: number;
+  marketPrice?: number;
+  userPrice?: number;
+  averageCost?: number;
+  quantityByUser: string;
+  boxToBuy: number;
+  stockage: number; // countRack + countStore?
+};
+
+export type AssociatedItems = AssociatedItem[];
+
 type SaveFileType = {
   Storage: CommonSave;
   Employees: CommonSave;
@@ -69,26 +94,11 @@ type SaveFileType = {
   Progression: CommonSave;
 };
 
-export type Item = {
+export type QuantityUserFile = {
   id: string;
-  img: string;
-  brand: string;
-  name: { fr: string; en: string; es: string; it: string; de: string };
   quantity: string;
-  storageType: string;
 };
 
-export type AssociatedItem = {
-  rackCount?: number;
-  item: Item;
-  storeCount?: number;
-  marketPrice?: number;
-  userPrice?: number;
-  averageCost?: number;
-};
-
-export type AssociatedItems = AssociatedItem[];
-
-export type lngType = 'en' | 'fr' | 'es' | 'de' | 'nl' | 'it';
+export type OrderBy = 'box' | 'default' | 'name';
 
 export default SaveFileType;

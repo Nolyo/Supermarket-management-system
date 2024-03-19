@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import SaveFileType, { DailyPriceChanges, Item } from '../../main/type';
+import SaveFileType, { Item, lngType } from '../../main/type';
 import Card from './Card';
 import items from '../../../.erb/scripts/items.json';
 import upArrowRed from '../../../assets/up-arrow-red.svg';
@@ -8,15 +8,13 @@ import formatDollar from '../utils';
 
 type PriceChangedType = {
   data: SaveFileType;
-  userLng: string;
+  userLng: lngType;
 };
 export default function PriceChanged(props: PriceChangedType) {
   const { data, userLng } = props;
   const { t } = useTranslation();
-  const priceChangeds = data.Price.value.DailyPriceChanges;
-
-  const priceChangedElement = Object.keys(priceChangeds || {}).map((i) => {
-    const price: DailyPriceChanges = priceChangeds?.[parseInt(i, 10)];
+  const priceChangeds = data.Price.value.DailyPriceChanges || [];
+  const priceChangedElement = priceChangeds.map((price) => {
     const item: Item | undefined = items.find(
       (it) => parseInt(it.id, 10) === price.ProductID,
     );
@@ -36,7 +34,7 @@ export default function PriceChanged(props: PriceChangedType) {
 
     return (
       <Card
-        key={i}
+        key={item.id}
         title={
           <div
             style={{
@@ -78,5 +76,6 @@ export default function PriceChanged(props: PriceChangedType) {
       />
     );
   });
+
   return <div className="flex">{priceChangedElement}</div>;
 }

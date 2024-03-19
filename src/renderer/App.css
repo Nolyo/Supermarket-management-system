@@ -19,7 +19,7 @@ body {
 }
 
 #root {
-  min-width: 1280px;
+  min-width: 968px;
 }
 
 button {
@@ -183,7 +183,8 @@ a:hover {
   justify-content: center;
   gap: 10px;
   background-color: #1f1d34;
-  width: calc(100vw);
+  min-width: calc(100%);
+  width: 100vw;
   padding: 20px 0;
   align-items: center;
 }
@@ -223,6 +224,8 @@ button.active {
 .line div {
   display: flex;
   gap: 10px;
+  align-items: center;
+  flex-shrink: 1;
 }
 
 .btn-primary {
@@ -250,4 +253,13 @@ input[type='checkbox'] {
   border: 1px solid red;
   border-radius: 7px;
   padding: 20px;
+}
+
+select#orderBy {
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.all-quantity {
+  padding: 10px;
 }

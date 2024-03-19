@@ -13,7 +13,7 @@ export default function Products(props: GeneralDataProps) {
   const { associated, data } = props;
   const { t, i18n } = useTranslation();
   const [search, setSearch] = useState('');
-  const [filtered, setFiltered] = useState<AssociatedItems>({});
+  const [filtered, setFiltered] = useState<AssociatedItems>([]);
   const [userLng, setUserLng] = useState<lngType>('en');
   const [moreInfo, setMoreInfo] = useState<boolean>(true);
 
@@ -42,7 +42,7 @@ export default function Products(props: GeneralDataProps) {
         itemName.toLowerCase().includes(search.toLowerCase()) ||
         item.item.brand.toLowerCase().includes(search.toLowerCase())
       ) {
-        (acc as { [key: string]: typeof item })[key] = item;
+        acc[parseInt(key, 10)] = item;
       }
       return acc;
     }, {} as AssociatedItems);
@@ -127,7 +127,7 @@ export default function Products(props: GeneralDataProps) {
                   />
                 </td>
                 <td>
-                  {(item.item.name as { [key: string]: string })[userLng]}
+                  {item.item.name[userLng]}
                   {item.item.brand} ({item.item.quantity})
                 </td>
                 <td>{item.storeCount || 0}</td>

@@ -21,6 +21,7 @@ export default function GeneralData(props: GeneralDataProps) {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
+    // eslint-disable-next-line no-console
     console.log(i18n.language);
   }, [i18n]);
 
