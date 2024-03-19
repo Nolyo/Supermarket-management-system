@@ -49,14 +49,14 @@ export default function Navbar() {
         >
           {t('navbar.quantity')}
         </button>
-
+        {/*
         <button
           onClick={() => window.electron.ipcRenderer.sendMessage('reload')}
           // onClick={() => alert('Soon')}
           type="button"
         >
           {t('products.refresh')}
-        </button>
+        </button> */}
       </div>
       <Link
         title="Join our community"

@@ -59,16 +59,6 @@ export type CommonSave = {
   };
 };
 
-type SaveFileType = {
-  Storage: CommonSave;
-  Employees: CommonSave;
-  Expenses: CommonSave;
-  Price: CommonSave;
-  Onboarding: CommonSave;
-  Quality: CommonSave;
-  Progression: CommonSave;
-};
-
 export type lngType = 'en' | 'fr' | 'es' | 'de' | 'nl' | 'it';
 
 export type Item = {
@@ -81,14 +71,34 @@ export type Item = {
 };
 
 export type AssociatedItem = {
-  rackCount?: number;
   item: Item;
-  storeCount?: number;
+  rackCount: number;
+  storeCount: number;
   marketPrice?: number;
   userPrice?: number;
   averageCost?: number;
+  quantityByUser: string;
+  boxToBuy: number;
+  stockage: number; // countRack + countStore?
 };
 
 export type AssociatedItems = AssociatedItem[];
+
+type SaveFileType = {
+  Storage: CommonSave;
+  Employees: CommonSave;
+  Expenses: CommonSave;
+  Price: CommonSave;
+  Onboarding: CommonSave;
+  Quality: CommonSave;
+  Progression: CommonSave;
+};
+
+export type QuantityUserFile = {
+  id: string;
+  quantity: string;
+};
+
+export type OrderBy = 'box' | 'default' | 'name';
 
 export default SaveFileType;

@@ -1,7 +1,8 @@
 import SaveFileType, {
+  AssociatedItem,
   AssociatedItems,
   DisplayedProductData,
-  Item,
+  QuantityUserFile,
   RackData,
 } from '../main/type';
 import items from '../../.erb/scripts/items.json';
@@ -50,6 +51,7 @@ export function associatePriceToItem(
   return datas;
 }
 
+// products = { 'id': count }[];
 export function associateProductsAndItems(
   products: DisplayedProductData,
   type = 'rack',
@@ -69,10 +71,13 @@ export function associateProductsAndItems(
         associated[parseInt(id)].rackCount = value;
       }
     } else {
-      let obj: { rackCount: number; item: Item; storeCount: number } = {
+      let obj: AssociatedItem = {
         item,
         rackCount: 0,
         storeCount: 0,
+        boxToBuy: 0,
+        quantityByUser: '0',
+        stockage: 0,
       };
       if (type === 'store') {
         obj.storeCount += products[id];
@@ -147,4 +152,74 @@ export function sortObjectsBySum(objects: AssociatedItems) {
     }))
     .sort((a, b) => a.sum - b.sum)
     .map(({ id }) => objects[parseInt(id, 10)]);
+}
+
+// Restocking
+function calculateQuantity(associatedItem: AssociatedItem): number {
+  // Extraire le nombre après le 'x' dans item.quantity
+  const quantity = parseInt(associatedItem.item.quantity.replace('x', ''), 10);
+
+  // Calculer le produit de quantityByUser et quantity
+  const totalQuantity = parseInt(associatedItem.quantityByUser, 10) * quantity;
+
+  const toBuy = Math.floor(
+    (totalQuantity - associatedItem.stockage) / quantity,
+  );
+
+  return toBuy;
+}
+
+function addBoxToBuyToAssociatedItem(
+  associatedItems: AssociatedItems,
+  quantityUserFile: QuantityUserFile[],
+  countStore: boolean,
+): AssociatedItems {
+  const assoItemsWithUserData = items.map((item) => {
+    let asso = associatedItems.find((ass) => ass.item.id === item.id);
+    const quantityUser = quantityUserFile?.find((q) => q.id === item.id);
+    if (!asso) {
+      asso = {
+        item,
+        rackCount: 0,
+        storeCount: 0,
+        boxToBuy: 0,
+        quantityByUser: '0',
+        stockage: 0,
+      };
+    }
+    asso.quantityByUser = quantityUser?.quantity || '0';
+    let total = asso?.rackCount || 0;
+    if (countStore) {
+      total += asso?.storeCount || 0;
+    }
+    asso.stockage = total;
+    const toBuy = calculateQuantity(asso);
+    asso.boxToBuy = toBuy > 0 ? toBuy : 0;
+
+    return asso;
+  });
+
+  return assoItemsWithUserData as AssociatedItems;
+}
+
+export function makeAssociatedItems(
+  saveFile: SaveFileType,
+  quantityUserFile: QuantityUserFile[],
+  countStore: boolean,
+) {
+  const inRack = countItemInRack(saveFile);
+  const onFloorAndRack = countItemOnFloor(saveFile, inRack);
+  const data = countItemInStore(saveFile, onFloorAndRack);
+  const notSorted = associatePriceToItem(saveFile, data);
+  const sorted = sortObjectsBySum(notSorted);
+  const withBoxToBuy = addBoxToBuyToAssociatedItem(
+    sorted,
+    quantityUserFile,
+    countStore,
+  );
+
+  // eslint-disable-next-line no-console
+  // console.log('Associated items and count:', sorted);
+
+  return withBoxToBuy;
 }
