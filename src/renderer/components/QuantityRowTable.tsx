@@ -1,14 +1,16 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { AssociatedItem, lngType } from '../../main/type';
 
 type props = {
-  userLng: lngType;
   asso: AssociatedItem;
 };
 
 export default function QuantityRowTable(props: props) {
-  const { userLng, asso } = props;
+  const { asso } = props;
   const { item } = asso;
+  const { i18n } = useTranslation();
+  const [userLng] = useState<lngType>(i18n.language as lngType);
   const [quantityByUser, setQuantityByUser] = useState<string>(
     asso.quantityByUser.toString(),
   );

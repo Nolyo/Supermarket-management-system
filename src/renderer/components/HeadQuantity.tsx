@@ -2,17 +2,28 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import items from '../../../.erb/scripts/items.json';
 import { OrderBy } from '../../main/type';
+import settings from '../../../assets/settings.svg';
 
 type Props = {
   countStore: boolean;
   setCountStore: (arg0: boolean) => void;
   setOrderBy: (arg0: OrderBy) => void;
   orderBy: OrderBy;
+  showLocked: boolean;
+  setShowLocked: (arg0: boolean) => void;
 };
 export default function HeadQuantity(props: Props) {
-  const { countStore, setCountStore, setOrderBy, orderBy } = props;
+  const {
+    countStore,
+    setCountStore,
+    setOrderBy,
+    orderBy,
+    setShowLocked,
+    showLocked,
+  } = props;
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [showSettings, setShowSettings] = useState<boolean>(false);
   const { t } = useTranslation();
   const list = [
     { action: 'half-slot', name: 'quantity.halfSlot' },
@@ -87,6 +98,7 @@ export default function HeadQuantity(props: Props) {
 
   return (
     <div className="line">
+      {/* Button slot / shelf / rack */}
       <div>
         {list.map((btn) => {
           return (
@@ -108,36 +120,64 @@ export default function HeadQuantity(props: Props) {
         <button type="submit" className="btn-primary">
           {t('quantity.save')}
         </button>
-        <label htmlFor="countStore">
-          {t('quantity.countStore')}
-          <input
-            id="countStore"
-            type="checkbox"
-            checked={countStore}
-            onChange={() => setCountStore(!countStore)}
-          />
-        </label>
       </div>
-      <div>
-        {error && <div className="error">{error}</div>}
-        {success && <div className="success">{success}</div>}
-        <select
-          name="orderBy"
-          id="orderBy"
-          value={orderBy}
-          onChange={(e) => setOrderBy(e.target.value as OrderBy)}
+
+      {/* Settings */}
+      <div className="settings-line">
+        {showSettings && (
+          <div className="settings-content">
+            <select
+              name="orderBy"
+              id="orderBy"
+              value={orderBy}
+              onChange={(e) => setOrderBy(e.target.value as OrderBy)}
+            >
+              <option aria-label="Default" value="default">
+                Default
+              </option>
+              <option aria-label="Box to buy" value="box">
+                Box To buy
+              </option>
+              <option aria-label="Name" value="name">
+                Name
+              </option>
+            </select>
+            <label htmlFor="countStore">
+              {t('quantity.countStore')}
+              <input
+                id="countStore"
+                type="checkbox"
+                checked={countStore}
+                onChange={() => setCountStore(!countStore)}
+              />
+            </label>
+            <label htmlFor="showUnlocked">
+              {t('quantity.showLocked')}
+              <input
+                id="showUnlocked"
+                type="checkbox"
+                checked={showLocked}
+                onChange={() => setShowLocked(!showLocked)}
+              />
+            </label>
+          </div>
+        )}
+
+        <button
+          onClick={() => setShowSettings(!showSettings)}
+          className="btn-settings"
+          type="button"
         >
-          <option aria-label="Default" value="default">
-            Default
-          </option>
-          <option aria-label="Box to buy" value="box">
-            Box To buy
-          </option>
-          <option aria-label="Name" value="name">
-            Name
-          </option>
-        </select>
+          <img
+            src={settings}
+            width={35}
+            alt={t('quantity.settings')}
+            className="settings"
+          />
+        </button>
       </div>
+      {error && <div className="error">{error}</div>}
+      {success && <div className="success">{success}</div>}
     </div>
   );
 }

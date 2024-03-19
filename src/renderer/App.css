@@ -218,7 +218,7 @@ button.active {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .line div {
@@ -226,6 +226,24 @@ button.active {
   gap: 10px;
   align-items: center;
   flex-shrink: 1;
+}
+
+.line .settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 1;
+  border: 1px solid #0d1018;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #a3a7b3;
+  color: #030b20;
+}
+
+.line .settings-line {
+  display: flex;
+  align-items: flex-end;
 }
 
 .btn-primary {
@@ -236,6 +254,18 @@ button.active {
 .btn-help {
   background-color: transparent;
   border: 2px solid #c1c4ce;
+  color: #fff;
+}
+
+.btn-settings {
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-transparent {
+  background-color: transparent;
   color: #fff;
 }
 
@@ -258,6 +288,7 @@ input[type='checkbox'] {
 select#orderBy {
   padding: 10px;
   border-radius: 7px;
+  width: 100%;
 }
 
 .all-quantity {
