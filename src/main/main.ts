@@ -8,27 +8,34 @@
  * When running `npm run build` or `npm run build:main`, this file is compiled to
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
-import path from 'path';
-import fs from 'fs';
-import os from 'os';
-import {
-  app,
-  BrowserWindow,
-  shell,
-  ipcMain,
-  IpcMainEvent,
-  screen,
-} from 'electron';
+import { app, BrowserWindow, shell, ipcMain, IpcMainEvent } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import chokidar from 'chokidar';
 import log from 'electron-log';
+import path from 'path';
+import fs from 'fs';
+import os from 'os';
+
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
+
+const appInsights = require('applicationinsights');
+
+appInsights.setup('d44ad9ee-8872-49df-b039-722ce6bc15ac').start();
+appInsights.defaultClient.trackEvent({
+  name: 'Started app',
+  properties: {
+    version: '1.5.4',
+    platform: process.platform,
+    arch: process.arch,
+  },
+});
 
 const appDataPath = process.env.APPDATA;
 const appName = 'supermarket-management';
 
 const settingsPath = path.join(appDataPath as string, appName, 'settings.json');
+let isQuitting = false;
 
 const logFilePath = path.join(
   appDataPath as string,
@@ -58,12 +65,14 @@ class AppUpdater {
 }
 
 let mainWindow: BrowserWindow | null = null;
+
 let settings: { x: number; y: number; width: number; height: number } = {
   x: 0,
   y: 0,
   width: 1024,
   height: 728,
 };
+
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
   console.log(msgTemplate(arg));
@@ -89,7 +98,11 @@ if (isDebug) {
   require('electron-debug')();
 }
 
-const reloadData = async (event: IpcMainEvent, filePath: string) => {
+const reloadData = async (
+  event: IpcMainEvent,
+  filePath: string,
+  isErrorHasReload = false,
+) => {
   try {
     log.info('Attempting to read the backup file');
     const stream = fs.createReadStream(filePath, { encoding: 'utf8' });
@@ -103,16 +116,19 @@ const reloadData = async (event: IpcMainEvent, filePath: string) => {
       event.reply('get-save-file', correctedData);
     });
     stream.on('error', (err) => {
-      log.error(err);
+      if (!isErrorHasReload) {
+        appInsights.defaultClient.trackException({ exception: err });
+        log.error(err);
+      }
       setTimeout(() => {
-        reloadData(event, filePath);
+        reloadData(event, filePath, true);
       }, 1200);
     });
   } catch (err) {
     log.error(err);
     setTimeout(() => {
-      reloadData(event, filePath);
-    }, 1200);
+      reloadData(event, filePath, true);
+    }, 2000);
   }
 };
 
@@ -253,7 +269,7 @@ ipcMain.on('set-quantity', async (event, args) => {
     event.reply('set-quantity', true);
   } catch (e: unknown) {
     event.reply('set-quantity', false);
-
+    appInsights.defaultClient.trackException({ exception: e });
     log.error(e);
   }
 });
@@ -294,21 +310,24 @@ ipcMain.on('get-quantity', async (event) => {
   } catch (e: unknown) {
     // Log any error that occurs during the file operations
     log.error(e);
+    appInsights.defaultClient.trackException({ exception: e });
   }
 });
-
-let isQuitting = false;
 
 app.on('before-quit', (event) => {
   if (!isQuitting) {
     event.preventDefault();
-    // Ici, vous pouvez sauvegarder votre fichier
-    fs.writeFileSync(
-      path.join(appDataPath as string, appName, 'settings.json'),
-      JSON.stringify(settings),
-    );
-    isQuitting = true;
-    app.quit();
+    try {
+      fs.writeFileSync(
+        path.join(appDataPath as string, appName, 'settings.json'),
+        JSON.stringify(settings),
+      );
+      isQuitting = true;
+      app.quit();
+    } catch (e) {
+      log.error(e);
+      appInsights.defaultClient.trackException({ exception: e });
+    }
   }
 });
 

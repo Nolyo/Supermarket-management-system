@@ -5,6 +5,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import { merge } from 'webpack-merge';
+import Dotenv from 'dotenv-webpack';
 import baseConfig from './webpack.config.base';
 import webpackPaths from './webpack.paths';
 import { dependencies } from '../../package.json';
@@ -71,6 +72,8 @@ const configuration: webpack.Configuration = {
         },
       },
     }),
+
+    new Dotenv(),
   ],
 };
 

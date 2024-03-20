@@ -7,6 +7,7 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import Dotenv from 'dotenv-webpack';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import { merge } from 'webpack-merge';
 import TerserPlugin from 'terser-webpack-plugin';
@@ -129,12 +130,14 @@ const configuration: webpack.Configuration = {
         removeComments: true,
       },
       isBrowser: false,
+      env: process.env,
       isDevelopment: false,
     }),
 
     new webpack.DefinePlugin({
       'process.type': '"renderer"',
     }),
+    new Dotenv(),
   ],
 };
 

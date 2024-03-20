@@ -86,8 +86,10 @@
     }
   },
   "dependencies": {
+    "@microsoft/applicationinsights-web": "^3.1.1",
     "applicationinsights": "^2.9.5",
     "chokidar": "^3.6.0",
+    "dotenv": "^16.4.5",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
     "electron-updater": "^6.1.4",
@@ -124,6 +126,7 @@
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "detect-port": "^1.5.1",
+    "dotenv-webpack": "^8.0.1",
     "electron": "^26.2.1",
     "electron-builder": "^24.6.4",
     "electron-devtools-installer": "^3.2.0",

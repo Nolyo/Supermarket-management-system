@@ -20,7 +20,6 @@ import './App.css';
 
 export default function App() {
   const { i18n } = useTranslation();
-
   const [saveFile, setSaveFile] = useState<SaveFileType | null>(null);
   const [quantityUserFile, setQuantityFile] = useState<QuantityUserFile[]>([]);
   const [associated, setAssociated] = useState<AssociatedItems>([]);
