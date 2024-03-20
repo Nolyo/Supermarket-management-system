@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useInsights from '../hooks/useInsights';
+
 import discord from '../../../assets/discord.svg';
 
 export default function Navbar() {
@@ -11,6 +13,7 @@ export default function Navbar() {
   const route = useNavigate();
   const location = useLocation();
   const { pathname } = location;
+  const appInsights = useInsights();
 
   useEffect(() => {
     if (pathname === '/quantity') {
@@ -20,7 +23,10 @@ export default function Navbar() {
     } else {
       setActive('products');
     }
-  }, [pathname]);
+    if (appInsights) {
+      appInsights.trackPageView({ uri: pathname });
+    }
+  }, [pathname, appInsights]);
 
   return (
     <div className="navbar">
