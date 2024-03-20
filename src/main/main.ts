@@ -11,7 +11,14 @@
 import path from 'path';
 import fs from 'fs';
 import os from 'os';
-import { app, BrowserWindow, shell, ipcMain, IpcMainEvent } from 'electron';
+import {
+  app,
+  BrowserWindow,
+  shell,
+  ipcMain,
+  IpcMainEvent,
+  screen,
+} from 'electron';
 import { autoUpdater } from 'electron-updater';
 import chokidar from 'chokidar';
 import log from 'electron-log';
@@ -20,6 +27,8 @@ import { resolveHtmlPath } from './util';
 
 const appDataPath = process.env.APPDATA;
 const appName = 'supermarket-management';
+
+const settingsPath = path.join(appDataPath as string, appName, 'settings.json');
 
 const logFilePath = path.join(
   appDataPath as string,
@@ -33,6 +42,7 @@ if (!fs.existsSync(logDir)) {
   log.info('Create logDir');
   fs.mkdirSync(logDir, { recursive: true });
 }
+
 log.transports.file.resolvePath = () => logFilePath;
 
 class AppUpdater {
@@ -48,6 +58,12 @@ class AppUpdater {
 }
 
 let mainWindow: BrowserWindow | null = null;
+let settings: { x: number; y: number; width: number; height: number } = {
+  x: 0,
+  y: 0,
+  width: 1024,
+  height: 728,
+};
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
   console.log(msgTemplate(arg));
@@ -69,7 +85,6 @@ if (process.env.NODE_ENV === 'production') {
 
 const isDebug =
   process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
-// const isDebug = true;
 if (isDebug) {
   require('electron-debug')();
 }
@@ -123,20 +138,45 @@ const createWindow = async () => {
     ? path.join(process.resourcesPath, 'assets')
     : path.join(__dirname, '../../assets');
 
+  try {
+    const settingsFile = fs.readFileSync(settingsPath, 'utf8');
+    settings = JSON.parse(settingsFile);
+  } catch (error) {
+    log.info('No settings file found');
+  }
+
   const getAssetPath = (...paths: string[]): string => {
     return path.join(RESOURCES_PATH, ...paths);
   };
 
   mainWindow = new BrowserWindow({
+    x: settings.x || 0,
+    y: settings.y || 0,
     show: false,
-    width: 1024,
-    height: 728,
+    width: settings.width || 800,
+    height: settings.height || 600,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
+  });
+
+  mainWindow.on('move', () => {
+    if (mainWindow) {
+      const { x, y } = mainWindow.getBounds();
+      settings.x = x;
+      settings.y = y;
+    }
+  });
+
+  mainWindow.on('resize', () => {
+    if (mainWindow) {
+      const { width, height } = mainWindow.getBounds();
+      settings.width = width;
+      settings.height = height;
+    }
   });
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
@@ -148,7 +188,7 @@ const createWindow = async () => {
     if (process.env.START_MINIMIZED) {
       mainWindow.minimize();
     } else {
-      mainWindow.maximize();
+      // mainWindow.maximize();
       mainWindow.show();
     }
   });
@@ -254,6 +294,21 @@ ipcMain.on('get-quantity', async (event) => {
   } catch (e: unknown) {
     // Log any error that occurs during the file operations
     log.error(e);
+  }
+});
+
+let isQuitting = false;
+
+app.on('before-quit', (event) => {
+  if (!isQuitting) {
+    event.preventDefault();
+    // Ici, vous pouvez sauvegarder votre fichier
+    fs.writeFileSync(
+      path.join(appDataPath as string, appName, 'settings.json'),
+      JSON.stringify(settings),
+    );
+    isQuitting = true;
+    app.quit();
   }
 });
 
